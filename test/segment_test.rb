@@ -29,6 +29,20 @@ class SegmentTest < Minitest::Test
     assert_equal "C", field3.to_s
   end
 
+  def test_repeat_accessor
+    rep1 = segment1.field(1).repeat(1)
+    assert_instance_of Pipehat::Repeat::Base, rep1
+    assert_equal "AA", rep1.to_s
+
+    rep2 = segment1.field(4).repeat(1)
+    assert_instance_of Pipehat::Repeat::Base, rep1
+    assert_equal "G", rep2.to_s
+
+    assert_instance_of Pipehat::Repeat::Base, rep1
+    rep3 = segment1.field(4).repeat(2)
+    assert_equal "H", rep3.to_s
+  end
+
   private
 
   def segment1
