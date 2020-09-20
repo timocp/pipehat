@@ -111,6 +111,24 @@ class SegmentTest < Minitest::Test
     assert_equal "ZZZ|QQ|B^C~D^E&RR||~^&RR", seg.to_hl7
   end
 
+  def test_escaping
+    seg = Pipehat::Segment::Base.new("ZZZ|\\E\\\\F\\\\R\\\\S\\\\T\\")
+    assert_equal "\\E\\\\F\\\\R\\\\S\\\\T\\", seg.field(1).unescaped
+    assert_equal "\\|~^&", seg.field(1).to_s
+
+    seg = Pipehat::Segment::Base.new("ZZZ|\\E\\\\F\\~\\R\\^\\S\\&\\T\\")
+    assert_equal "\\|", seg.field(1).repeat(1).to_s
+    assert_equal "~", seg.field(1).repeat(2).to_s
+    assert_equal "~", seg.field(1).repeat(2).component(1).to_s
+    assert_equal "^", seg.field(1).repeat(2).component(2).to_s
+    assert_equal "^", seg.field(1).repeat(2).component(2).subcomponent(1).to_s
+    assert_equal "&", seg.field(1).repeat(2).component(2).subcomponent(2).to_s
+
+    # other sequences are not converted
+    seg = Pipehat::Segment::Base.new("ZZZ|\\H\\Highlight\\N\\\\.br\\")
+    assert_equal "\\H\\Highlight\\N\\\\.br\\", seg.field(1).to_s
+  end
+
   private
 
   def segment1

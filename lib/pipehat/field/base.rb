@@ -2,24 +2,22 @@
 
 module Pipehat
   module Field
-    class Base
+    class Base < Pipehat::Node
       def initialize(segment, fnum)
         @segment = segment
         @fnum = fnum
       end
 
-      def repeat(rnum)
-        Pipehat::Repeat::Base.new(@segment, @fnum, rnum)
-      end
+      attr_reader :segment, :fnum
 
-      def to_s
-        @segment.get(@fnum, 1, 1, 1)
+      def repeat(rnum)
+        Pipehat::Repeat::Base.new(segment, fnum, rnum)
       end
 
       # Set on a field should replace the entire tree at this field
       # This should discard anything under repeats etc
       def set(value)
-        @segment.set_field(@fnum, value)
+        segment.set_field(fnum, value)
       end
     end
   end

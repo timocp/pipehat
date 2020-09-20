@@ -1,6 +1,6 @@
 module Pipehat
   module Component
-    class Base
+    class Base < Pipehat::Node
       def initialize(segment, fnum, rnum, cnum)
         @segment = segment
         @fnum = fnum
@@ -8,16 +8,14 @@ module Pipehat
         @cnum = cnum
       end
 
-      def subcomponent(snum)
-        Pipehat::Subcomponent::Base.new(@segment, @fnum, @rnum, @cnum, snum)
-      end
+      attr_reader :segment, :fnum, :rnum, :cnum
 
-      def to_s
-        @segment.get(@fnum, @rnum, @cnum, 1)
+      def subcomponent(snum)
+        Pipehat::Subcomponent::Base.new(segment, fnum, rnum, cnum, snum)
       end
 
       def set(value)
-        @segment.set_component(@fnum, @rnum, @cnum, value)
+        segment.set_component(fnum, rnum, cnum, value)
       end
     end
   end

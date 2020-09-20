@@ -1,22 +1,20 @@
 module Pipehat
   module Repeat
-    class Base
+    class Base < Pipehat::Node
       def initialize(segment, fnum, rnum)
         @segment = segment
         @fnum = fnum
         @rnum = rnum
       end
 
-      def component(cnum)
-        Pipehat::Component::Base.new(@segment, @fnum, @rnum, cnum)
-      end
+      attr_reader :segment, :fnum, :rnum
 
-      def to_s
-        @segment.get(@fnum, @rnum, 1, 1)
+      def component(cnum)
+        Pipehat::Component::Base.new(segment, fnum, rnum, cnum)
       end
 
       def set(value)
-        @segment.set_repeat(@fnum, @rnum, value)
+        segment.set_repeat(fnum, rnum, value)
       end
     end
   end
