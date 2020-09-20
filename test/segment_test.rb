@@ -43,6 +43,18 @@ class SegmentTest < Minitest::Test
     assert_equal "H", rep3.to_s
   end
 
+  def test_component_accessor
+    comp1 = segment1.field(1).repeat(1).component(1)
+    assert_instance_of Pipehat::Component::Base, comp1
+    assert_equal "AA", comp1.to_s
+
+    comp2 = segment1.field(4).repeat(1).component(1)
+    assert_equal "G", comp2.to_s
+
+    comp2 = segment1.field(4).repeat(2).component(1)
+    assert_equal "H", comp2.to_s
+  end
+
   private
 
   def segment1

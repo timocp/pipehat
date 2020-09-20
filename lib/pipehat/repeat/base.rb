@@ -7,6 +7,10 @@ module Pipehat
         @rnum = rnum
       end
 
+      def component(cnum)
+        Pipehat::Component::Base.new(@segment, @fnum, @rnum, cnum)
+      end
+
       def to_s
         @segment.get(@fnum, @rnum, 1, 1)
       end
