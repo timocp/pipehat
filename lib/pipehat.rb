@@ -7,3 +7,4 @@ end
 
 require "pipehat/parser"
 require "pipehat/segment/base"
+require "pipehat/field/base"

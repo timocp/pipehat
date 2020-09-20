@@ -16,6 +16,20 @@ module Pipehat
         @parser = parser
       end
 
+      # Returns a reference to a field by number
+      def field(fnum)
+        Pipehat::Field::Base.new(self, fnum)
+      end
+
+      # Return the raw (escaped) string at the specified position.
+      # If the position doesn't exist, returns nil.
+      #
+      # Note this works by assuming @data always has arrays nesting to
+      # the subcomponent position
+      def get(fnum, rnum, cnum, snum)
+        @data.dig(fnum)&.dig(rnum - 1)&.dig(cnum - 1)&.dig(snum - 1)
+      end
+
       attr_accessor :parser
 
       def to_hl7
