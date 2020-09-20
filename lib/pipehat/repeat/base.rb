@@ -14,6 +14,10 @@ module Pipehat
       def to_s
         @segment.get(@fnum, @rnum, 1, 1)
       end
+
+      def set(value)
+        @segment.set_repeat(@fnum, @rnum, value)
+      end
     end
   end
 end

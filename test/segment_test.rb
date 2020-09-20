@@ -63,6 +63,54 @@ class SegmentTest < Minitest::Test
     assert_equal "K", sub3.to_s
   end
 
+  def test_change_field
+    seg = Pipehat::Segment::Base.new("ZZZ|AA|B^C~D^E")
+    seg.field(1).set("QQ")
+    assert_equal "ZZZ|QQ|B^C~D^E", seg.to_hl7
+
+    seg.field(2).set("RR")
+    assert_equal "ZZZ|QQ|RR", seg.to_hl7
+
+    seg.field(4).set("SS")
+    assert_equal "ZZZ|QQ|RR||SS", seg.to_hl7
+  end
+
+  def test_change_repeat
+    seg = Pipehat::Segment::Base.new("ZZZ|AA|B^C~D^E")
+    seg.field(1).repeat(1).set("QQ")
+    assert_equal "ZZZ|QQ|B^C~D^E", seg.to_hl7
+
+    seg.field(2).repeat(2).set("RR")
+    assert_equal "ZZZ|QQ|B^C~RR", seg.to_hl7
+
+    seg.field(4).repeat(2).set("SS")
+    assert_equal "ZZZ|QQ|B^C~RR||~SS", seg.to_hl7
+  end
+
+  def test_change_component
+    seg = Pipehat::Segment::Base.new("ZZZ|AA|B^C~D^E")
+    seg.field(1).repeat(1).component(1).set("QQ")
+    assert_equal "ZZZ|QQ|B^C~D^E", seg.to_hl7
+
+    seg.field(2).repeat(2).component(1).set("RR")
+    assert_equal "ZZZ|QQ|B^C~RR^E", seg.to_hl7
+
+    seg.field(4).repeat(2).component(2).set("SS")
+    assert_equal "ZZZ|QQ|B^C~RR^E||~^SS", seg.to_hl7
+  end
+
+  def test_change_subcomponent
+    seg = Pipehat::Segment::Base.new("ZZZ|AA|B^C~D^E")
+    seg.field(1).repeat(1).component(1).subcomponent(1).set("QQ")
+    assert_equal "ZZZ|QQ|B^C~D^E", seg.to_hl7
+
+    seg.field(2).repeat(2).component(2).subcomponent(2).set("RR")
+    assert_equal "ZZZ|QQ|B^C~D^E&RR", seg.to_hl7
+
+    seg.field(4).repeat(2).component(2).subcomponent(2).set("RR")
+    assert_equal "ZZZ|QQ|B^C~D^E&RR||~^&RR", seg.to_hl7
+  end
+
   private
 
   def segment1

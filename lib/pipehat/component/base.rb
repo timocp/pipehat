@@ -15,6 +15,10 @@ module Pipehat
       def to_s
         @segment.get(@fnum, @rnum, @cnum, 1)
       end
+
+      def set(value)
+        @segment.set_component(@fnum, @rnum, @cnum, value)
+      end
     end
   end
 end

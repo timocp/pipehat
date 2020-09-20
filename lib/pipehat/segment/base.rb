@@ -30,13 +30,35 @@ module Pipehat
         @data.dig(fnum)&.dig(rnum - 1)&.dig(cnum - 1)&.dig(snum - 1)
       end
 
+      def set_field(fnum, value)
+        @data[fnum] = [[[value]]]
+      end
+
+      def set_repeat(fnum, rnum, value)
+        @data[fnum] ||= [[[]]]
+        @data[fnum][rnum - 1] = [[value]]
+      end
+
+      def set_component(fnum, rnum, cnum, value)
+        @data[fnum] ||= [[[]]]
+        @data[fnum][rnum - 1] ||= [[]]
+        @data[fnum][rnum - 1][cnum - 1] = [value]
+      end
+
+      def set_subcomponent(fnum, rnum, cnum, snum, value)
+        @data[fnum] ||= [[[]]]
+        @data[fnum][rnum - 1] ||= [[]]
+        @data[fnum][rnum - 1][cnum - 1] ||= []
+        @data[fnum][rnum - 1][cnum - 1][snum - 1] = value
+      end
+
       attr_accessor :parser
 
       def to_hl7
         @data.map do |field|
-          field.map do |repeat|
-            repeat.map do |component|
-              component.join(parser.subcomponent_sep)
+          (field || []).map do |repeat|
+            (repeat || []).map do |component|
+              (component || []).join(parser.subcomponent_sep)
             end.join(parser.component_sep)
           end.join(parser.repetition_sep)
         end.join(parser.field_sep)
