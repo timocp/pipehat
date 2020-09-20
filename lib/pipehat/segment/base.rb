@@ -13,6 +13,19 @@ module Pipehat
             end
           end
         end
+        @parser = parser
+      end
+
+      attr_accessor :parser
+
+      def to_hl7
+        @data.map do |field|
+          field.map do |repeat|
+            repeat.map do |component|
+              component.join(parser.subcomponent_sep)
+            end.join(parser.component_sep)
+          end.join(parser.repetition_sep)
+        end.join(parser.field_sep)
       end
     end
   end
