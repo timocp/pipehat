@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "irb"
 
 class SegmentTest < Minitest::Test
   TEST1 = "ZZZ|AA|A^B|C&D^E&F|G~H|I^J&K~L"
