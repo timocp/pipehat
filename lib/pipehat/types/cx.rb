@@ -6,12 +6,12 @@ Pipehat.define_type :CX do
   component :identifier_check_digit,          :ST
   component :check_digit_scheme,              :ID
   component :assigning_authority,             :HD
-  # component :identifier_type_code,            :ID
-  # component :assigning_facility,              :HD
-  # component :effective_date,                  :DT
-  # component :expiration_date,                 :DT
-  # component :assigning_jurisdiction,          :CWE
-  # component :assigning_agency_or_department,  :CWE
-  # component :security_check,                  :ST
-  # component :security_check_scheme,           :ID
+  component :identifier_type_code,            :ID
+  component :assigning_facility,              :HD
+  component :effective_date,                  :DT
+  component :expiration_date,                 :DT
+  component :assigning_jurisdiction,          :CWE
+  component :assigning_agency_or_department,  :CWE
+  component :security_check,                  :ST
+  component :security_check_scheme,           :ID
 end

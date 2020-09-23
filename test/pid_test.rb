@@ -46,6 +46,25 @@ class PidTest < Minitest::Test
 
     pid.patient_identifier_list.id_number = "NEWID"
     assert_equal "PID|||NEWID^4^M11", pid.to_hl7
+
+    # check all CX fields can be accessed
+    pidlist = pid.patient_identifier_list
+    assert_equal "NEWID", pidlist.id_number.to_s
+    assert_equal "4", pidlist.identifier_check_digit.to_s
+    assert_equal "M11", pidlist.check_digit_scheme.to_s
+    assert_equal "", pidlist.assigning_authority.to_s
+    assert_equal "", pidlist.identifier_type_code.to_s
+    assert_equal "", pidlist.assigning_facility.to_s
+    assert_equal "", pidlist.effective_date.to_s
+    assert_equal "", pidlist.expiration_date.to_s
+    assert_equal "", pidlist.assigning_jurisdiction.to_s
+    assert_equal "", pidlist.assigning_agency_or_department.to_s
+    assert_equal "", pidlist.security_check.to_s
+    assert_equal "", pidlist.security_check_scheme.to_s
+    pidlist.security_check_scheme = "ZZ"
+    assert_equal "PID|||NEWID^4^M11^^^^^^^^^ZZ", pid.to_hl7
+
+    assert_equal "", pidlist.assigning_jurisdiction.value_set_version_id.to_s
   end
 
   def test_subcomponents
