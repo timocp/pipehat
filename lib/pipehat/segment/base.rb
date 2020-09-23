@@ -17,8 +17,8 @@ module Pipehat
       end
 
       # Returns a reference to a field by number
-      def field(fnum)
-        Pipehat::Field::Base.new(self, fnum)
+      def field(fnum, type = Pipehat::Field::Base)
+        type.new(self, fnum)
       end
 
       # Return the raw (escaped) string at the specified position.

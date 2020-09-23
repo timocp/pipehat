@@ -10,8 +10,8 @@ module Pipehat
 
       attr_reader :segment, :fnum, :rnum, :cnum
 
-      def subcomponent(snum)
-        Pipehat::Subcomponent::Base.new(segment, fnum, rnum, cnum, snum)
+      def subcomponent(snum, type = Pipehat::Subcomponent::Base)
+        type.new(segment, fnum, rnum, cnum, snum)
       end
 
       def set(value)

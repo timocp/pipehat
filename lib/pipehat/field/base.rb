@@ -11,13 +11,31 @@ module Pipehat
       attr_reader :segment, :fnum
 
       def repeat(rnum)
-        Pipehat::Repeat::Base.new(segment, fnum, rnum)
+        repeat_class.new(segment, fnum, rnum)
+      end
+
+      def [](rnum)
+        repeat(rnum)
+      end
+
+      def []=(rnum, value)
+        repeat(rnum).set(value)
+      end
+
+      def first
+        repeat(1)
       end
 
       # Set on a field should replace the entire tree at this field
       # This should discard anything under repeats etc
       def set(value)
         segment.set_field(fnum, value)
+      end
+
+      private
+
+      def repeat_class
+        Object.const_get(self.class.name.sub(/Field/, "Repeat"))
       end
     end
   end

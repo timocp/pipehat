@@ -12,3 +12,5 @@ require "pipehat/field/base"
 require "pipehat/repeat/base"
 require "pipehat/component/base"
 require "pipehat/subcomponent/base"
+
+require "pipehat/segment/pid"
