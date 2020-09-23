@@ -30,26 +30,31 @@ module Pipehat
         @data.dig(fnum)&.dig(rnum - 1)&.dig(cnum - 1)&.dig(snum - 1)
       end
 
+      # TODO: set_* currently assume a string only.  Would be good to accept
+      # and insert arrays (for nodes higher than subcomponents)
+      # There should also be a way to avoid the escaping (eg, FT values use
+      # escape sequences that shouldn't be escaped again).
+
       def set_field(fnum, value)
-        @data[fnum] = [[[value]]]
+        @data[fnum] = [[[parser.escape(value)]]]
       end
 
       def set_repeat(fnum, rnum, value)
         @data[fnum] ||= [[[]]]
-        @data[fnum][rnum - 1] = [[value]]
+        @data[fnum][rnum - 1] = [[parser.escape(value)]]
       end
 
       def set_component(fnum, rnum, cnum, value)
         @data[fnum] ||= [[[]]]
         @data[fnum][rnum - 1] ||= [[]]
-        @data[fnum][rnum - 1][cnum - 1] = [value]
+        @data[fnum][rnum - 1][cnum - 1] = [parser.escape(value)]
       end
 
       def set_subcomponent(fnum, rnum, cnum, snum, value)
         @data[fnum] ||= [[[]]]
         @data[fnum][rnum - 1] ||= [[]]
         @data[fnum][rnum - 1][cnum - 1] ||= []
-        @data[fnum][rnum - 1][cnum - 1][snum - 1] = value
+        @data[fnum][rnum - 1][cnum - 1][snum - 1] = parser.escape(value)
       end
 
       attr_accessor :parser

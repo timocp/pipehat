@@ -129,6 +129,21 @@ class SegmentTest < Minitest::Test
     assert_equal "\\H\\Highlight\\N\\\\.br\\", seg.field(1).to_s
   end
 
+  def test_writing
+    seg = Pipehat::Segment::Base.new("ZZZ")
+    seg.field(1).set("F")
+    seg.field(2).repeat(2).set("R")
+    seg.field(3).repeat(1).component(2).set("C")
+    seg.field(4).repeat(1).component(1).subcomponent(2).set("S")
+    assert_equal "ZZZ|F|~R|^C|&S", seg.to_hl7
+  end
+
+  def test_escaped_writing
+    seg = Pipehat::Segment::Base.new("ZZZ")
+    seg.field(1).set("\\|~^&")
+    assert_equal "ZZZ|\\E\\\\F\\\\R\\\\S\\\\T\\", seg.to_hl7
+  end
+
   private
 
   def segment1

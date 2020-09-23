@@ -72,6 +72,26 @@ module Pipehat
       @escaped_hex_regex ||= Regexp.new "#{Regexp.quote escape_char}X\\h+#{Regexp.quote escape_char}"
     end
 
+    def escape(string)
+      return "" if string.nil?
+
+      string.each_char.map do |chr|
+        case chr
+        when field_sep then escaped_field_sep
+        when repetition_sep then escaped_repetition_sep
+        when component_sep then escaped_component_sep
+        when subcomponent_sep then escaped_subcomponent_sep
+        when escape_char then escaped_escape_char
+        else
+          if (32.chr..127.chr).cover?(chr)
+            chr
+          else
+            format("\\X%02X\\", chr.ord)
+          end
+        end
+      end.join
+    end
+
     def unescape(string)
       return "" if string.nil?
       return string unless string.include?(escape_char)
