@@ -71,9 +71,13 @@ module Pipehat
       end
 
       class << self
+        # returns a list of the fields define on this segment as symbols
+        attr_reader :fields
+
         def field(name, type)
-          @count ||= 0
-          count = @count += 1
+          @fields ||= []
+          @fields << name
+          count = @fields.size
           klass = Object.const_get("Pipehat::Field::#{type}")
 
           define_method name do
