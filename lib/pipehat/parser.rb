@@ -72,6 +72,15 @@ module Pipehat
       @escaped_hex_regex ||= Regexp.new "#{Regexp.quote escape_char}X\\h+#{Regexp.quote escape_char}"
     end
 
+    def msh2
+      @msh2 ||= [
+        component_sep,
+        repetition_sep,
+        escape_char,
+        subcomponent_sep
+      ].join
+    end
+
     def escape(string)
       return "" if string.nil?
 

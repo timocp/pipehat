@@ -74,15 +74,20 @@ module Pipehat
         # returns a list of the fields define on this segment as symbols
         attr_reader :fields
 
-        def field(name, type)
+        def field(name, type, options = {})
           @fields ||= []
           @fields << name
           count = @fields.size
           klass = Object.const_get("Pipehat::Field::#{type}")
 
+          invalid_options = options.keys - %i[setter]
+          raise "Invalid options: #{invalid_options.join(", ")}" if invalid_options.any?
+
           define_method name do
             field(count, klass)
           end
+
+          return unless options.fetch(:setter, true)
 
           define_method "#{name}=" do |value|
             send(name).set(value)
