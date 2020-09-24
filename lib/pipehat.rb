@@ -14,5 +14,4 @@ require "pipehat/subcomponent/base"
 require "pipehat/define_type"
 
 Dir[File.join(__dir__, "pipehat", "types", "*.rb")].sort.each { |file| require file }
-
-require "pipehat/segment/pid"
+Dir[File.join(__dir__, "pipehat", "segment", "*.rb")].sort.each { |file| require file }

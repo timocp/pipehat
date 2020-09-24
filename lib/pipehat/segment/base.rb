@@ -3,7 +3,8 @@
 module Pipehat
   module Segment
     class Base
-      def initialize(string, parser: Pipehat::DEFAULT_PARSER)
+      def initialize(string = nil, parser: Pipehat::DEFAULT_PARSER)
+        string ||= self.class.name.split("::").last
         # storage is nested array (to depth of subcomponents).  The unescaped
         # strings is stored (escape/unescape occurs in accessors).
         @data = string.split(parser.field_sep).map do |field|
@@ -67,6 +68,22 @@ module Pipehat
             end.join(parser.component_sep)
           end.join(parser.repetition_sep)
         end.join(parser.field_sep)
+      end
+
+      class << self
+        def field(name, type)
+          @count ||= 0
+          count = @count += 1
+          klass = Object.const_get("Pipehat::Field::#{type}")
+
+          define_method name do
+            field(count, klass)
+          end
+
+          define_method "#{name}=" do |value|
+            send(name).set(value)
+          end
+        end
       end
     end
   end
