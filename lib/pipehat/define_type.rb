@@ -9,7 +9,7 @@ module Pipehat
       @count = 0
     end
 
-    def component(name, type)
+    def add_component(name, type)
       setter = "#{name}=".to_sym
       count = @count += 1
 

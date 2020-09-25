@@ -2,16 +2,16 @@
 
 # Extended Composite ID with Check Digit
 Pipehat.define_type :CX do
-  component :id_number,                       :ST
-  component :identifier_check_digit,          :ST
-  component :check_digit_scheme,              :ID
-  component :assigning_authority,             :HD
-  component :identifier_type_code,            :ID
-  component :assigning_facility,              :HD
-  component :effective_date,                  :DT
-  component :expiration_date,                 :DT
-  component :assigning_jurisdiction,          :CWE
-  component :assigning_agency_or_department,  :CWE
-  component :security_check,                  :ST
-  component :security_check_scheme,           :ID
+  add_component :id_number,                       :ST
+  add_component :identifier_check_digit,          :ST
+  add_component :check_digit_scheme,              :ID
+  add_component :assigning_authority,             :HD
+  add_component :identifier_type_code,            :ID
+  add_component :assigning_facility,              :HD
+  add_component :effective_date,                  :DT
+  add_component :expiration_date,                 :DT
+  add_component :assigning_jurisdiction,          :CWE
+  add_component :assigning_agency_or_department,  :CWE
+  add_component :security_check,                  :ST
+  add_component :security_check_scheme,           :ID
 end

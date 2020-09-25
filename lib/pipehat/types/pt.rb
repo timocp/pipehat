@@ -2,6 +2,6 @@
 
 # Processing Type
 Pipehat.define_type :PT do
-  component :processing_id,   :ID
-  component :processing_mode, :ID
+  add_component :processing_id,   :ID
+  add_component :processing_mode, :ID
 end

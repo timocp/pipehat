@@ -2,15 +2,15 @@
 
 # Person Location
 Pipehat.define_type :PL do
-  component :point_of_care,                     :HD
-  component :room,                              :HD
-  component :bed,                               :HD
-  component :facility,                          :HD
-  component :location_status,                   :IS
-  component :person_location_type,              :IS
-  component :building,                          :HD
-  component :floor,                             :HD
-  component :location_description,              :ST
-  component :comprehensive_location_identifier, :EI
-  component :assigning_authority_for_location,  :HD
+  add_component :point_of_care,                     :HD
+  add_component :room,                              :HD
+  add_component :bed,                               :HD
+  add_component :facility,                          :HD
+  add_component :location_status,                   :IS
+  add_component :person_location_type,              :IS
+  add_component :building,                          :HD
+  add_component :floor,                             :HD
+  add_component :location_description,              :ST
+  add_component :comprehensive_location_identifier, :EI
+  add_component :assigning_authority_for_location,  :HD
 end

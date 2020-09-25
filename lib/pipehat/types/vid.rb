@@ -2,7 +2,7 @@
 
 # Version Identifier
 Pipehat.define_type :VID do
-  component :version_id,                :ID
-  component :internationalization_code, :CWE
-  component :international_version_id,  :CWE
+  add_component :version_id,                :ID
+  add_component :internationalization_code, :CWE
+  add_component :international_version_id,  :CWE
 end

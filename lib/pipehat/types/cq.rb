@@ -2,6 +2,6 @@
 
 # Composite Quantity with Units
 Pipehat.define_type :CQ do
-  component :quantity,  :NM
-  component :units,     :CWE
+  add_component :quantity,  :NM
+  add_component :units,     :CWE
 end

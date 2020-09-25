@@ -80,7 +80,7 @@ module Pipehat
           @field_names ||= []
         end
 
-        def field(name, type, options = {})
+        def add_field(name, type, options = {})
           field_names << name
           count = field_names.size
           klass = Object.const_get("Pipehat::Field::#{type}")

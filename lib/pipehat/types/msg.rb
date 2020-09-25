@@ -2,7 +2,7 @@
 
 # Message Type
 Pipehat.define_type :MSG do
-  component :message_code,      :ID
-  component :trigger_event,     :ID
-  component :message_structure, :ID
+  add_component :message_code,      :ID
+  add_component :trigger_event,     :ID
+  add_component :message_structure, :ID
 end

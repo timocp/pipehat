@@ -2,9 +2,9 @@
 
 # Family Name
 Pipehat.define_type :FN do
-  component :surname,                     :ST
-  component :own_surname_prefix,          :ST
-  component :own_surname,                 :ST
-  component :surname_prefix_from_partner, :ST
-  component :surname_from_partner,        :ST
+  add_component :surname,                     :ST
+  add_component :own_surname_prefix,          :ST
+  add_component :own_surname,                 :ST
+  add_component :surname_prefix_from_partner, :ST
+  add_component :surname_from_partner,        :ST
 end

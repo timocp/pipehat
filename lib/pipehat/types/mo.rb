@@ -2,6 +2,6 @@
 
 # Money
 Pipehat.define_type :MO do
-  component :quantity,      :NM
-  component :denomination,  :ID
+  add_component :quantity,      :NM
+  add_component :denomination,  :ID
 end
