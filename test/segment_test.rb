@@ -143,6 +143,17 @@ class SegmentTest < Minitest::Test
     assert_equal "ZZZ|\\E\\\\F\\\\R\\\\S\\\\T\\", seg.to_hl7
   end
 
+  def test_field_names
+    expected_msa_fields = %i[
+      acknowledgment_code message_control_id text_message expected_sequence_number delayed_acknowledgment_type
+      error_condition message_waiting_number message_waiting_priority
+    ]
+    assert_equal expected_msa_fields, Pipehat::Segment::MSA.field_names
+    assert_equal expected_msa_fields, Pipehat::Segment::MSA.new.field_names
+    assert_equal [], Pipehat::Segment::Base.field_names
+    assert_equal [], Pipehat::Segment::Base.new.field_names
+  end
+
   private
 
   def segment1

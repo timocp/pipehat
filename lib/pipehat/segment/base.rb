@@ -58,6 +58,10 @@ module Pipehat
         @data[fnum][rnum - 1][cnum - 1][snum - 1] = parser.escape(value)
       end
 
+      def field_names
+        self.class.field_names
+      end
+
       attr_accessor :parser
 
       def to_hl7
@@ -72,12 +76,13 @@ module Pipehat
 
       class << self
         # returns a list of the fields define on this segment as symbols
-        attr_reader :fields
+        def field_names
+          @field_names ||= []
+        end
 
         def field(name, type, options = {})
-          @fields ||= []
-          @fields << name
-          count = @fields.size
+          field_names << name
+          count = field_names.size
           klass = Object.const_get("Pipehat::Field::#{type}")
 
           invalid_options = options.keys - %i[setter]

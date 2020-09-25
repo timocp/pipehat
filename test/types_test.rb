@@ -9,7 +9,7 @@ class TypesTest < Minitest::Test
     base = Pipehat::Segment::Base
     ObjectSpace.each_object(base.singleton_class).reject { |klass| klass == base }.each do |klass|
       seg = klass.new
-      klass.fields.each do |fieldname|
+      klass.field_names.each do |fieldname|
         field = seg.send(fieldname)
 
         # skip special message header fields (tested in msh_test)
