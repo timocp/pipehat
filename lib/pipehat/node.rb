@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Pipehat
   # Parent class of all accessor types (Field, Repeat, (Sub)Component
   # providing common methods
@@ -24,6 +26,14 @@ module Pipehat
 
     def unescaped
       segment.get(fnum, rnum, cnum, snum)
+    end
+
+    def component_names
+      self.class.component_names
+    end
+
+    def self.component_names
+      @component_names ||= []
     end
   end
 end

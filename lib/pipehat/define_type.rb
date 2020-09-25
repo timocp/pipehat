@@ -13,6 +13,10 @@ module Pipehat
       setter = "#{name}=".to_sym
       count = @count += 1
 
+      @fclass.component_names << name
+      @rclass.component_names << name
+      @cclass.component_names << name
+
       # component for a field class is delegated to the first repeat and
       # returns a Component
       @fclass.define_method name do
