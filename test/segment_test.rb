@@ -144,6 +144,9 @@ class SegmentTest < Minitest::Test
   end
 
   def test_field_names
+    assert_raises(FrozenError) { Pipehat::Segment::MSA.field_names << :bad }
+    assert_raises(FrozenError) { Pipehat::Segment::MSA.new.field_names << :bad }
+
     expected_msa_fields = %i[
       acknowledgment_code message_control_id text_message expected_sequence_number delayed_acknowledgment_type
       error_condition message_waiting_number message_waiting_priority

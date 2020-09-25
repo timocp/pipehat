@@ -4,6 +4,9 @@ require "test_helper"
 
 class TypesTest < Minitest::Test
   def test_component_names
+    assert_raises(FrozenError) { Pipehat::Field::HD.component_names << :bad }
+    assert_raises(FrozenError) { Pipehat::Segment::MSH.new.sending_facility.component_names << :bad }
+
     expected_hd_fields = %i[namespace_id universal_id universal_id_type]
     assert_equal expected_hd_fields, Pipehat::Field::HD.component_names
     assert_equal expected_hd_fields, Pipehat::Repeat::HD.component_names

@@ -56,9 +56,13 @@ module Pipehat
     if block_given?
       # composite type
       TypeDefinitionProxy.new(fclass, rclass, cclass).instance_eval(&block)
+      fclass.component_names.freeze
+      rclass.component_names.freeze
+      cclass.component_names.freeze
     else
       # primitive type
-      Pipehat::Subcomponent.const_set(type, Class.new(Pipehat::Subcomponent::Base))
+      sclass = Pipehat::Subcomponent.const_set(type, Class.new(Pipehat::Subcomponent::Base))
+      sclass.component_names.freeze
     end
   end
 end
