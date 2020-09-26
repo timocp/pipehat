@@ -49,4 +49,35 @@ class TypesTest < Minitest::Test
       end
     end
   end
+
+  # The "Varies" field type can be cast to another, as it is context sensitive.
+  # It's pointers have a "cast" method which converts the pointer to one of the
+  # desires type.  It is only the Node which is converted (nothing in the
+  # underlying segment is modified).
+  # There are no limitations on the type you can cast to.
+  #
+  # Example: OBX-5 has a type which is provided in OBX-2
+  def test_varies
+    obx = Pipehat::Segment::OBX.new("OBX|1|TX|FZ^SPECIMEN TYPE^L||Sputum||||||F")
+    assert_instance_of Pipehat::Field::Varies, obx.observation_value
+    assert_equal "Sputum", obx.observation_value.to_s
+
+    obx = Pipehat::Segment::OBX.new("OBX|2|CWE|123^^L|1.1|^Influenza||||||F")
+    assert_instance_of Pipehat::Field::Varies, obx.observation_value
+    assert_equal "", obx.observation_value.to_s
+
+    vt = obx.value_type
+    assert_instance_of Pipehat::Field::CWE, obx.observation_value.cast(vt)
+    assert_equal "", obx.observation_value.cast(vt).to_s
+    assert_equal "", obx.observation_value.cast(vt).identifier.to_s
+    assert_equal "Influenza", obx.observation_value.cast(vt).text.to_s
+
+    assert_instance_of Pipehat::Repeat::CWE, obx.observation_value.first.cast(vt)
+    assert_equal "Influenza", obx.observation_value.first.cast(vt).text.to_s
+
+    # you don't actually have to cast to get the values, you can just use the
+    # index based accessors
+    assert_equal "", obx.observation_value.component(1).to_s
+    assert_equal "Influenza", obx.observation_value.component(2).to_s
+  end
 end

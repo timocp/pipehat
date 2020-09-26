@@ -32,6 +32,11 @@ module Pipehat
         segment.set_field(fnum, value)
       end
 
+      # calling component(n) on a field assumes you mean the first repeat
+      def component(cnum, type = Pipehat::Component::Base)
+        first.component(cnum, type)
+      end
+
       private
 
       def repeat_class
