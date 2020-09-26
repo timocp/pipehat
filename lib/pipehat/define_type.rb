@@ -19,29 +19,29 @@ module Pipehat
 
       # component for a field class is delegated to the first repeat and
       # returns a Component
-      @fclass.define_method name do
+      @fclass.send(:define_method, name) do
         first.send(name)
       end
 
-      @fclass.define_method setter do |value|
+      @fclass.send(:define_method, setter) do |value|
         first.send(setter, value)
       end
 
       # component in a repeat class returns a Component
-      @rclass.define_method name do
+      @rclass.send(:define_method, name) do
         component(count, Object.const_get("Pipehat::Component::#{type}"))
       end
 
-      @rclass.define_method setter do |value|
+      @rclass.send(:define_method, setter) do |value|
         send(name).set(value)
       end
 
       # component in a component class returns a Subcomponent
-      @cclass.define_method name do
+      @cclass.send(:define_method, name) do
         subcomponent(count, Object.const_get("Pipehat::Subcomponent::#{type}"))
       end
 
-      @cclass.define_method setter do |value|
+      @cclass.send(:define_method, setter) do |value|
         send(name).set(value)
       end
     end

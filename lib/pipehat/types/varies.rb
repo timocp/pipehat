@@ -4,15 +4,15 @@
 Pipehat.define_type :Varies do
 end
 
-Pipehat::Field::Varies.define_method :cast do |cast_to|
+Pipehat::Field::Varies.send(:define_method, :cast) do |cast_to|
   Object.const_get("Pipehat::Field::#{cast_to}").new(segment, fnum)
 end
 
-Pipehat::Repeat::Varies.define_method :cast do |cast_to|
+Pipehat::Repeat::Varies.send(:define_method, :cast) do |cast_to|
   Object.const_get("Pipehat::Repeat::#{cast_to}").new(segment, fnum, rnum)
 end
 
-Pipehat::Component::Varies.define_method :cast do |cast_to|
+Pipehat::Component::Varies.send(:define_method, :cast) do |cast_to|
   Object.const_get("Pipehat::Component::#{cast_to}").new(segment, fnum, rnum, cnum)
 end
 
