@@ -126,6 +126,10 @@ module Pipehat
       end
       out
     end
+
+    def inspect
+      "#<#{self.class} #{field_sep}#{msh2}>"
+    end
   end
 
   DEFAULT_PARSER = Parser.new

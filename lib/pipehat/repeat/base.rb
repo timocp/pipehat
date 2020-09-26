@@ -16,6 +16,16 @@ module Pipehat
       def set(value)
         segment.set_repeat(fnum, rnum, value)
       end
+
+      def to_hl7
+        (segment.tree(fnum, rnum) || []).map do |component|
+          (component || []).join(parser.subcomponent_sep)
+        end.join(parser.component_sep)
+      end
+
+      def inspect
+        inspect_node(fnum, rnum)
+      end
     end
   end
 end

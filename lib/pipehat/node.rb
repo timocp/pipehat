@@ -35,5 +35,19 @@ module Pipehat
     def self.component_names
       @component_names ||= []
     end
+
+    def parser
+      segment.parser
+    end
+
+    private
+
+    def inspect_node(*nums)
+      s = "#<#{self.class} #{segment.segment_name}(#{nums.join(",")}) "
+      maxlen = 76 - s.length
+      fragment = to_hl7
+      fragment = fragment[0, maxlen - 3] + "..." if fragment.length > maxlen
+      "#{s}#{fragment}>"
+    end
   end
 end

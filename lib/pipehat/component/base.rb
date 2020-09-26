@@ -17,6 +17,14 @@ module Pipehat
       def set(value)
         segment.set_component(fnum, rnum, cnum, value)
       end
+
+      def to_hl7
+        (segment.tree(fnum, rnum, cnum) || []).join(parser.subcomponent_sep)
+      end
+
+      def inspect
+        inspect_node(fnum, rnum, cnum)
+      end
     end
   end
 end

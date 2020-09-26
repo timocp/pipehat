@@ -22,13 +22,21 @@ module Pipehat
         type.new(self, fnum)
       end
 
-      # Return the raw (escaped) string at the specified position.
+      # Return the raw (unescaped) string at the specified position.
       # If the position doesn't exist, returns nil.
       #
       # Note this works by assuming @data always has arrays nesting to
       # the subcomponent position
       def get(fnum, rnum, cnum, snum)
-        @data.dig(fnum)&.dig(rnum - 1)&.dig(cnum - 1)&.dig(snum - 1)
+        tree(fnum, rnum, cnum, snum)
+      end
+
+      def tree(fnum, rnum = nil, cnum = nil, snum = nil)
+        tmp = @data.dig(fnum)
+        tmp = tmp&.dig(rnum - 1) if rnum
+        tmp = tmp&.dig(cnum - 1) if cnum
+        tmp = tmp&.dig(snum - 1) if snum
+        tmp
       end
 
       # TODO: set_* currently assume a string only.  Would be good to accept
@@ -60,6 +68,10 @@ module Pipehat
 
       def field_names
         self.class.field_names
+      end
+
+      def segment_name
+        field(0).to_s
       end
 
       attr_accessor :parser
@@ -98,6 +110,14 @@ module Pipehat
             send(name).set(value)
           end
         end
+      end
+
+      def inspect
+        s = "#<#{self.class} "
+        maxlen = 76 - s.length
+        fragment = to_hl7
+        fragment = fragment[0, maxlen - 3] + "..." if fragment.length > maxlen
+        "#{s}#{fragment}>"
       end
     end
   end

@@ -37,6 +37,18 @@ module Pipehat
         first.component(cnum, type)
       end
 
+      def to_hl7
+        (segment.tree(fnum) || []).map do |repeat|
+          (repeat || []).map do |component|
+            (component || []).join(parser.subcomponent_sep)
+          end.join(parser.component_sep)
+        end.join(parser.repetition_sep)
+      end
+
+      def inspect
+        inspect_node(fnum)
+      end
+
       private
 
       def repeat_class
