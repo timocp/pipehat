@@ -5,7 +5,7 @@ require "strscan"
 module Pipehat
   class Parser
     def segment_sep
-      "\\r"
+      "\r"
     end
 
     def field_sep
@@ -125,6 +125,19 @@ module Pipehat
         end
       end
       out
+    end
+
+    # Returns an array of Pipehat::Segments of the right class
+    def parse(hl7)
+      hl7.split(segment_sep).map do |seg|
+        name = seg[0, seg.index("|")]
+        klass = if Pipehat::Segment.const_defined?(name)
+                  Pipehat::Segment.const_get(name)
+                else
+                  Pipehat::Segment::Base
+                end
+        klass.new(seg, parser: self)
+      end
     end
 
     def inspect
