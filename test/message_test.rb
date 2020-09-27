@@ -40,6 +40,11 @@ class MessageTest < Minitest::Test
     assert_instance_of Enumerator, msg.segments
     assert_instance_of Pipehat::Segment::MSH, msg.segments.first
     assert_instance_of Pipehat::Segment::DG1, msg.segments.to_a.last
+    assert_equal 8, msg.segments.count
+
+    assert_instance_of Enumerator, msg.segments(:PID)
+    assert_instance_of Pipehat::Segment::PID, msg.segments(:PID).first
+    assert_equal 1, msg.segments(:PID).count
   end
 
   def test_append_segment

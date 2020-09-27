@@ -19,10 +19,12 @@ module Pipehat
 
     # Returns an enumerator over the message's segments
     # The optional parameter limits it to the given type
-    def segments
-      return to_enum(:segments) unless block_given?
+    def segments(type = nil)
+      return to_enum(:segments, type) unless block_given?
 
       @segments.each do |segment|
+        next if type && segment.segment_name != type.to_s
+
         yield segment
       end
     end
