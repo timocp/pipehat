@@ -13,6 +13,10 @@ module Pipehat
       segments.map(&:to_hl7).join(parser.segment_sep)
     end
 
+    def <<(segment)
+      @segments << segment
+    end
+
     # Returns an enumerator over the message's segments
     # The optional parameter limits it to the given type
     def segments
