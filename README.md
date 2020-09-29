@@ -39,19 +39,32 @@ hl7 = "MSH|^~\&|||||20200927212805+0930||ADT^A01^ADT_A01|1234567890|D|2.5\r" \
 msg = Pipehat::Message.new(hl7)
 ```
 
+#### Segments
+
 Messages are essentially an array of segments.  Individual segments can be
-accessed using `#segments`.  The optional parameter will filter by segment
-type.  This method returns an Enumerator.
+accessed via an Enumerator returned from `#each`.  The optional parameter will
+filter by segment type.
 
 ```ruby
 # Example, pick the first PID segment
-pid = msg.segments(:PID).first
+pid = msg.each(:PID).first
 ```
+
+Any standard methods from Enumerable can be applied to this.  For example,
+to select the first PRD segment which has a provider role of `RT` could be done
+like this (note this would work for PRD segment where `provider_role` contained
+additional components, such as `RT|Referred To`).
+
+```ruby
+ref_to_prd = msg.each(:PRD).detect { |prd| prd.provider_role.to_s == "RT" }
+```
+
+#### Fields, Repeats, Components and Subcomponents
 
 Once a segment is accessed, fields, repeats, components and sub-components
 can be accessed by name.  Note that these methods return a subclass of
 Pipehat::Node, which is an index into the segment.  To retreive the string
-value at (or under) that position, call `@to_s` on the node.
+value at (or under) that position, call `to_s` on the node.
 
 ```ruby
 # Access the value of PID-2 (deprecated patient ID)
@@ -79,6 +92,8 @@ pid.patient_identifier_list[2].to_s #=> "ABC"
 pid.patient_identifier_list[2].id_number.to_s #=> "ABC"
 pid.patient_identifier_list[2].assigning_authority.namespace_id.to_s #=> "System2"
 ```
+
+#### Numeric indexes
 
 Values can also be accessed positionally by index instead of name.  This could
 be useful to access values:

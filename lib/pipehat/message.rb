@@ -10,7 +10,7 @@ module Pipehat
     attr_reader :parser
 
     def to_hl7
-      segments.map(&:to_hl7).join(parser.segment_sep)
+      @segments.map(&:to_hl7).join(parser.segment_sep)
     end
 
     def <<(segment)
@@ -19,8 +19,8 @@ module Pipehat
 
     # Returns an enumerator over the message's segments
     # The optional parameter limits it to the given type
-    def segments(type = nil)
-      return to_enum(:segments, type) unless block_given?
+    def each(type = nil)
+      return to_enum(:each, type) unless block_given?
 
       @segments.each do |segment|
         next if type && segment.segment_name != type.to_s

@@ -35,16 +35,16 @@ class MessageTest < Minitest::Test
     assert_instance_of Pipehat::Message, msg
   end
 
-  def test_segments
+  def test_each
     msg = example_msg
-    assert_instance_of Enumerator, msg.segments
-    assert_instance_of Pipehat::Segment::MSH, msg.segments.first
-    assert_instance_of Pipehat::Segment::DG1, msg.segments.to_a.last
-    assert_equal 8, msg.segments.count
+    assert_instance_of Enumerator, msg.each
+    assert_instance_of Pipehat::Segment::MSH, msg.each.first
+    assert_instance_of Pipehat::Segment::DG1, msg.each.to_a.last
+    assert_equal 8, msg.each.count
 
-    assert_instance_of Enumerator, msg.segments(:PID)
-    assert_instance_of Pipehat::Segment::PID, msg.segments(:PID).first
-    assert_equal 1, msg.segments(:PID).count
+    assert_instance_of Enumerator, msg.each(:PID)
+    assert_instance_of Pipehat::Segment::PID, msg.each(:PID).first
+    assert_equal 1, msg.each(:PID).count
   end
 
   def test_append_segment
