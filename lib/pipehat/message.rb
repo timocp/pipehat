@@ -17,6 +17,20 @@ module Pipehat
       @segments << segment
     end
 
+    def append(type)
+      segment = Pipehat::Segment.const_get(type).new(nil, parser: parser)
+      yield segment if block_given?
+      @segments << segment
+      segment
+    end
+
+    def insert(index, type)
+      segment = Pipehat::Segment.const_get(type).new(nil, parser: parser)
+      yield segment if block_given?
+      @segments.insert(index, segment)
+      segment
+    end
+
     # Returns an enumerator over the message's segments
     # The optional parameter limits it to the given type
     def each(type = nil)

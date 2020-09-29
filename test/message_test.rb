@@ -47,6 +47,35 @@ class MessageTest < Minitest::Test
     assert_equal 1, msg.each(:PID).count
   end
 
+  def test_append_insert
+    msg = Pipehat::Message.new
+    msg.append(:MSH) do |msh|
+      msh.sending_facility = "XYZHospC"
+    end
+    assert_equal "MSH|^~\\&||XYZHospC", msg.to_hl7
+    msg.append(:PID) do |pid|
+      pid.patient_name = "AAA"
+    end
+    assert_equal "MSH|^~\\&||XYZHospC\rPID|||||AAA", msg.to_hl7
+    msg.insert(1, :PID) do |pid|
+      pid.patient_name = "BBB"
+    end
+    assert_equal "MSH|^~\\&||XYZHospC\rPID|||||BBB\rPID|||||AAA", msg.to_hl7
+
+    # can also use the return value of append instead of passing a block
+    prd = msg.append(:PRD)
+    prd.provider_role = "RT"
+    prd.provider_name = "A"
+    prd.provider_name.suffix = "Dr"
+    assert_equal "MSH|^~\\&||XYZHospC\rPID|||||BBB\rPID|||||AAA\rPRD|RT|A^^^Dr", msg.to_hl7
+
+    prd = msg.insert(1, :PRD)
+    prd.provider_role = "RP"
+    prd.provider_name = "B"
+    prd.provider_name.suffix = "Dr"
+    assert_equal "MSH|^~\\&||XYZHospC\rPRD|RP|B^^^Dr\rPID|||||BBB\rPID|||||AAA\rPRD|RT|A^^^Dr", msg.to_hl7
+  end
+
   def test_append_segment
     msg = Pipehat::Message.new.tap do |m|
       m << Pipehat::Segment::MSH.new.tap do |msh|

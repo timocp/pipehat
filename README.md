@@ -93,7 +93,7 @@ pid.patient_identifier_list[2].id_number.to_s #=> "ABC"
 pid.patient_identifier_list[2].assigning_authority.namespace_id.to_s #=> "System2"
 ```
 
-#### Numeric indexes
+#### Numeric Indexes
 
 Values can also be accessed positionally by index instead of name.  This could
 be useful to access values:
@@ -115,13 +115,24 @@ more readable and self-documenting.
 
 ### Generating HL7
 
-Example to generate a message the same as the above example.  Note that the
-field separator and encoding characters do not have to be provided, they are
-initialized automatically.
+The main way to build up a HL7 message is to use the methods on Message:
+* `append(type)` adds a segment of the given type at the of the message
+* `insert(index, type)` insert a segment of the given type at the specified position
+where `type` is a symbol for the segment such as `:PID` or `:MSH`.
+
+Both of these methods will yield the new segment to a block if provided, and
+also return the segment.
+
+Unlike other HL7 indexing, the index param to `insert` is treated like a ruby
+array (ie, insert at 0 to insert before all other seconds).
+
+The following example generates a message similar to the "Parsing" example
+above.  Note that the field separator and encoding characters do not have to be
+provided, they are initialized automatically.
 
 ```ruby
 msg = Pipehat::Message.new
-msg << Pipehat::Segment::MSH.new.tap do |msh|
+msg.append(:MSH) do |msh|
   msh.date_time_of_message = Time.now.strftime("%Y%m%d%H%M%S%z")
   msh.message_type.message_code = "ADT"
   msh.message_type.trigger_event = "A01"
@@ -130,7 +141,7 @@ msg << Pipehat::Segment::MSH.new.tap do |msh|
   msh.processing_id = "D"
   msh.version_id = "2.5"
 end
-msg << Pipehat::Segment::PID.new.tap do |pid|
+msg.append(:PID) do |pid|
   pid.patient_id = "XXX"
   pid.patient_name.family_name = "Family"
   pid.patient_name.given_name = "Given"
@@ -146,6 +157,8 @@ msg << Pipehat::Segment::PID.new.tap do |pid|
 end
 msg.to_hl7 #=> "MSH|^~\\&|||||20200927212805+0930||ADT^A01^ADT_A01|1234567890|D|2.5\r..."
 ```
+
+#### Numeric Indexes
 
 The indexed based access looks slightly different due to ruby syntax; the `set`
 method must be called on the node object.  `set` can be called at any level
