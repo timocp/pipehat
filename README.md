@@ -183,22 +183,23 @@ assignment.  The following 2 examples are equivalent:
 
 ```ruby
 pid = Pipehat::Segment::PID.new
-pid.patient_name[1] = ["Family", "", "Given"]
-pid.to_hl7 #=> "PID|||||Family^^Given"
+pid.patient_name[1] = ["Family", "Given", "", "", "Mx"]
+pid.to_hl7 #=> "PID|||||Family^Given^^^Mx"
 
 pid = Pipehat::Segment::PID.new
 pid.patient_name.family_name = "Family"
 pid.patient_name.given_name = "Given"
-pid.to_hl7 #=> "PID|||||Family^Given"
+pid.patient_name.prefix = "Mx"
+pid.to_hl7 #=> "PID|||||Family^Given^^^Mx"
 ```
 
 Note that the index `[1]` is required in the first example because otherwise it
-is assumed you're trying to set 3 repeats which is not what you want:
+is assumed you're trying to set 2 repeats which is not what you want:
 
 ```ruby
 pid = Pipehat::Segment::PID.new
-pid.patient_name = ["Family", "", "Given"]
-pid.to_hl7 #=> "PID|||||Family~~Given"
+pid.patient_name = ["Family", "Given"]
+pid.to_hl7 #=> "PID|||||Family~Given"
 ```
 
 Subcomponents can also be assigned this way:

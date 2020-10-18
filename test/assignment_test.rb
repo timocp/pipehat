@@ -28,8 +28,8 @@ class AssignmentTest < Minitest::Test
     pid = Pipehat::Segment::PID.new
     pid.patient_identifier_list = ["ID1", "ID2"] # note this sets 2 repeats
     pid.patient_identifier_list.assigning_authority = ["AA", "", "L"]
-    pid.patient_name.first = ["Family", "", "Given"]
-    pid.patient_name[2] = ["Second Family", "", "Second Given"]
-    assert_equal "PID|||ID1^^^AA&&L~ID2||Family^^Given~Second Family^^Second Given", pid.to_hl7
+    pid.patient_name.first = ["Family", "Given", "", "", "Mx"]
+    pid.patient_name[2] = ["Second Family", "Second Given", "", "", "Mx"]
+    assert_equal "PID|||ID1^^^AA&&L~ID2||Family^Given^^^Mx~Second Family^Second Given^^^Mx", pid.to_hl7
   end
 end
