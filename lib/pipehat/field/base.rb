@@ -26,6 +26,10 @@ module Pipehat
         repeat(1)
       end
 
+      def first=(value)
+        repeat(1).set(value)
+      end
+
       # Set on a field should replace the entire tree at this field
       # This should discard anything under repeats etc
       def set(value)

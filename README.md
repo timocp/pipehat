@@ -175,6 +175,43 @@ pid.field(3).repeat(2).component(4).subcomponent(3).set("L")
 pid.to_hl7 #=> "PID|||~^^^System2&&L"
 ```
 
+#### Assigning an array of components
+
+You can assign an array to a field, repeat or component (but not a
+subcomponent).  This allows a more concise but less expressive means of
+assignment.  The following 2 examples are equivalent:
+
+```ruby
+pid = Pipehat::Segment::PID.new
+pid.patient_name[1] = ["Family", "", "Given"]
+pid.to_hl7 #=> "PID|||||Family^^Given"
+
+pid = Pipehat::Segment::PID.new
+pid.patient_name.family_name = "Family"
+pid.patient_name.given_name = "Given"
+pid.to_hl7 #=> "PID|||||Family^Given"
+```
+
+Note that the index `[1]` is required in the first example because otherwise it
+is assumed you're trying to set 3 repeats which is not what you want:
+
+```ruby
+pid = Pipehat::Segment::PID.new
+pid.patient_name = ["Family", "", "Given"]
+pid.to_hl7 #=> "PID|||||Family~~Given"
+```
+
+Subcomponents can also be assigned this way:
+
+```ruby
+pid = Pipehat::Segment::PID.new
+pid.patient_identifier_list.id_number = "ID1"
+pid.patient_identifier_list.assigning_authority = ["AA", "", "L"]
+pid.to_hl7 #=> "PID|||ID1^^^AA&&L"
+```
+
+Arrays assigned this way must contain strings only.
+
 ### HL7 Escaping
 
 Values returned by the `to_s` methods have HL7 escape codes automatically 

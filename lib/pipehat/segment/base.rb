@@ -39,27 +39,34 @@ module Pipehat
         tmp
       end
 
-      # TODO: set_* currently assume a string only.  Would be good to accept
-      # and insert arrays (for nodes higher than subcomponents)
-      # There should also be a way to avoid the escaping (eg, FT values use
-      # escape sequences that shouldn't be escaped again).
-
       def set_field(fnum, value)
-        @data[fnum] = [[[parser.escape(value)]]]
+        raise TypeError, "Field value must be a string or an array of component strings" unless str_or_array?(value)
+
+        @data[fnum] = Array(value).map { |v| [[parser.escape(v)]] }
       end
 
       def set_repeat(fnum, rnum, value)
+        unless str_or_array?(value)
+          raise TypeError, "Component value must be a string or an array of subcomponent strings"
+        end
+
         @data[fnum] ||= [[[]]]
-        @data[fnum][rnum - 1] = [[parser.escape(value)]]
+        @data[fnum][rnum - 1] = Array(value).map { |v| [parser.escape(v)] }
       end
 
       def set_component(fnum, rnum, cnum, value)
+        unless str_or_array?(value)
+          raise TypeError, "Component value must be a string or an array of subcomponent strings"
+        end
+
         @data[fnum] ||= [[[]]]
         @data[fnum][rnum - 1] ||= [[]]
-        @data[fnum][rnum - 1][cnum - 1] = [parser.escape(value)]
+        @data[fnum][rnum - 1][cnum - 1] = Array(value).map { |v| parser.escape(v) }
       end
 
       def set_subcomponent(fnum, rnum, cnum, snum, value)
+        raise TypeError, "Subcomponent value must be a string" unless value.is_a?(String)
+
         @data[fnum] ||= [[[]]]
         @data[fnum][rnum - 1] ||= [[]]
         @data[fnum][rnum - 1][cnum - 1] ||= []
@@ -118,6 +125,13 @@ module Pipehat
         fragment = to_hl7
         fragment = fragment[0, maxlen - 3] + "..." if fragment.length > maxlen
         "#{s}#{fragment}>"
+      end
+
+      private
+
+      # nil is allowed because #escape will turn it into ""
+      def str_or_array?(value)
+        value.is_a?(String) || (value.is_a?(Array) && value.all? { |v| v.is_a?(String) })
       end
     end
   end
