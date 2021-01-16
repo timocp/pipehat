@@ -1,4 +1,4 @@
-# Pipehat [![Build Status](https://travis-ci.org/timocp/pipehat.svg?branch=master)](https://travis-ci.org/timocp/pipehat)
+# Pipehat [![Build Status](https://github.com/timocp/pipehat/workflows/CI/badge.svg)](https://github.com/timocp/pipehat/actions)
 
 Pipehat is a Ruby gem for reading and writing HL7 v.2.x messages.
 
