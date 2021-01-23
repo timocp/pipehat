@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Extended Telecommunication Number
 Pipehat.define_type :XTN do
   add_component :telephone_number,                    :ST
   add_component :telecommunication_use_code,          :ID
