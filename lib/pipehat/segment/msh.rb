@@ -3,7 +3,7 @@
 module Pipehat
   module Segment
     # Message Header
-    class MSH < Base
+    class MSH < Header
       add_field :field_separator,                         :ST, setter: false
       add_field :encoding_characters,                     :ST, setter: false
       add_field :sending_application,                     :HD
@@ -29,24 +29,9 @@ module Pipehat
       add_field :receiving_responsible_organization,      :XON
       add_field :sending_network_address,                 :HD
       add_field :receiving_network_address,               :HD
-
-      def initialize(string = nil, parser: Pipehat::DEFAULT_PARSER)
-        super
-        @data.insert(1, [[[parser.field_sep]]])
-        @data[2] = [[[parser.msh2]]]
-      end
-
-      def to_hl7
-        # Same as Base, but just drop the field separator since it will be
-        # added by the join
-        @data.each_with_index.reject { |_field, i| i == 1 }.map do |field, _i|
-          (field || []).map do |repeat|
-            (repeat || []).map do |component|
-              (component || []).join(parser.subcomponent_sep)
-            end.join(parser.component_sep)
-          end.join(parser.repetition_sep)
-        end.join(parser.field_sep)
-      end
+      add_field :security_classification_tag,             :CWE
+      add_field :security_handling_instructions,          :CWE
+      add_field :special_access_restriction_instructions, :ST
     end
   end
 end

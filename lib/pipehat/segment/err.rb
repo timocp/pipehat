@@ -4,7 +4,7 @@ module Pipehat
   module Segment
     # Error
     class ERR < Base
-      add_field :error_code_and_location,     :ST
+      add_field :error_code_and_location,     :ELD
       add_field :error_location,              :ERL
       add_field :hl7_error_code,              :CWE
       add_field :severity,                    :ID

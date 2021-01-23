@@ -35,7 +35,11 @@ class TypesTest < Minitest::Test
         field = seg.send(fieldname)
 
         # skip special message header fields (tested in msh_test)
-        next if klass == Pipehat::Segment::MSH && %i[field_separator encoding_characters].include?(fieldname)
+        if klass == Pipehat::Segment::MSH && %i[field_separator encoding_characters].include?(fieldname) ||
+           klass == Pipehat::Segment::BHS && %i[batch_field_separator batch_encoding_characters].include?(fieldname) ||
+           klass == Pipehat::Segment::FHS && %i[file_field_separator file_encoding_characters].include?(fieldname)
+          next
+        end
 
         assert_equal "", field.to_s
         field.component_names.each do |compname|

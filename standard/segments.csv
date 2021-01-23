@@ -1,0 +1,130 @@
+ADD,Addendum,ST,Addendum Continuation Pointer
+,,,
+BHS,Batch Header,ST,Batch Field Separator
+,,ST,Batch Encoding Characters
+,,HD,Batch Sending Application
+,,HD,Batch Sending Facility
+,,HD,Batch Receiving Application
+,,HD,Batch Receiving Facility
+,,DTM,Batch Creation Date/Time
+,,ST,Batch Security
+,,ST,Batch Name/ID/Type
+,,ST,Batch Comment
+,,ST,Batch Control ID
+,,ST,Reference Batch Control ID
+,,HD,Batch Sending Network Address
+,,HD,Batch Receiving Network Address
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ST,Special Access Restriction Instructions
+,,,
+BTS,Batch Trailer,ST,Batch Message Count
+,,ST,Batch Comment
+,,NM,Batch Totals
+,,,
+DSC,Continuation Pointer,ST,Continuation Pointer
+,,ID,Continuation Style
+,,,
+ERR,Error,ELD,Error Code and Location
+,,ERL,Error Location
+,,CWE,HL7 Error Code
+,,ID,Severity
+,,CWE,Application Error Code
+,,ST,Application Error Parameter
+,,TX,Diagnostic Information
+,,TX,User Message
+,,CWE,Inform Person Indicator
+,,CWE,Override Type
+,,CWE,Override Reason Code
+,,XTN,Help Desk Contact Point
+,,,
+FHS,File Header,ST,File Field Separator
+,,ST,File Encoding Characters
+,,HD,File Sending Application
+,,HD,File Sending Facility
+,,HD,File Receiving Application
+,,HD,File Receiving Facility
+,,DTM,File Creation Date/Time
+,,ST,File Security
+,,ST,File Name/ID
+,,ST,File Header Comment
+,,ST,File Control ID
+,,ST,Reference File Control ID
+,,HD,File Sending Network Address
+,,HD,File Receiving Network Address
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ST,Special Access Restriction Instructions
+,,,
+FTS,File Trailer,NM,File Batch Count
+,,ST,File Trailer Comment
+,,,
+MSA,Message Acknowledgment,ID,Acknowledgment Code
+,,ST,Message Control ID
+,,ST,Text Message
+,,NM,Expected Sequence Number
+,,ID,Delayed Acknowledgment Type
+,,CE,Error Condition
+,,NM,Message Waiting Number
+,,ID,Message Waiting Priority
+,,,
+MSH,Message Header,ST,Field Separator
+,,ST,Encoding Characters
+,,HD,Sending Application
+,,HD,Sending Facility
+,,HD,Receiving Application
+,,HD,Receiving Facility
+,,DTM,Date/Time of Message
+,,ST,Security
+,,MSG,Message Type
+,,ST,Message Control ID
+,,PT,Processing ID
+,,VID,Version ID
+,,NM,Sequence Number
+,,ST,Continuation Pointer
+,,ID,Accept Acknowledgment Type
+,,ID,Application Acknowledgment Type
+,,ID,Country Code
+,,ID,Character Set
+,,CWE,Principal Language Of Message
+,,ID,Alternate Character Set Handling Scheme
+,,EI,Message Profile Identifier
+,,XON,Sending Responsible Organization
+,,XON,Receiving Responsible Organization
+,,HD,Sending Network Address
+,,HD,Receiving Network Address
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ST,Special Access Restriction Instructions
+,,,
+NTE,Notes and Comments,SI,Set ID - NTE
+,,ID,Source of Comment
+,,FT,Comment
+,,CWE,Comment Type
+,,XCN,Entered By
+,,DTM,Entered Date/Time
+,,DTM,Effective Start Date
+,,DTM,Expiration Date
+,,CWE,Coded Comment
+,,,
+OVR,Override Segment,CWE,Business Rule Override Type
+,,CWE,Business Rule Override Code
+,,TX,Override Comments
+,,XCN,Override Entered By
+,,XCN,Override Authorized By
+,,,
+SFT,Software Segment,XON,Software Vendor Organization
+,,ST,Software Certified Version or Release Number
+,,ST,Software Product Name
+,,ST,Software Binary ID
+,,TX,Software Product Information
+,,DTM,Software Install Date
+,,,
+SGH, Segment Group Header,SI,Set ID – SGH
+,,ST,Segment Group Name
+,,,
+SGT,Segment Group Trailer,SI,Set ID – SGT
+,,ST,Segment Group Name
+,,,
+UAC,User Authentication Credential Segment,CWE,User Authentication Credential Type Code
+,,ED,User Authentication Credential
