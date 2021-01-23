@@ -4,7 +4,7 @@ module Pipehat
   module Segment
     # Notes and Comments
     class NTE < Base
-      add_field :set_id_nte,           :SI
+      add_field :set_id,               :SI
       add_field :source_of_comment,    :ID
       add_field :comment,              :FT
       add_field :comment_type,         :CWE

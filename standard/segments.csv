@@ -97,7 +97,7 @@ MSH,Message Header,ST,Field Separator
 ,,CWE,Security Handling Instructions
 ,,ST,Special Access Restriction Instructions
 ,,,
-NTE,Notes and Comments,SI,Set ID - NTE
+NTE,Notes and Comments,SI,Set ID
 ,,ID,Source of Comment
 ,,FT,Comment
 ,,CWE,Comment Type
@@ -128,3 +128,351 @@ SGT,Segment Group Trailer,SI,Set ID – SGT
 ,,,
 UAC,User Authentication Credential Segment,CWE,User Authentication Credential Type Code
 ,,ED,User Authentication Credential
+,,,
+EVN,Event Type,ID,Event Type Code
+,,DTM,Recorded Date/Time
+,,DTM,Date/Time Planned Event
+,,CWE,Event Reason Code
+,,XCN,Operator ID
+,,DTM,Event Occurred
+,,HD,Event Facility
+,,,
+PID,Patient Identification,SI,Set ID
+,,CX,Patient ID
+,,CX,Patient Identifier List
+,,CX,Alternate Patient ID
+,,XPN,Patient Name
+,,XPN,Mother's Maiden Name
+,,DTM,Date/Time of Birth
+,,CWE,Administrative Sex
+,,XPN,Patient Alias
+,,CWE,Race
+,,XAD,Patient Address
+,,IS,County Code
+,,XTN,Phone Number - Home
+,,XTN,Phone Number - Business
+,,CWE,Primary Language
+,,CWE,Marital Status
+,,CWE,Religion
+,,CX,Patient Account Number
+,,ST,SSN Number
+,,DLN,Driver's License Number
+,,CX,Mother's Identifier
+,,CWE,Ethnic Group
+,,ST,Birth Place
+,,ID,Multiple Birth Indicator
+,,NM,Birth Order
+,,CWE,Citizenship
+,,CWE,Veterans Military Status
+,,CE,Nationality
+,,DTM,Patient Death Date and Time
+,,ID,Patient Death Indicator
+,,ID,Identity Unknown Indicator
+,,CWE,Identity Reliability Code
+,,DTM,Last Update Date/Time
+,,HD,Last Update Facility
+,,CWE,Taxonomic Classification Code
+,,CWE,Breed Code
+,,ST,Strain
+,,CWE,Production Class Code
+,,CWE,Tribal Citizenship
+,,XTN,Patient Telecommunication Information
+,,,
+PV1,Patient Visit,SI,Set ID
+,,CWE,Patient Class
+,,PL,Assigned Patient Location
+,,CWE,Admission Type
+,,CX,Preadmit Number
+,,PL,Prior Patient Location
+,,XCN,Attending Doctor
+,,XCN,Referring Doctor
+,,XCN,Consulting Doctor
+,,CWE,Hospital Service
+,,PL,Temporary Location
+,,CWE,Preadmit Test Indicator
+,,CWE,Re-admission Indicator
+,,CWE,Admit Source
+,,CWE,Ambulatory Status
+,,CWE,VIP Indicator
+,,XCN,Admitting Doctor
+,,CWE,Patient Type
+,,CX,Visit Number
+,,FC,Financial Class
+,,CWE,Charge Price Indicator
+,,CWE,Courtesy Code
+,,CWE,Credit Rating
+,,CWE,Contract Code
+,,DT,Contract Effective Date
+,,NM,Contract Amount
+,,NM,Contract Period
+,,CWE,Interest Code
+,,CWE,Transfer to Bad Debt Code
+,,DT,Transfer to Bad Debt Date
+,,CWE,Bad Debt Agency Code
+,,NM,Bad Debt Transfer Amount
+,,NM,Bad Debt Recovery Amount
+,,CWE,Delete Account Indicator
+,,DT,Delete Account Date
+,,CWE,Discharge Disposition
+,,DLD,Discharged to Location
+,,CWE,Diet Type
+,,CWE,Servicing Facility
+,,IS,Bed Status
+,,CWE,Account Status
+,,PL,Pending Location
+,,PL,Prior Temporary Location
+,,DTM,Admit Date/Time
+,,DTM,Discharge Date/Time
+,,NM,Current Patient Balance
+,,NM,Total Charges
+,,NM,Total Adjustments
+,,NM,Total Payments
+,,CX,Alternate Visit ID
+,,CWE,Visit Indicator
+,,XCN,Other Healthcare Provider
+,,ST,Service Episode Description
+,,CX,Service Episode Identifier
+,,,
+PV2,Patient Visit - Additional Information,PL,Prior Pending Location
+,,CWE,Accommodation Code
+,,CWE,Admit Reason
+,,CWE,Transfer Reason
+,,ST,Patient Valuables
+,,ST,Patient Valuables Location
+,,CWE,Visit User Code
+,,DTM,Expected Admit Date/Time
+,,DTM,Expected Discharge Date/Time
+,,NM,Estimated Length of Inpatient Stay
+,,NM,Actual Length of Inpatient Stay
+,,ST,Visit Description
+,,XCN,Referral Source Code
+,,DT,Previous Service Date
+,,ID,Employment Illness Related Indicator
+,,CWE,Purge Status Code
+,,DT,Purge Status Date
+,,CWE,Special Program Code
+,,ID,Retention Indicator
+,,NM,Expected Number of Insurance Plans
+,,CWE,Visit Publicity Code
+,,ID,Visit Protection Indicator
+,,XON,Clinic Organization Name
+,,CWE,Patient Status Code
+,,CWE,Visit Priority Code
+,,DT,Previous Treatment Date
+,,CWE,Expected Discharge Disposition
+,,DT,Signature on File Date
+,,DT,First Similar Illness Date
+,,CWE,Patient Charge Adjustment Code
+,,CWE,Recurring Service Code
+,,ID,Billing Media Code
+,,DTM,Expected Surgery Date and Time
+,,ID,Military Partnership Code
+,,ID,Military Non-Availability Code
+,,ID,Newborn Baby Indicator
+,,ID,Baby Detained Indicator
+,,CWE,Mode of Arrival Code
+,,CWE,Recreational Drug Use Code
+,,CWE,Admission Level of Care Code
+,,CWE,Precaution Code
+,,CWE,Patient Condition Code
+,,CWE,Living Will Code
+,,CWE,Organ Donor Code
+,,CWE,Advance Directive Code
+,,DT,Patient Status Effective Date
+,,DTM,Expected LOA Return Date/Time
+,,DTM,Expected Pre-admission Testing Date/Time
+,,CWE,Notify Clergy Code
+,,DT,Advance Directive Last Verified Date
+,,,
+NK1,Next of Kin / Associated Parties,SI,Set ID
+,,XPN,Name
+,,CWE,Relationship
+,,XAD,Address
+,,XTN,Phone Number
+,,XTN,Business Phone Number
+,,CWE,Contact Role
+,,DT,Start Date
+,,DT,End Date
+,,ST,Next of Kin / Associated Parties Job Title
+,,JCC,Next of Kin / Associated Parties Job Code/Class
+,,CX,Next of Kin / Associated Parties Employee Number
+,,XON,Organization Name
+,,CWE,Marital Status
+,,CWE,Administrative Sex
+,,DTM,Date/Time of Birth
+,,CWE,Living Dependency
+,,CWE,Ambulatory Status
+,,CWE,Citizenship
+,,CWE,Primary Language
+,,CWE,Living Arrangement
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,CWE,Student Indicator
+,,CWE,Religion
+,,XPN,Mother's Maiden Name
+,,CWE,Nationality
+,,CWE,Ethnic Group
+,,CWE,Contact Reason
+,,XPN,Contact Person's Name
+,,XTN,Contact Person's Telephone Number
+,,XAD,Contact Person's Address
+,,CX,Next of Kin/Associated Party's Identifiers
+,,CWE,Job Status
+,,CWE,Race
+,,CWE,Handicap
+,,ST,Contact Person Social Security Number
+,,ST,Next of Kin Birth Place
+,,CWE,VIP Indicator
+,,XTN,Next of Kin Telecommunication Information
+,,XTN,Contact Person's Telecommunication Information
+,,,
+AL1,Patient Allergy Information,SI,Set ID
+,,CWE,Allergen Type Code
+,,CWE,Allergen Code/Mnemonic/Description
+,,CWE,Allergy Severity Code
+,,ST,Allergy Reaction Code
+,,DT,Identification Date
+,,,
+IAM,Patient Adverse Reaction Information,SI,Set ID
+,,CWE,Allergen Type Code
+,,CWE,Allergen Code/Mnemonic/Description
+,,CWE,Allergy Severity Code
+,,ST,Allergy Reaction Code
+,,CNE,Allergy Action Code
+,,EI,Allergy Unique Identifier
+,,ST,Action Reason
+,,CWE,Sensitivity to Causative Agent Code
+,,CWE,Allergen Group Code/Mnemonic/Description
+,,DT,Onset Date
+,,ST,Onset Date Text
+,,DTM,Reported Date/Time
+,,XPN,Reported By
+,,CWE,Relationship to Patient Code
+,,CWE,Alert Device Code
+,,CWE,Allergy Clinical Status Code
+,,XCN,Statused by Person
+,,XON,Statused by Organization
+,,DTM,Statused at Date/Time
+,,XCN,Inactivated by Person
+,,DTM,Inactivated Date/Time
+,,XCN,Initially Recorded by Person
+,,DTM,Initially Recorded Date/Time
+,,XCN,Modified by Person
+,,DTM,Modified Date/Time
+,,CWE,Clinician Identified Code
+,,XON,Initially Recorded by Organization
+,,XON,Modified by Organization
+,,XON,Inactivated by Organization
+,,,
+IAR,Allergy Reaction,CWE,Allergy Reaction Code
+,,CWE,Allergy Severity Code
+,,CWE,Sensitivity to Causative Agent Code
+,,ST,Management
+,,,
+NPU,Bed Status Update,PL,Bed Location
+,,CWE,Bed Status
+,,,
+MRG,Merge Patient Information,CX,Prior Patient Identifier List
+,,CX,Prior Alternate Patient ID
+,,CX,Prior Patient Account Number
+,,CX,Prior Patient ID
+,,CX,Prior Visit Number
+,,CX,Prior Alternate Visit ID
+,,XPN,Prior Patient Name
+,,,
+PD1,Patient Additional Demographic,CWE,Living Dependency
+,,CWE,Living Arrangement
+,,XON,Patient Primary Facility
+,,XCN,Patient Primary Care Provider Name & ID No.
+,,CWE,Student Indicator
+,,CWE,Handicap
+,,CWE,Living Will Code
+,,CWE,Organ Donor Code
+,,ID,Separate Bill
+,,CX,Duplicate Patient
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,DT,Protection Indicator Effective Date
+,,XON,Place of Worship
+,,CWE,Advance Directive Code
+,,CWE,Immunization Registry Status
+,,DT,Immunization Registry Status Effective Date
+,,DT,Publicity Code Effective Date
+,,CWE,Military Branch
+,,CWE,Military Rank/Grade
+,,CWE,Military Status
+,,DT,Advance Directive Last Verified Date
+,,DT,Retirement Date
+,,,
+DB1,Disability,SI,Set ID
+,,CWE,Disabled Person Code
+,,CX,Disabled Person Identifier
+,,ID,Disability Indicator
+,,DT,Disability Start Date
+,,DT,Disability End Date
+,,DT,Disability Return to Work Date
+,,DT,Disability Unable to Work Date
+,,,
+PDA,Patient Death and Autopsy,CWE,Death Cause Code
+,,PL,Death Location
+,,ID,Death Certified Indicator
+,,DTM,Death Certificate Signed Date/Time
+,,XCN,Death Certified By
+,,ID,Autopsy Indicator
+,,DR,Autopsy Start and End Date/Time
+,,XCN,Autopsy Performed By
+,,ID,Coroner Indicator
+,,,
+ARV,Access Restriction,SI,Set ID
+,,CNE,Access Restriction Action Code
+,,CWE,Access Restriction Value
+,,CWE,Access Restriction Reason
+,,ST,Special Access Restriction Instructions
+,,DR,Access Restriction Date Range
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ERL,Access Restriction Message Location
+,,EI,Access Restriction Instance Identifier
+,,,
+OH1,Person Employment Status,SI,Set ID
+,,ID,Action Code
+,,CWE,Employment Status
+,,DT,Employment Status Start Date
+,,DT,Employment Status End Date
+,,DT,Entered Date
+,,EI,Employment Status Unique Identifier
+,,,
+OH2,Past or Present Job,SI,Set ID
+,,ID,Action Code
+,,DT,Entered Date
+,,CWE,Occupation
+,,CWE,Industry
+,,CWE,Work Classification
+,,DT,Job Start Date
+,,DT,Job End Date
+,,CWE,Work Schedule
+,,NM,Average Hours worked per Day
+,,NM,Average Days Worked per Week
+,,XON,Employer Organization
+,,XAD,Employer Address
+,,CWE,Supervisory Level
+,,ST,Job Duties
+,,FT,Occupational Hazards
+,,EI,Job Unique Identifier
+,,CWE,Current Job Indicator
+,,,
+OH3,Usual Work,SI,Set ID
+,,ID,Action Code
+,,CWE,Occupation
+,,CWE,Industry
+,,NM,Usual Occupation Duration (years)
+,,DT,Start year
+,,DT,Entered Date
+,,EI,Work Unique Identifier
+,,,
+OH4,Combat Zone Work,SI,Set ID
+,,ID,Action Code
+,,DT,Combat Zone Start Date
+,,DT,Combat Zone End Date
+,,DT,Entered Date
+,,EI,Combat Zone Unique Identifier
