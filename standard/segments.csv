@@ -750,3 +750,233 @@ BUI,Blood Unit Information,SI,Set ID
 ,,NR,Transport Temperature
 ,,CNE,Transport Temperature Units
 ,,ID,Action Code
+,,,
+RXO,Pharmacy/Treatment Order,CWE,Requested Give Code
+,,NM,Requested Give Amount - Minimum
+,,NM,Requested Give Amount - Maximum
+,,CWE,Requested Give Units
+,,CWE,Requested Dosage Form
+,,CWE,Provider's Pharmacy/Treatment Instructions
+,,CWE,Provider's Administration Instructions
+,,LA1,Deliver-To Location
+,,ID,Allow Substitutions
+,,CWE,Requested Dispense Code
+,,NM,Requested Dispense Amount
+,,CWE,Requested Dispense Units
+,,NM,Number Of Refills
+,,XCN,Ordering Provider's DEA Number
+,,XCN,Pharmacist/Treatment Supplier's Verifier ID
+,,ID,Needs Human Review
+,,ST,Requested Give Per (Time Unit)
+,,NM,Requested Give Strength
+,,CWE,Requested Give Strength Units
+,,CWE,Indication
+,,ST,Requested Give Rate Amount
+,,CWE,Requested Give Rate Units
+,,CQ,Total Daily Dose
+,,CWE,Supplementary Code
+,,NM,Requested Drug Strength Volume
+,,CWE,Requested Drug Strength Volume Units
+,,ID,Pharmacy Order Type
+,,NM,Dispensing Interval
+,,EI,Medication Instance Identifier
+,,EI,Segment Instance Identifier
+,,CNE,Mood Code
+,,CWE,Dispensing Pharmacy
+,,XAD,Dispensing Pharmacy Address
+,,PL,Deliver-to Patient Location
+,,XAD,Deliver-to Address
+,,XTN,Pharmacy Phone Number
+,,,
+RXR,Pharmacy/Treatment Route,CWE,Route
+,,CWE,Administration Site
+,,CWE,Administration Device
+,,CWE,Administration Method
+,,CWE,Routing Instruction
+,,CWE,Administration Site Modifier
+,,,
+RXC,Pharmacy/Treatment Component Order,ID,RX Component Type
+,,CWE,Component Code
+,,NM,Component Amount
+,,CWE,Component Units
+,,NM,Component Strength
+,,CWE,Component Strength Units
+,,CWE,Supplementary Code
+,,NM,Component Drug Strength Volume
+,,CWE,Component Drug Strength Volume Units
+,,NM,Dispense Amount
+,,CWE,Dispense Units
+,,,
+RXE,Pharmacy/Treatment Encoded Order,TQ,Quantity/Timing
+,,CWE,Give Code
+,,NM,Give Amount - Minimum
+,,NM,Give Amount - Maximum
+,,CWE,Give Units
+,,CWE,Give Dosage Form
+,,CWE,Provider's Administration Instructions
+,,LA1,Deliver-to Location
+,,ID,Substitution Status
+,,NM,Dispense Amount
+,,CWE,Dispense Units
+,,NM,Number of Refills
+,,XCN,Ordering Provider's DEA Number
+,,XCN,Pharmacist/Treatment Supplier's Verifier ID
+,,ST,Prescription Number
+,,NM,Number of Refills Remaining
+,,NM,Number of Refills/Doses Dispensed
+,,DTM,D/T of Most Recent Refill or Dose Dispensed
+,,CQ,Total Daily Dose
+,,ID,Needs Human Review
+,,CWE,Special Dispensing Instructions
+,,ST,Give Per (Time Unit)
+,,ST,Give Rate Amount
+,,CWE,Give Rate Units
+,,NM,Give Strength
+,,CWE,Give Strength Units
+,,CWE,Give Indication
+,,NM,Dispense Package Size
+,,CWE,Dispense Package Size Unit
+,,ID,Dispense Package Method
+,,CWE,Supplementary Code
+,,DTM,Original Order Date/Time
+,,NM,Give Drug Strength Volume
+,,CWE,Give Drug Strength Volume Units
+,,CWE,Controlled Substance Schedule
+,,ID,Formulary Status
+,,CWE,Pharmaceutical Substance Alternative
+,,CWE,Pharmacy of Most Recent Fill
+,,NM,Initial Dispense Amount
+,,CWE,Dispensing Pharmacy
+,,XAD,Dispensing Pharmacy Address
+,,PL,Deliver-to Patient Location
+,,XAD,Deliver-to Address
+,,ID,Pharmacy Order Type
+,,XTN,Pharmacy Phone Number
+,,,
+RXD,Pharmacy/Treatment Dispense,NM,Dispense Sub-ID Counter
+,,CWE,Dispense/Give Code
+,,DTM,Date/Time Dispensed
+,,NM,Actual Dispense Amount
+,,CWE,Actual Dispense Units
+,,CWE,Actual Dosage Form
+,,ST,Prescription Number
+,,NM,Number of Refills Remaining
+,,ST,Dispense Notes
+,,XCN,Dispensing Provider
+,,ID,Substitution Status
+,,CQ,Total Daily Dose
+,,LA2,Dispense-to Location
+,,ID,Needs Human Review
+,,CWE,Special Dispensing Instructions
+,,NM,Actual Strength
+,,CWE,Actual Strength Unit
+,,ST,Substance Lot Number
+,,DTM,Substance Expiration Date
+,,CWE,Substance Manufacturer Name
+,,CWE,Indication
+,,NM,Dispense Package Size
+,,CWE,Dispense Package Size Unit
+,,ID,Dispense Package Method
+,,CWE,Supplementary Code
+,,CWE,Initiating Location
+,,CWE,Packaging/Assembly Location
+,,NM,Actual Drug Strength Volume
+,,CWE,Actual Drug Strength Volume Units
+,,CWE,Dispense to Pharmacy
+,,XAD,Dispense to Pharmacy Address
+,,ID,Pharmacy Order Type
+,,CWE,Dispense Type
+,,XTN,Pharmacy Phone Number
+,,EI,Dispense Tag Identifier
+,,,
+RXG,Pharmacy/Treatment Give,NM,Give Sub-ID Counter
+,,NM,Dispense Sub-ID Counter
+,,TQ,Quantity/Timing
+,,CWE,Give Code
+,,NM,Give Amount - Minimum
+,,NM,Give Amount - Maximum
+,,CWE,Give Units
+,,CWE,Give Dosage Form
+,,CWE,Administration Notes
+,,ID,Substitution Status
+,,LA2,Dispense-To Location
+,,ID,Needs Human Review
+,,CWE,Special Administration Instructions
+,,ST,Give Per (Time Unit)
+,,ST,Give Rate Amount
+,,CWE,Give Rate Units
+,,NM,Give Strength
+,,CWE,Give Strength Units
+,,ST,Substance Lot Number
+,,DTM,Substance Expiration Date
+,,CWE,Substance Manufacturer Name
+,,CWE,Indication
+,,NM,Give Drug Strength Volume
+,,CWE,Give Drug Strength Volume Units
+,,CWE,Give Barcode Identifier
+,,ID,Pharmacy Order Type
+,,CWE,Dispense to Pharmacy
+,,XAD,Dispense to Pharmacy Address
+,,PL,Deliver-to Patient Location
+,,XAD,Deliver-to Address
+,,EI,Give Tag Identifier
+,,NM,Dispense Amount
+,,CWE,Dispense Units
+,,,
+RXA,Pharmacy/Treatment Administration,NM,Give Sub-ID Counter
+,,NM,Administration Sub-ID Counter
+,,DTM,Date/Time Start of Administration
+,,DTM,Date/Time End of Administration
+,,CWE,Administered Code
+,,NM,Administered Amount
+,,CWE,Administered Units
+,,CWE,Administered Dosage Form
+,,CWE,Administration Notes
+,,XCN,Administering Provider
+,,LA2,Administered-at Location
+,,ST,Administered Per (Time Unit)
+,,NM,Administered Strength
+,,CWE,Administered Strength Units
+,,ST,Substance Lot Number
+,,DTM,Substance Expiration Date
+,,CWE,Substance Manufacturer Name
+,,CWE,Substance/Treatment Refusal Reason
+,,CWE,Indication
+,,ID,Completion Status
+,,ID,Action Code
+,,DTM,System Entry Date/Time
+,,NM,Administered Drug Strength Volume
+,,CWE,Administered Drug Strength Volume Units
+,,CWE,Administered Barcode Identifier
+,,ID,Pharmacy Order Type
+,,PL,Administer-at
+,,XAD,Administered-at Address
+,,EI,Administered Tag Identifier
+,,,
+RXV,Pharmacy/Treatment Infusion,SI,Set ID
+,,ID,Bolus Type
+,,NM,Bolus Dose Amount
+,,CWE,Bolus Dose Amount Units
+,,NM,Bolus Dose Volume
+,,CWE,Bolus Dose Volume Units
+,,ID,PCA Type
+,,NM,PCA Dose Amount
+,,CWE,PCA Dose Amount Units
+,,NM,PCA Dose Amount Volume
+,,CWE,PCA Dose Amount Volume Units
+,,NM,Max Dose Amount
+,,CWE,Max Dose Amount Units
+,,NM,Max Dose Amount Volume
+,,CWE,Max Dose Amount Volume Units
+,,CQ,Max Dose per Time
+,,CQ,Lockout Interval
+,,CWE,Syringe Manufacturer
+,,CWE,Syringe Model Number
+,,NM,Syringe Size
+,,CWE,Syringe Size Units
+,,ID,Action Code
+,,,
+CDO,Cumulative Dosage,SI,Set ID
+,,ID,Action Code
+,,CQ,Cumulative Dosage Limit
+,,CQ,Cumulative Dosage Limit Time Interval
