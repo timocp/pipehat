@@ -7,12 +7,12 @@ module Pipehat
       add_field :order_control,                               :ID
       add_field :placer_order_number,                         :EI
       add_field :filler_order_number,                         :EI
-      add_field :placer_group_number,                         :EI
+      add_field :placer_order_group_number,                   :EI
       add_field :order_status,                                :ID
       add_field :response_flag,                               :ID
-      add_field :quantity_timing,                             :ST
-      add_field :parent,                                      :EIP
-      add_field :date_time_of_transaction,                    :DTM
+      add_field :quantity_timing,                             :TQ
+      add_field :parent_order,                                :EIP
+      add_field :date_time_of_order_event,                    :DTM
       add_field :entered_by,                                  :XCN
       add_field :verified_by,                                 :XCN
       add_field :ordering_provider,                           :XCN
@@ -37,7 +37,11 @@ module Pipehat
       add_field :parent_universal_service_identifier,         :CWE
       add_field :advanced_beneficiary_notice_date,            :DT
       add_field :alternate_placer_order_number,               :CX
-      add_field :order_workflow_profile,                      :EI
+      add_field :order_workflow_profile,                      :CWE
+      add_field :action_code,                                 :ID
+      add_field :order_status_date_range,                     :DR
+      add_field :order_creation_date_time,                    :DTM
+      add_field :filler_order_group_number,                   :EI
     end
   end
 end

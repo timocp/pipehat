@@ -476,3 +476,277 @@ OH4,Combat Zone Work,SI,Set ID
 ,,DT,Combat Zone End Date
 ,,DT,Entered Date
 ,,EI,Combat Zone Unique Identifier
+,,,
+ORC,Common Order,ID,Order Control
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,EI,Placer Order Group Number
+,,ID,Order Status
+,,ID,Response Flag
+,,TQ,Quantity/Timing
+,,EIP,Parent Order
+,,DTM,Date/Time of Order Event
+,,XCN,Entered By
+,,XCN,Verified By
+,,XCN,Ordering Provider
+,,PL,Enterer's Location
+,,XTN,Call Back Phone Number
+,,DTM,Order Effective Date/Time
+,,CWE,Order Control Code Reason
+,,CWE,Entering Organization
+,,CWE,Entering Device
+,,XCN,Action By
+,,CWE,Advanced Beneficiary Notice Code
+,,XON,Ordering Facility Name
+,,XAD,Ordering Facility Address
+,,XTN,Ordering Facility Phone Number
+,,XAD,Ordering Provider Address
+,,CWE,Order Status Modifier
+,,CWE,Advanced Beneficiary Notice Override Reason
+,,DTM,Filler's Expected Availability Date/Time
+,,CWE,Confidentiality Code
+,,CWE,Order Type
+,,CNE,Enterer Authorization Mode
+,,CWE,Parent Universal Service Identifier
+,,DT,Advanced Beneficiary Notice Date
+,,CX,Alternate Placer Order Number
+,,CWE,Order Workflow Profile
+,,ID,Action Code
+,,DR,Order Status Date Range
+,,DTM,Order Creation Date/Time
+,,EI,Filler Order Group Number
+,,,
+BLG,Billing,CCD,When to Charge
+,,ID,Charge Type
+,,CX,Account ID
+,,CWE,Charge Type Reason
+,,,
+OBR,Observation Request,SI,Set ID
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,CWE,Universal Service Identifier
+,,ID,Priority
+,,TS,Requested Date/Time
+,,DTM,Observation Date/Time
+,,DTM,Observation End Date/Time
+,,CQ,Collection Volume
+,,XCN,Collector Identifier
+,,ID,Specimen Action Code
+,,CWE,Danger Code
+,,CWE,Relevant Clinical Information
+,,TS,Specimen Received Date/Time
+,,SPS,Specimen Source
+,,XCN,Ordering Provider
+,,XTN,Order Callback Phone Number
+,,ST,Placer Field 1
+,,ST,Placer Field 2
+,,ST,Filler Field 1
+,,ST,Filler Field 2
+,,DTM,Results Rpt/Status Chng – Date/Time
+,,MOC,Charge to Practice
+,,ID,Diagnostic Serv Sect ID
+,,ID,Result Status
+,,PRL,Parent Result
+,,TQ,Quantity/Timing
+,,XCN,Result Copies To
+,,EIP,Parent Results Observation Identifier
+,,ID,Transportation Mode
+,,CWE,Reason for Study
+,,NDL,Principal Result Interpreter
+,,NDL,Assistant Result Interpreter
+,,NDL,Technician
+,,NDL,Transcriptionist
+,,DTM,Scheduled Date/Time
+,,NM,Number of Sample Containers
+,,CWE,Transport Logistics of Collected Sample
+,,CWE,Collector's Comment
+,,CWE,Transport Arrangement Responsibility
+,,ID,Transport Arranged
+,,ID,Escort Required
+,,CWE,Planned Patient Transport Comment
+,,CNE,Procedure Code
+,,CNE,Procedure Code Modifier
+,,CWE,Placer Supplemental Service Information
+,,CWE,Filler Supplemental Service Information
+,,CWE,Medically Necessary Duplicate Procedure Reason
+,,CWE,Result Handling
+,,CWE,Parent Universal Service Identifier
+,,EI,Observation Group ID
+,,EI,Parent Observation Group ID
+,,CX,Alternate Placer Order Number
+,,EIP,Parent Order
+,,ID,Action Code
+,,,
+TQ1,Timing/Quantity,SI,Set ID
+,,CQ,Quantity
+,,RPT,Repeat Pattern
+,,TM,Explicit Time
+,,CQ,Relative Time and Units
+,,CQ,Service Duration
+,,DTM,Start date/time
+,,DTM,End date/time
+,,CWE,Priority
+,,TX,Condition text
+,,TX,Text instruction
+,,ID,Conjunction
+,,CQ,Occurrence duration
+,,NM,Total occurrences
+,,,
+TQ2,Timing/Quantity Relationship,SI,Set ID
+,,ID,Sequence/Results Flag
+,,EI,Related Placer Number
+,,EI,Related Filler Number
+,,EI,Related Placer Group Number
+,,ID,Sequence Condition Code
+,,ID,Cyclic Entry/Exit Indicator
+,,CQ,Sequence Condition Time Interval
+,,NM,Cyclic Group Maximum Number of Repeats
+,,ID,Special Service Request Relationship
+,,,
+IPC, Imaging Procedure Control Segment,EI,Accession Identifier
+,,EI,Requested Procedure ID
+,,EI,Study Instance UID
+,,EI,Scheduled Procedure Step ID
+,,CWE,Modality
+,,CWE,Protocol Code
+,,EI,Scheduled Station Name
+,,CWE,Scheduled Procedure Step Location
+,,ST,Scheduled Station AE Title
+,,ID,Action Code
+,,,
+ODS,"Dietary Orders, Supplements, and Preferences",ID,Type
+,,CWE,Service Period
+,,CWE,"Diet, Supplement, or Preference Code"
+,,ST,Text Instruction
+,,,
+ODT, Diet Tray Instructions,CWE,Tray Type
+,,CWE,Service Period
+,,ST,Text Instruction
+,,,
+RQD,Requisition Detail,SI,Requisition Line Number
+,,CWE,Item Code - Internal
+,,CWE,Item Code - Externa
+,,CWE,Hospital Item Code
+,,NM,Requisition Quantity
+,,CWE,Requisition Unit of Measure
+,,CX,Cost Center Account Number
+,,CWE,Item Natural Account Code
+,,CWE,Deliver To ID
+,,DT,Date Needed
+,,,
+RQ1,Requisition Detail-1,ST,Anticipated Price
+,,CWE,Manufacturer Identifier
+,,ST,Manufacturer's Catalog
+,,CWE,Vendor ID
+,,ST,Vendor Catalog
+,,ID,Taxable
+,,ID,Substitute Allowed
+,,,
+BPO,Blood product order,SI,Set ID
+,,CWE,BP Universal Service Identifier
+,,CWE,BP Processing Requirements
+,,NM,BP Quantity
+,,NM,BP Amount
+,,CWE,BP Units
+,,DTM,BP Intended Use Date/Time
+,,PL,BP Intended Dispense From Location
+,,XAD,BP Intended Dispense From Address
+,,DTM,BP Requested Dispense Date/Time
+,,PL,BP Requested Dispense To Location
+,,XAD,BP Requested Dispense To Address
+,,CWE,BP Indication for Use
+,,ID,BP Informed Consent Indicator
+,,,
+BPX,Blood product dispense status,SI,Set ID
+,,CWE,BP Dispense Status
+,,ID,BP Status
+,,DTM,BP Date/Time of Status
+,,EI,BC Donation ID
+,,CNE,BC Component
+,,CNE,BC Donation Type / Intended Use
+,,CWE,CP Commercial Product
+,,XON,CP Manufacturer
+,,EI,CP Lot Number
+,,CNE,BP Blood Group
+,,CNE,BC Special Testing
+,,DTM,BP Expiration Date/Time
+,,NM,BP Quantity
+,,NM,BP Amount
+,,CWE,BP Units
+,,EI,BP Unique ID
+,,PL,BP Actual Dispensed To Location
+,,XAD,BP Actual Dispensed To Address
+,,XCN,BP Dispensed to Receiver
+,,XCN,BP Dispensing Individual
+,,ID,Action Code
+,,,
+BTX,Blood Product Transfusion/Disposition,SI,Set ID
+,,EI,BC Donation ID
+,,CNE,BC Component
+,,CNE,BC Blood Group
+,,CWE,CP Commercial Product
+,,XON,CP Manufacturer
+,,EI,CP Lot Number
+,,NM,BP Quantity
+,,NM,BP Amount
+,,CWE,BP Units
+,,CWE,BP Transfusion/Disposition Status
+,,ID,BP Message Status
+,,DTM,BP Date/Time of Status
+,,XCN,BP Transfusion Administrator
+,,XCN,BP Transfusion Verifier
+,,DTM,BP Transfusion Start Date/Time of Status
+,,DTM,BP Transfusion End Date/Time of Status
+,,CWE,BP Adverse Reaction Type
+,,CWE,BP Transfusion Interrupted Reason
+,,EI,BP Unique ID
+,,ID,Action Code
+,,,
+DON,Donation,EI,Donation Identification Number
+,,CNE,Donation Type
+,,DTM,Phlebotomy Start Date/Time
+,,DTM,Phlebotomy End Date/Time
+,,NM,Donation Duration
+,,CNE,Donation Duration Units
+,,CNE,Intended Procedure Type
+,,CNE,Actual Procedure Type
+,,ID,Donor Eligibility Flag
+,,CNE,Donor Eligibility Procedure Type
+,,DTM,Donor Eligibility Date
+,,CNE,Process Interruption
+,,CNE,Process Interruption Reason
+,,CNE,Phlebotomy Issue
+,,ID,Intended Recipient Blood Relative
+,,XPN,Intended Recipient Name
+,,DTM,Intended Recipient DOB
+,,XON,Intended Recipient Facility
+,,DTM,Intended Recipient Procedure Date
+,,XPN,Intended Recipient Ordering Provider
+,,CNE,Phlebotomy Status
+,,CNE,Arm Stick
+,,XPN,Bleed Start Phlebotomist
+,,XPN,Bleed End Phlebotomist
+,,ST,Aphaeresis Type Machine
+,,ST,Aphaeresis Machine Serial Number
+,,ID,Donor Reaction
+,,XPN,Final Review Staff ID
+,,DTM,Final Review Date/Time
+,,NM,Number of Tubes Collected
+,,EI,Donation Sample Identifier
+,,XCN,Donation Accept Staff
+,,XCN,Donation Material Review Staff
+,,ID,Action Code
+,,,
+BUI,Blood Unit Information,SI,Set ID
+,,EI,Blood Unit Identifier
+,,CWE,Blood Unit Type
+,,NM,Blood Unit Weight
+,,CNE,Weight Units
+,,NM,Blood Unit Volume
+,,CNE,Volume Units
+,,ST,Container Catalog Number
+,,ST,Container Lot Number
+,,XON,Container Manufacturer
+,,NR,Transport Temperature
+,,CNE,Transport Temperature Units
+,,ID,Action Code

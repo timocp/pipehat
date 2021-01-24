@@ -25,6 +25,16 @@ class TypesTest < Minitest::Test
     assert_equal [], Pipehat::Segment::PID.new.patient_identifier_list.assigning_authority.universal_id_type.component_names
   end
 
+  # type tests to skip.  These definitions put a composite type in a sub-
+  # component, which isn't valid and raises an exception.  I'm not sure how
+  # anyone is meant to encode these.
+  SKIP_TEST = Set[
+    [Pipehat::Segment::OBR, :quantity_timing, :quantity, :units],
+    [Pipehat::Segment::OBR, :quantity_timing, :interval, :repeat_pattern],
+    [Pipehat::Segment::ORC, :quantity_timing, :quantity, :units],
+    [Pipehat::Segment::ORC, :quantity_timing, :interval, :repeat_pattern]
+  ]
+
   # dynamically test each named field / component / subcomponent
   # this ensures no type definitions are missing
   def test_types
@@ -46,8 +56,17 @@ class TypesTest < Minitest::Test
           comp = field.send(compname)
           assert_equal "", comp.to_s
           comp.component_names.each do |subcompname|
-            subcomp = comp.send(subcompname)
-            assert_equal "", subcomp.to_s
+            next if SKIP_TEST.include?([klass, fieldname, compname, subcompname])
+
+            subcomp =
+              begin
+                comp.send(subcompname)
+              rescue NameError
+                warn "Invalid types: #{[klass.name, fieldname, compname, subcompname].inspect}"
+                warn "Probably a set of types which would lead to a non-primitive subcomponent, this is invalid"
+                raise
+              end
+            assert_equal "", subcomp.to_s if subcomp
           end
         end
       end
