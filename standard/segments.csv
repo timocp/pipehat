@@ -1480,3 +1480,261 @@ GP2,Grouping/Reimbursement - Procedure Line Item,CWE,Revenue Code
 ,,CWE,Reimbursement Type Code
 ,,CP,Co-Pay Amount
 ,,NM,Pay Rate per Service Unit
+,,,
+OBX,Observation/Result,SI,Set ID
+,,ID,Value Type
+,,CWE,Observation Identifier
+,,OG,Observation Sub-ID
+,,Varies,Observation Value
+,,CWE,Units
+,,ST,Reference Range
+,,CWE,Interpretation Codes
+,,NM,Probability
+,,ID,Nature of Abnormal Test
+,,ID,Observation Result Status
+,,DTM,Effective Date of Reference Range
+,,ST,User Defined Access Checks
+,,DTM,Date/Time of the Observation
+,,CWE,Producer's ID
+,,XCN,Responsible Observer
+,,CWE,Observation Method
+,,EI,Equipment Instance Identifier
+,,DTM,Date/Time of the Analysis
+,,CWE,Observation Site
+,,EI,Observation Instance Identifier
+,,CNE,Mood Code
+,,XON,Performing Organization Name
+,,XAD,Performing Organization Address
+,,XCN,Performing Organization Medical Director
+,,ID,Patient Results Release Category
+,,CWE,Root Cause
+,,CWE,Local Process Control
+,,ID,Observation Type
+,,ID,Observation Sub-Type
+,,ID,Action Code
+,,CWE,Observation Value Absent Reason
+,,EIP,Observation Related Specimen Identifier
+,,,
+SPM,Specimen,SI,Set ID
+,,EIP,Specimen Identifier
+,,EIP,Specimen Parent IDs
+,,CWE,Specimen Type
+,,CWE,Specimen Type Modifier
+,,CWE,Specimen Additives
+,,CWE,Specimen Collection Method
+,,CWE,Specimen Source Site
+,,CWE,Specimen Source Site Modifier
+,,CWE,Specimen Collection Site
+,,CWE,Specimen Role
+,,CQ,Specimen Collection Amount
+,,NM,Grouped Specimen Count
+,,ST,Specimen Description
+,,CWE,Specimen Handling Code
+,,CWE,Specimen Risk Code
+,,DR,Specimen Collection Date/Time
+,,DTM,Specimen Received Date/Time
+,,DTM,Specimen Expiration Date/Time
+,,ID,Specimen Availability
+,,CWE,Specimen Reject Reason
+,,CWE,Specimen Quality
+,,CWE,Specimen Appropriateness
+,,CWE,Specimen Condition
+,,CQ,Specimen Current Quantity
+,,NM,Number of Specimen Containers
+,,CWE,Container Type
+,,CWE,Container Condition
+,,CWE,Specimen Child Role
+,,CX,Accession ID
+,,CX,Other Specimen ID
+,,EI,Shipment ID
+,,DTM,Culture Start Date/Time
+,,DTM,Culture Final Date/Time
+,,ID,Action Code
+,,,
+PRT,Participation Information,EI,Participation Instance ID
+,,ID,Action Code
+,,CWE,Action Reason
+,,CWE,Role of Participation
+,,XCN,Person
+,,CWE,Person Provider Type
+,,CWE,Organization Unit Type
+,,XON,Organization
+,,PL,Location
+,,EI,Device
+,,DTM,Begin Date/Time (arrival time)
+,,DTM,End Date/Time (departure time)
+,,CWE,Qualitative Duration
+,,XAD,Address
+,,XTN,Telecommunication Address
+,,EI,UDI Device Identifier
+,,DTM,Device Manufacture Date
+,,DTM,Device Expiry Date
+,,ST,Device Lot Number
+,,ST,Device Serial Number
+,,EI,Device Donation Identification
+,,CNE,Device Type
+,,CWE,Preferred Method of Contact
+,,PLN,Contact Identifiers
+,,,
+CSR,Clinical Study Registration,EI,Sponsor Study ID
+,,EI,Alternate Study ID
+,,CWE,Institution Registering the Patient
+,,CX,Sponsor Patient ID
+,,CX,Alternate Patient ID - CSR
+,,DTM,Date/Time of Patient Study Registration
+,,XCN,Person Performing Study Registration
+,,XCN,Study Authorizing Provider
+,,DTM,Date/Time Patient Study Consent Signed
+,,CWE,Patient Study Eligibility Status
+,,DTM,Study Randomization Date/time
+,,CWE,Randomized Study Arm
+,,CWE,Stratum for Study Randomization
+,,CWE,Patient Evaluability Status
+,,DTM,Date/Time Ended Study
+,,CWE,Reason Ended Study
+,,ID,Action Code
+,,,
+CSP,Clinical Study Phase,CWE,Study Phase Identifier
+,,DTM,Date/time Study Phase Began
+,,DTM,Date/time Study Phase Ended
+,,CWE,Study Phase Evaluability
+,,,
+CSS,Clinical Study Data Schedule,CWE,Study Scheduled Time Point
+,,DTM,Study Scheduled Patient Time Point
+,,CWE,Study Quality Control Codes
+,,,
+CTI,Clinical Trial Identification,EI,Sponsor Study ID
+,,CWE,Study Phase Identifier
+,,CWE,Study Scheduled Time Point
+,,ID,Action Code
+,,,
+PES,Product Experience Sender,XON,Sender Organization Name
+,,XCN,Sender Individual Name
+,,XAD,Sender Address
+,,XTN,Sender Telephone
+,,EI,Sender Event Identifier
+,,NM,Sender Sequence Number
+,,FT,Sender Event Description
+,,FT,Sender Comment
+,,DTM,Sender Aware Date/Time
+,,DTM,Event Report Date
+,,ID,Event Report Timing/Type
+,,ID,Event Report Source
+,,ID,Event Reported To
+,,,
+PEO,Product Experience Observation,CWE,Event Identifiers Used
+,,CWE,Event Symptom/Diagnosis Code
+,,DTM,Event Onset Date/Time
+,,DTM,Event Exacerbation Date/Time
+,,DTM,Event Improved Date/Time
+,,DTM,Event Ended Data/Time
+,,XAD,Event Location Occurred Address
+,,ID,Event Qualification
+,,ID,Event Serious
+,,ID,Event Expected
+,,ID,Event Outcome
+,,ID,Patient Outcome
+,,FT,Event Description from Others
+,,FT,Event Description from Original Reporter
+,,FT,Event Description from Patient
+,,FT,Event Description from Practitioner
+,,FT,Event Description from Autopsy
+,,CWE,Cause Of Death
+,,XPN,Primary Observer Name
+,,XAD,Primary Observer Address
+,,XTN,Primary Observer Telephone
+,,ID,Primary Observer's Qualification
+,,ID,Confirmation Provided By
+,,DTM,Primary Observer Aware Date/Time
+,,ID,Primary Observer's identity May Be Divulged
+,,,
+PCR,Possible Causal Relationship,CWE,Implicated Product
+,,IS,Generic Product
+,,CWE,Product Class
+,,CQ,Total Duration Of Therapy
+,,DTM,Product Manufacture Date
+,,DTM,Product Expiration Date
+,,DTM,Product Implantation Date
+,,DTM,Product Explantation Date
+,,CWE,Single Use Device
+,,CWE,Indication For Product Use
+,,CWE,Product Problem
+,,ST,Product Serial/Lot Number
+,,CWE,Product Available For Inspection
+,,CWE,Product Evaluation Performed
+,,CWE,Product Evaluation Status
+,,CWE,Product Evaluation Results
+,,ID,Evaluated Product Source
+,,DTM,Date Product Returned To Manufacturer
+,,ID,Device Operator Qualifications
+,,ID,Relatedness Assessment
+,,ID,Action Taken In Response To The Event
+,,ID,Event Causality Observations
+,,ID,Indirect Exposure Mechanism
+,,,
+PSH,Product Summary Header,ST,Report Type
+,,ST,Report Form Identifier
+,,DTM,Report Date
+,,DTM,Report Interval Start Date
+,,DTM,Report Interval End Date
+,,CQ,Quantity Manufactured
+,,CQ,Quantity Distributed
+,,ID,Quantity Distributed Method
+,,FT,Quantity Distributed Comment
+,,CQ,Quantity in Use
+,,ID,Quantity in Use Method
+,,FT,Quantity in Use Comment
+,,NM,Number of Product Experience Reports Filed by Facility
+,,NM,Number of Product Experience Reports Filed by Distributor
+,,,
+PDC,Product Detail Country,XON,Manufacturer/Distributor
+,,CWE,Country
+,,ST,Brand Name
+,,ST,Device Family Name
+,,CWE,Generic Name
+,,ST,Model Identifier
+,,ST,Catalogue Identifier
+,,ST,Other Identifier
+,,CWE,Product Code
+,,ID,Marketing Basis
+,,ST,Marketing Approval ID
+,,CQ,Labeled Shelf Life
+,,CQ,Expected Shelf Life
+,,DTM,Date First Marketed
+,,DTM,Date Last Marketed
+,,,
+FAC,Facility,EI,Facility ID
+,,ID,Facility Type
+,,XAD,Facility Address
+,,XTN,Facility Telecommunication
+,,XCN,Contact Person
+,,ST,Contact Title
+,,XAD,Contact Address
+,,XTN,Contact Telecommunication
+,,XCN,Signature Authority
+,,ST,Signature Authority Title
+,,XAD,Signature Authority Address
+,,XTN,Signature Authority Telecommunication
+,,,
+SHP,Shipment,EI,Shipment ID
+,,EI,Internal Shipment ID
+,,CWE,Shipment Status
+,,DTM,Shipment Status Date/Time
+,,TX,Shipment Status Reason
+,,CWE,Shipment Priority
+,,CWE,Shipment Confidentiality
+,,NM,Number of Packages in Shipment
+,,CWE,Shipment Condition
+,,CWE,Shipment Handling Code
+,,CWE,Shipment Risk Code
+,,ID,Action Code
+,,,
+PAC,Shipment Package,SI,Set Id
+,,EI,Package ID
+,,EI,Parent Package ID
+,,NA,Position in Parent Package
+,,CWE,Package Type
+,,CWE,Package Condition
+,,CWE,Package Handling Code
+,,CWE,Package Risk Code
+,,ID,Action Code
