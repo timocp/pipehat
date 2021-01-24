@@ -1017,3 +1017,466 @@ RDF,Table Row Definition,NM,Number of Columns per Row
 ,,RCD,Column Description
 ,,,
 RDT,Table Row Data,Varies,Column Value
+,,,
+FT1,Financial Transaction,SI,Set ID
+,,CX,Transaction ID
+,,ST,Transaction Batch ID
+,,DR,Transaction Date
+,,DTM,Transaction Posting Date
+,,CWE,Transaction Type
+,,CWE,Transaction Code
+,,ST,Transaction Description
+,,ST,Transaction Description - Alt
+,,NM,Transaction Quantity
+,,CP,Transaction Amount - Extended
+,,CP,Transaction Amount - Unit
+,,CWE,Department Code
+,,CWE,Health Plan ID
+,,CP,Insurance Amount
+,,PL,Assigned Patient Location
+,,CWE,Fee Schedule
+,,CWE,Patient Type
+,,CWE,Diagnosis Code
+,,XCN,Performed By Code
+,,XCN,Ordered By Code
+,,CP,Unit Cost
+,,EI,Filler Order Number
+,,XCN,Entered By Code
+,,CNE,Procedure Code
+,,CNE,Procedure Code Modifier
+,,CWE,Advanced Beneficiary Notice Code
+,,CWE,Medically Necessary Duplicate Procedure Reason
+,,CWE,NDC Code
+,,CX,Payment Reference ID
+,,SI,Transaction Reference Key
+,,XON,Performing Facility
+,,XON,Ordering Facility
+,,CWE,Item Number
+,,ST,Model Number
+,,CWE,Special Processing Code
+,,CWE,Clinic Code
+,,CX,Referral Number
+,,CX,Authorization Number
+,,CWE,Service Provider Taxonomy Code
+,,CWE,Revenue Code
+,,ST,Prescription Number
+,,CQ,NDC Qty and UOM
+,,CWE,DME Certificate of Medical Necessity Transmission Code
+,,CWE,DME Certification Type Code
+,,NM,DME Duration Value
+,,DT,DME Certification Revision Date
+,,DT,DME Initial Certification Date
+,,DT,DME Last Certification Date
+,,NM,DME Length of Medical Necessity Days
+,,MO,DME Rental Price
+,,MO,DME Purchase Price
+,,CWE,DME Frequency Code
+,,ID,DME Certification Condition Indicator
+,,CWE,DME Condition Indicator Code
+,,CWE,Service Reason Code
+,,,
+DG1,Diagnosis,SI,Set ID
+,,ID,Diagnosis Coding Method
+,,CWE,Diagnosis Code
+,,ST,Diagnosis Description
+,,DTM,Diagnosis Date/Time
+,,CWE,Diagnosis Type
+,,CE,Major Diagnostic Category
+,,CE,Diagnostic Related Group
+,,ID,DRG Approval Indicator
+,,IS,DRG Grouper Review Code
+,,CE,Outlier Type
+,,NM,Outlier Days
+,,CP,Outlier Cost
+,,ST,Grouper Version And Type
+,,NM,Diagnosis Priority
+,,XCN,Diagnosing Clinician
+,,CWE,Diagnosis Classification
+,,ID,Confidential Indicator
+,,DTM,Attestation Date/Time
+,,EI,Diagnosis Identifier
+,,ID,Diagnosis Action Code
+,,EI,Parent Diagnosis
+,,CWE,DRG CCL Value Code
+,,ID,DRG Grouping Usage
+,,CWE,DRG Diagnosis Determination Status
+,,CWE,Present On Admission (POA) Indicator
+,,,
+DRG,Diagnosis Related Group,CNE,Diagnostic Related Group
+,,DTM,DRG Assigned Date/Time
+,,ID,DRG Approval Indicator
+,,CWE,DRG Grouper Review Code
+,,CWE,Outlier Type
+,,NM,Outlier Days
+,,CP,Outlier Cost
+,,CWE,DRG Payor
+,,CP,Outlier Reimbursement
+,,ID,Confidential Indicator
+,,CWE,DRG Transfer Type
+,,XPN,Name of Coder
+,,CWE,Grouper Status
+,,CWE,PCCL Value Code
+,,NM,Effective Weight
+,,MO,Monetary Amount
+,,CWE,Status Patient
+,,ST,Grouper Software Name
+,,ST,Grouper Software Version
+,,CWE,Status Financial Calculation
+,,MO,Relative Discount/Surcharge
+,,MO,Basic Charge
+,,MO,Total Charge
+,,MO,Discount/Surcharge
+,,NM,Calculated Days
+,,CWE,Status Gender
+,,CWE,Status Age
+,,CWE,Status Length of Stay
+,,CWE,Status Same Day Flag
+,,CWE,Status Separation Mode
+,,CWE,Status Weight at Birth
+,,CWE,Status Respiration Minutes
+,,CWE,Status Admission
+,,,
+PR1,Procedures,SI,Set ID
+,,IS,Procedure Coding Method
+,,CNE,Procedure Code
+,,ST,Procedure Description
+,,DTM,Procedure Date/Time
+,,CWE,Procedure Functional Type
+,,NM,Procedure Minutes
+,,XCN,Anesthesiologist
+,,CWE,Anesthesia Code
+,,NM,Anesthesia Minutes
+,,XCN,Surgeon
+,,XCN,Procedure Practitioner
+,,CWE,Consent Code
+,,NM,Procedure Priority
+,,CWE,Associated Diagnosis Code
+,,CNE,Procedure Code Modifier
+,,CWE,Procedure DRG Type
+,,CWE,Tissue Type Code
+,,EI,Procedure Identifier
+,,ID,Procedure Action Code
+,,CWE,DRG Procedure Determination Status
+,,CWE,DRG Procedure Relevance
+,,PL,Treating Organizational Unit
+,,ID,Respiratory Within Surgery
+,,EI,Parent Procedure ID
+,,,
+GT1,Guarantor,SI,Set ID
+,,CX,Guarantor Number
+,,XPN,Guarantor Name
+,,XPN,Guarantor Spouse Name
+,,XAD,Guarantor Address
+,,XTN,Guarantor Ph Num – Home
+,,XTN,Guarantor Ph Num – Business
+,,DTM,Guarantor Date/Time Of Birth
+,,CWE,Guarantor Administrative Sex
+,,CWE,Guarantor Type
+,,CWE,Guarantor Relationship
+,,ST,Guarantor SSN
+,,DT,Guarantor Date - Begin
+,,DT,Guarantor Date - End
+,,NM,Guarantor Priority
+,,XPN,Guarantor Employer Name
+,,XAD,Guarantor Employer Address
+,,XTN,Guarantor Employer Phone Number
+,,CX,Guarantor Employee ID Number
+,,CWE,Guarantor Employment Status
+,,XON,Guarantor Organization Name
+,,ID,Guarantor Billing Hold Flag
+,,CWE,Guarantor Credit Rating Code
+,,DTM,Guarantor Death Date And Time
+,,ID,Guarantor Death Flag
+,,CWE,Guarantor Charge Adjustment Code
+,,CP,Guarantor Household Annual Income
+,,NM,Guarantor Household Size
+,,CX,Guarantor Employer ID Number
+,,CWE,Guarantor Marital Status Code
+,,DT,Guarantor Hire Effective Date
+,,DT,Employment Stop Date
+,,CWE,Living Dependency
+,,CWE,Ambulatory Status
+,,CWE,Citizenship
+,,CWE,Primary Language
+,,CWE,Living Arrangement
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,CWE,Student Indicator
+,,CWE,Religion
+,,XPN,Mother's Maiden Name
+,,CWE,Nationality
+,,CWE,Ethnic Group
+,,XPN,Contact Person's Name
+,,XTN,Contact Person's Telephone Number
+,,CWE,Contact Reason
+,,CWE,Contact Relationship
+,,ST,Job Title
+,,JCC,Job Code/Class
+,,XON,Guarantor Employer's Organization Name
+,,CWE,Handicap
+,,CWE,Job Status
+,,FC,Guarantor Financial Class
+,,CWE,Guarantor Race
+,,ST,Guarantor Birth Place
+,,CWE,VIP Indicator
+,,,
+IN1,Insurance,SI,Set ID
+,,CWE,Health Plan ID
+,,CX,Insurance Company ID
+,,XON,Insurance Company Name
+,,XAD,Insurance Company Address
+,,XPN,Insurance Co Contact Person
+,,XTN,Insurance Co Phone Number
+,,ST,Group Number
+,,XON,Group Name
+,,CX,Insured's Group Emp ID
+,,XON,Insured's Group Emp Name
+,,DT,Plan Effective Date
+,,DT,Plan Expiration Date
+,,AUI,Authorization Information
+,,CWE,Plan Type
+,,XPN,Name Of Insured
+,,CWE,Insured's Relationship To Patient
+,,DTM,Insured's Date Of Birth
+,,XAD,Insured's Address
+,,CWE,Assignment Of Benefits
+,,CWE,Coordination Of Benefits
+,,ST,Coord Of Ben. Priority
+,,ID,Notice Of Admission Flag
+,,DT,Notice Of Admission Date
+,,ID,Report Of Eligibility Flag
+,,DT,Report Of Eligibility Date
+,,CWE,Release Information Code
+,,ST,Pre-Admit Cert (PAC)
+,,DTM,Verification Date/Time
+,,XCN,Verification By
+,,CWE,Type Of Agreement Code
+,,CWE,Billing Status
+,,NM,Lifetime Reserve Days
+,,NM,Delay Before L.R. Day
+,,CWE,Company Plan Code
+,,ST,Policy Number
+,,CP,Policy Deductible
+,,CP,Policy Limit - Amount
+,,NM,Policy Limit - Days
+,,CP,Room Rate - Semi-Private
+,,CP,Room Rate - Private
+,,CWE,Insured's Employment Status
+,,CWE,Insured's Administrative Sex
+,,XAD,Insured's Employer's Address
+,,ST,Verification Status
+,,CWE,Prior Insurance Plan ID
+,,CWE,Coverage Type
+,,CWE,Handicap
+,,CX,Insured's ID Number
+,,CWE,Signature Code
+,,DT,Signature Code Date
+,,ST,Insured's Birth Place
+,,CWE,VIP Indicator
+,,CX,External Health Plan Identifiers
+,,ID,Insurance Action Code
+,,,
+IN2,Insurance Additional Information,CX,Insured's Employee ID
+,,ST,Insured's Social Security Number
+,,XCN,Insured's Employer's Name and ID
+,,CWE,Employer Information Data
+,,CWE,Mail Claim Party
+,,ST,Medicare Health Ins Card Number
+,,XPN,Medicaid Case Name
+,,ST,Medicaid Case Number
+,,XPN,Military Sponsor Name
+,,ST,Military ID Number
+,,CWE,Dependent Of Military Recipient
+,,ST,Military Organization
+,,ST,Military Station
+,,CWE,Military Service
+,,CWE,Military Rank/Grade
+,,CWE,Military Status
+,,DT,Military Retire Date
+,,ID,Military Non-Avail Cert On File
+,,ID,Baby Coverage
+,,ID,Combine Baby Bill
+,,ST,Blood Deductible
+,,XPN,Special Coverage Approval Name
+,,ST,Special Coverage Approval Title
+,,CWE,Non-Covered Insurance Code
+,,CX,Payor ID
+,,CX,Payor Subscriber ID
+,,CWE,Eligibility Source
+,,RMC,Room Coverage Type/Amount
+,,PTA,Policy Type/Amount
+,,DDI,Daily Deductible
+,,CWE,Living Dependency
+,,CWE,Ambulatory Status
+,,CWE,Citizenship
+,,CWE,Primary Language
+,,CWE,Living Arrangement
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,CWE,Student Indicator
+,,CWE,Religion
+,,XPN,Mother's Maiden Name
+,,CWE,Nationality
+,,CWE,Ethnic Group
+,,CWE,Marital Status
+,,DT,Insured's Employment Start Date
+,,DT,Employment Stop Date
+,,ST,Job Title
+,,JCC,Job Code/Class
+,,CWE,Job Status
+,,XPN,Employer Contact Person Name
+,,XTN,Employer Contact Person Phone Number
+,,CWE,Employer Contact Reason
+,,XPN,Insured's Contact Person's Name
+,,XTN,Insured's Contact Person Phone Number
+,,CWE,Insured's Contact Person Reason
+,,DT,Relationship to the Patient Start Date
+,,DT,Relationship to the Patient Stop Date
+,,CWE,Insurance Co Contact Reason
+,,XTN,Insurance Co Contact Phone Number
+,,CWE,Policy Scope
+,,CWE,Policy Source
+,,CX,Patient Member Number
+,,CWE,Guarantor's Relationship to Insured
+,,XTN,Insured's Phone Number - Home
+,,XTN,Insured's Employer Phone Number
+,,CWE,Military Handicapped Program
+,,ID,Suspend Flag
+,,ID,Copay Limit Flag
+,,ID,Stoploss Limit Flag
+,,XON,Insured Organization Name and ID
+,,XON,Insured Employer Organization Name and ID
+,,CWE,Race
+,,CWE,Patient's Relationship to Insured
+,,CP,Co-Pay Amount
+,,,
+IN3,"Insurance Additional Information, Certification",SI,Set ID
+,,CX,Certification Number
+,,XCN,Certified By
+,,ID,Certification Required
+,,MOP,Penalty
+,,DTM,Certification Date/Time
+,,DTM,Certification Modify Date/Time
+,,XCN,Operator
+,,DT,Certification Begin Date
+,,DT,Certification End Date
+,,DTN,Days
+,,CWE,Non-Concur Code/Description
+,,DTM,Non-Concur Effective Date/Time
+,,XCN,Physician Reviewer
+,,ST,Certification Contact
+,,XTN,Certification Contact Phone Number
+,,CWE,Appeal Reason
+,,CWE,Certification Agency
+,,XTN,Certification Agency Phone Number
+,,ICD,Pre-Certification Requirement
+,,ST,Case Manager
+,,DT,Second Opinion Date
+,,CWE,Second Opinion Status
+,,CWE,Second Opinion Documentation Received
+,,XCN,Second Opinion Physician
+,,CWE,Certification Type
+,,CWE,Certification Category
+,,DTM,Online Verification Date/Time
+,,CWE,Online Verification Result
+,,CWE,Online Verification Result Error Code
+,,ST,Online Verification Result Check Digit
+,,,
+ACC,Accident,DTM,Accident Date/Time
+,,CWE,Accident Code
+,,ST,Accident Location
+,,CWE,Auto Accident State
+,,ID,Accident Job Related Indicator
+,,ID,Accident Death Indicator
+,,XCN,Entered By
+,,ST,Accident Description
+,,ST,Brought In By
+,,ID,Police Notified Indicator
+,,XAD,Accident Address
+,,NM,Degree of patient liability
+,,EI,Accident Identifier
+,,,
+UB1,Uniform Billing Data 1,SI,Set ID
+,,NM,Blood Deductible
+,,NM,Blood Furnished-Pints
+,,NM,Blood Replaced-Pints
+,,NM,Blood Not Replaced-Pints
+,,NM,Co-Insurance Days
+,,IS,Condition Code
+,,NM,Covered Days
+,,NM,Non Covered Days
+,,CM,Value Amount & Code
+,,NM,Number Of Grace Days
+,,CE,Special Program Indicator
+,,CE,PSRO/UR Approval Indicator
+,,DT,PSRO/UR Approved Stay-Fm
+,,DT,PSRO/UR Approved Stay-To
+,,CM,Occurrence
+,,CE,Occurrence Span
+,,DT,Occur Span Start Date
+,,DT,Occur Span End Date
+,,ST,UB-82 Locator 2
+,,ST,UB-82 Locator 9
+,,ST,UB-82 Locator 27
+,,ST,UB-82 Locator 45
+,,,
+UB2,Uniform Billing Data 2,SI,Set ID
+,,ST,Co-Insurance Days (9)
+,,CWE,Condition Code (24-30)
+,,ST,Covered Days (7)
+,,ST,Non-Covered Days (8)
+,,UVC,Value Amount & Code (39-41)
+,,OCD,Occurrence Code & Date (32-35)
+,,OSP,Occurrence Span Code/Dates (36)
+,,ST,Uniform Billing Locator 2 (state)
+,,ST,Uniform Billing Locator 11 (state)
+,,ST,Uniform Billing Locator 31 (national)
+,,ST,Document Control Number
+,,ST,Uniform Billing Locator 49 (national)
+,,ST,Uniform Billing Locator 56 (state)
+,,ST,Uniform Billing Locator 57 (sational)
+,,ST,Uniform Billing Locator 78 (state)
+,,NM,Special Visit Count
+,,,
+ABS,Abstract,XCN,Discharge Care Provider
+,,CWE,Transfer Medical Service Code
+,,CWE,Severity of Illness Code
+,,DTM,Date/Time of Attestation
+,,XCN,Attested By
+,,CWE,Triage Code
+,,DTM,Abstract Completion Date/Time
+,,XCN,Abstracted By
+,,CWE,Case Category Code
+,,ID,Caesarian Section Indicator
+,,CWE,Gestation Category Code
+,,NM,Gestation Period - Weeks
+,,CWE,Newborn Code
+,,ID,Stillborn Indicator
+,,,
+BLC,Blood Code,CWE,Blood Product Code
+,,CQ,Blood Amount
+,,,
+RMI,Risk Management Incident,CWE,Risk Management Incident Code
+,,DTM,Date/Time Incident
+,,CWE,Incident Type Code
+,,,
+GP1,Grouping/Reimbursement - Visit,CWE,Type of Bill Code
+,,CWE,Revenue Code
+,,CWE,Overall Claim Disposition Code
+,,CWE,OCE Edits per Visit Code
+,,CP,Outlier Cost
+,,,
+GP2,Grouping/Reimbursement - Procedure Line Item,CWE,Revenue Code
+,,NM,Number of Service Units
+,,CP,Charge
+,,CWE,Reimbursement Action Code
+,,CWE,Denial or Rejection Code
+,,CWE,OCE Edit Code
+,,CWE,Ambulatory Payment Classification Code
+,,CWE,Modifier Edit Code
+,,CWE,Payment Adjustment Code
+,,CWE,Packaging Status Code
+,,CP,Expected CMS Payment Amount
+,,CWE,Reimbursement Type Code
+,,CP,Co-Pay Amount
+,,NM,Pay Rate per Service Unit

@@ -55,6 +55,8 @@ CF,Coded Element with Formatted Values,ST,Identifier
 ,,ST,Second Alternate Value Set OID
 ,,DTM,Second Alternate Value Set Version ID
 ,,,
+CM,Composite
+,,,
 CNE,Coded with No Exceptions,ST,Identifier
 ,,ST,Text
 ,,ID,Name of Coding System
