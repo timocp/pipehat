@@ -980,3 +980,40 @@ CDO,Cumulative Dosage,SI,Set ID
 ,,ID,Action Code
 ,,CQ,Cumulative Dosage Limit
 ,,CQ,Cumulative Dosage Limit Time Interval
+,,,
+DSP,Display Data,SI,Set ID
+,,SI,Display Level
+,,TX,Data Line
+,,ST,Logical Break Point
+,,TX,Result ID
+,,,
+QAK,Query Acknowledgment,ST,Query Tag
+,,ID,Query Response Status
+,,CWE,Message Query Name
+,,NM,Hit Count Total
+,,NM,This payload
+,,NM,Hits remaining
+,,,
+QID,Query Identification,ST,Query Tag
+,,CWE,Message Query Name
+,,,
+QPD,Query Parameter Definition,CWE,Message Query Name
+,,ST,Query Tag
+,,Varies,User Parameters (in successive fields)
+,,,
+QRI,Query Response Instance,NM,Candidate Confidence
+,,CWE,Match Reason Code
+,,CWE,Algorithm Descriptor
+,,,
+RCP,Response Control Parameter,ID,Query Priority
+,,CQ,Quantity Limited Request
+,,CNE,Response Modality
+,,DTM,Execution and Delivery Time
+,,ID,Modify Indicator
+,,SRT,Sort-by Field
+,,ID,Segment group inclusion
+,,,
+RDF,Table Row Definition,NM,Number of Columns per Row
+,,RCD,Column Description
+,,,
+RDT,Table Row Data,Varies,Column Value
