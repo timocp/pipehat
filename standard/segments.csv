@@ -1738,3 +1738,329 @@ PAC,Shipment Package,SI,Set Id
 ,,CWE,Package Handling Code
 ,,CWE,Package Risk Code
 ,,ID,Action Code
+,,,
+MFI,Master File Identification,CWE,Master File Identifier
+,,HD,Master File Application Identifier
+,,ID,File-Level Event Code
+,,DTM,Entered Date/Time
+,,DTM,Effective Date/Time
+,,ID,Response Level Code
+,,,
+MFE,Master File Entry,ID,Record-Level Event Code
+,,ST,MFN Control ID
+,,DTM,Effective Date/Time
+,,Varies,Primary Key Value
+,,ID,Primary Key Value Type
+,,DTM,Entered Date/Time
+,,XCN,Entered By
+,,,
+MFA,Master File Acknowledgment,ID,Record-Level Event Code
+,,ST,MFN Control ID
+,,DTM,Event Completion Date/Time
+,,CWE,MFN Record Level Error Return
+,,Varies,Primary Key Value
+,,ID,Primary Key Value Type
+,,,
+OM1,General Segment,NM,Sequence Number
+,,CWE,Producer's Service/Test/Observation ID
+,,ID,Permitted Data Types
+,,ID,Specimen Required
+,,CWE,Producer ID
+,,TX,Observation Description
+,,CWE,Other Service/Test/Observation IDs for the Observation
+,,ST,Other Names
+,,ST,Preferred Report Name for the Observation
+,,ST,Preferred Short Name or Mnemonic for the Observation
+,,ST,Preferred Long Name for the Observation
+,,ID,Orderability
+,,CWE,Identity of Instrument Used to Perform this Study
+,,CWE,Coded Representation of Method
+,,ID,Portable Device Indicator
+,,CWE,Observation Producing Department/Section
+,,XTN,Telephone Number of Section
+,,CWE,Nature of Service/Test/Observation
+,,CWE,Report Subheader
+,,ST,Report Display Order
+,,DTM,Date/Time Stamp for Any Change in Definition for the Observation
+,,DTM,Effective Date/Time of Change
+,,NM,Typical Turn-Around Time
+,,NM,Processing Time
+,,ID,Processing Priority
+,,ID,Reporting Priority
+,,CWE,Outside Site(s) Where Observation May Be Performed
+,,XAD,Address of Outside Site(s)
+,,XTN,Phone Number of Outside Site
+,,CWE,Confidentiality Code
+,,CWE,Observations Required to Interpret this Observation
+,,TX,Interpretation of Observations
+,,CWE,Contraindications to Observations
+,,CWE,Reflex Tests/Observations
+,,TX,Rules that Trigger Reflex Testing
+,,CWE,Fixed Canned Message
+,,TX,Patient Preparation
+,,CWE,Procedure Medication
+,,TX,Factors that may Affect the Observation
+,,ST,Service/Test/Observation Performance Schedule
+,,TX,Description of Test Methods
+,,CWE,Kind of Quantity Observed
+,,CWE,Point Versus Interval
+,,TX,Challenge Information
+,,CWE,Relationship Modifier
+,,CWE,Target Anatomic Site Of Test
+,,CWE,Modality of Imaging Measurement
+,,ID,Exclusive Test
+,,ID,Diagnostic Serv Sect ID
+,,CWE,Taxonomic Classification Code
+,,ST,Other Names
+,,CWE,Replacement Producer's Service/Test/Observation ID
+,,TX,Prior Resuts Instructions
+,,TX,Special Instructions
+,,CWE,Test Category
+,,CWE,Observation/Identifier associated with Producer’s Service/Test/Observation ID
+,,CQ,Typical Turn-Around Time
+,,CWE,Gender Restriction
+,,NR,Age Restriction
+,,,
+OM2,Numeric Observation,NM,Sequence Number
+,,CWE,Units of Measure
+,,NM,Range of Decimal Precision
+,,CWE,Corresponding SI Units of Measure
+,,TX,SI Conversion Factor
+,,RFR,Reference Range for Ordinal and Continuous Observations
+,,RFR,Critical Range for Ordinal and Continuous Observations
+,,RFR,Absolute Range for Ordinal and Continuous Observations
+,,DLT,Delta Check Criteria
+,,NM,Minimum Meaningful Increments
+,,,
+OM3,Categorical Service/Test/Observation,NM,Sequence Number
+,,CWE,Preferred Coding System
+,,CWE,"Valid Coded ""Answers"""
+,,CWE,Normal Text/Codes for Categorical Observations
+,,CWE,Abnormal Text/Codes for Categorical Observations
+,,CWE,Critical Text/Codes for Categorical Observations
+,,ID,Value Type
+,,,
+OM4,Observations that Require Specimens,NM,Sequence Number
+,,ID,Derived Specimen
+,,TX,Container Description
+,,NM,Container Volume
+,,CWE,Container Units
+,,CWE,Specimen
+,,CWE,Additive
+,,TX,Preparation
+,,TX,Special Handling Requirements
+,,CQ,Normal Collection Volume
+,,CQ,Minimum Collection Volume
+,,TX,Specimen Requirements
+,,ID,Specimen Priorities
+,,CQ,Specimen Retention Time
+,,CWE,Specimen Handling Code
+,,ID,Specimen Preference
+,,NM,Preferred Specimen/Attribture Sequence ID
+,,CWE,Taxonomic Classification Code
+,,,
+OM5,Observation Batteries (Sets),NM,Sequence Number
+,,CWE,Test/Observations Included Within an Ordered Test Battery
+,,ST,Observation ID Suffixes
+,,,
+OM6,Observations that are Calculated from Other Observations,NM,Sequence Number
+,,TX,Derivation Rule
+,,,
+OM7,Additional Basic Attributes,NM,Sequence Number
+,,CWE,Universal Service Identifier
+,,CWE,Category Identifier
+,,TX,Category Description
+,,ST,Category Synonym
+,,DTM,Effective Test/Service Start Date/Time
+,,DTM,Effective Test/Service End Date/Time
+,,NM,Test/Service Default Duration Quantity
+,,CWE,Test/Service Default Duration Units
+,,CWE,Test/Service Default Frequency
+,,ID,Consent Indicator
+,,CWE,Consent Identifier
+,,DTM,Consent Effective Start Date/Time
+,,DTM,Consent Effective End Date/Time
+,,NM,Consent Interval Quantity
+,,CWE,Consent Interval Units
+,,NM,Consent Waiting Period Quantity
+,,CWE,Consent Waiting Period Units
+,,DTM,Effective Date/Time of Change
+,,XCN,Entered By
+,,PL,Orderable-at Location
+,,CWE,Formulary Status
+,,ID,Special Order Indicator
+,,CWE,Primary Key Value - CDM
+,,,
+OMC,Supporting Clinical Information,NM,Sequence Number
+,,ID,Segment Action Code
+,,EI,Segment Unique Key
+,,CWE,Clinical Information Request
+,,CWE,Collection Event/Process Step
+,,CWE,Communication Location
+,,ID,Answer Required
+,,ST,Hint/Help Text
+,,ID,Type of Answer
+,,ID,Multiple Answers Allowed
+,,CWE,Answer Choices
+,,NM,Character Limit
+,,NM,Number of Decimals
+,,,
+PM1,Payer Master File,CWE,Health Plan ID
+,,CX,Insurance Company ID
+,,XON,Insurance Company Name
+,,XAD,Insurance Company Address
+,,XPN,Insurance Co Contact Person
+,,XTN,Insurance Co Phone Number
+,,ST,Group Number
+,,XON,Group Name
+,,DT,Plan Effective Date
+,,DT,Plan Expiration Date
+,,ID,Patient DOB Required
+,,ID,Patient Gender Required
+,,ID,Patient Relationship Required
+,,ID,Patient Signature Required
+,,ID,Diagnosis Required
+,,ID,Service Required
+,,ID,Patient Name Required
+,,ID,Patient Address Required
+,,ID,Subscribers Name Required
+,,ID,Workman's Comp Indicator
+,,ID,Bill Type Required
+,,ID,Commercial Carrier Name and Address Required
+,,ST,Policy Number Pattern
+,,ST,Group Number Pattern
+,,,
+MCP,Master File Coverage,SI,Set ID
+,,CWE,Producer's Service/Test/Observation ID
+,,MO,Universal Service Price Range – Low Value
+,,MO,Universal Service Price Range – High Value
+,,ST,Reason for Universal Service Cost Range
+,,,
+DPS,Diagnosis and Procedure Code,CWE,Diagnosis Code
+,,CWE,Procedure Code
+,,DTM,Effective Date/Time
+,,DTM,Expiration Date/Time
+,,CNE,Type of Limitation
+,,,
+LOC,Location Identification,PL,Primary Key Value
+,,ST,Location Description
+,,CWE,Location Type
+,,XON,Organization Name
+,,XAD,Location Address
+,,XTN,Location Phone
+,,CWE,License Number
+,,CWE,Location Equipment
+,,CWE,Location Service Code
+,,,
+LCH,Location Characteristic,PL,Primary Key Value
+,,ID,Segment Action Code
+,,EI,Segment Unique Key
+,,CWE,Location Characteristic ID
+,,CWE,Location Characteristic Value
+,,,
+LRL,Location Relationship,PL,Primary Key Value
+,,ID,Segment Action Code
+,,EI,Segment Unique Key
+,,CWE,Location Relationship ID
+,,XON,Organizational Location Relationship Value
+,,PL,Patient Location Relationship Value
+,,,
+LDP,Location Department,PL,Primary Key Value
+,,CWE,Location Department
+,,CWE,Location Service
+,,CWE,Specialty Type
+,,CWE,Valid Patient Classes
+,,ID,Active/Inactive Flag
+,,DTM,Activation Date
+,,DTM,Inactivation Date
+,,ST,Inactivated Reason
+,,VH,Visiting Hours
+,,XTN,Contact Phone
+,,CWE,Location Cost Center
+,,,
+LCC,Location Charge Code,PL,Primary Key Value
+,,CWE,Location Department
+,,CWE,Accommodation Type
+,,CWE,Charge Code
+,,,
+CDM,Charge Description Master,CWE,Primary Key Value
+,,CWE,Charge Code Alias
+,,ST,Charge Description Short
+,,ST,Charge Description Long
+,,CWE,Description Override Indicator
+,,CWE,Exploding Charges
+,,CNE,Procedure Code
+,,ID,Active/Inactive Flag
+,,CWE,Inventory Number
+,,NM,Resource Load
+,,CX,Contract Number
+,,XON,Contract Organization
+,,ID,Room Fee Indicator
+,,,
+PRC,Pricing Segment,CWE,Primary Key Value
+,,CWE,Facility ID
+,,CWE,Department
+,,CWE,Valid Patient Classes
+,,CP,Price
+,,ST,Formula
+,,NM,Minimum Quantity
+,,NM,Maximum Quantity
+,,MO,Minimum Price
+,,MO,Maximum Price
+,,DTM,Effective Start Date
+,,DTM,Effective End Date
+,,CWE,Price Override Flag
+,,CWE,Billing Category
+,,ID,Chargeable Flag
+,,ID,Active/Inactive Flag
+,,MO,Cost
+,,CWE,Charge on Indicator
+,,,
+CM0,Clinical Study Master,SI,Set ID
+,,EI,Sponsor Study ID
+,,EI,Alternate Study ID
+,,ST,Title of Study
+,,XCN,Chairman of Study
+,,DT,Last IRB Approval Date
+,,NM,Total Accrual to Date
+,,DT,Last Accrual Date
+,,XCN,Contact for Study
+,,XTN,Contact's Telephone Number
+,,XAD,Contact's Address
+,,,
+CM1,Clinical Study Phase Master,SI,Set ID
+,,CWE,Study Phase Identifier
+,,ST,Description of Study Phase
+,,,
+CM2,Clinical Study Schedule Master,SI,Set ID
+,,CWE,Scheduled Time Point
+,,ST,Description of Time Point
+,,CWE,Events Scheduled This Time Point
+,,,
+DMI,DRG Master File Information,CNE,Diagnostic Related Group
+,,CNE,Major Diagnostic Category
+,,NR,Lower and Upper Trim Points
+,,NM,Average Length of Stay
+,,NM,Relative Weight
+,,,
+CTR,Contract Master Outbound,EI,Contract Identifier
+,,ST,Contract Description
+,,CWE,Contract Status
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,XPN,Contract Owner Name
+,,XPN,Contract Originator Name
+,,CWE,Supplier Type
+,,CWE,Contract Type
+,,CNE,Free On Board Freight Terms
+,,DTM,Price Protection Date
+,,CNE,Fixed Price Contract Indicator
+,,XON,Group Purchasing Organization
+,,MOP,Maximum Markup
+,,MOP,Actual Markup
+,,XON,Corporation
+,,XON,Parent of Corporation
+,,CWE,Pricing Tier Level
+,,ST,Contract Priority
+,,CWE,Class of Trade
+,,EI,Associated Contract ID

@@ -23,7 +23,8 @@ class CodeGenerator
     name
       .downcase
       .gsub(/\(.*\)$/, "")
-      .gsub(/'s/, "s")
+      .gsub(/['’]s/, "s")
+      .gsub(/\(s\)/, "s")
       .gsub(/[^a-z0-9]/, " ")
       .strip
       .squeeze(" ")
