@@ -2064,3 +2064,58 @@ CTR,Contract Master Outbound,EI,Contract Identifier
 ,,ST,Contract Priority
 ,,CWE,Class of Trade
 ,,EI,Associated Contract ID
+,,,
+CON,Consent Segment,SI,Set ID
+,,CWE,Consent Type
+,,ST,Consent Form ID and Version
+,,EI,Consent Form Number
+,,FT,Consent Text
+,,FT,Subject-specific Consent Text
+,,FT,Consent Background Information
+,,FT,Subject-specific Consent Background Text
+,,FT,Consenter-imposed limitations
+,,CNE,Consent Mode
+,,CNE,Consent Status
+,,DTM,Consent Discussion Date/Time
+,,DTM,Consent Decision Date/Time
+,,DTM,Consent Effective Date/Time
+,,DTM,Consent End Date/Time
+,,ID,Subject Competence Indicator
+,,ID,Translator Assistance Indicator
+,,CWE,Language Translated To
+,,ID,Informational Material Supplied Indicator
+,,CWE,Consent Bypass Reason
+,,ID,Consent Disclosure Level
+,,CWE,Consent Non-disclosure Reason
+,,CWE,Non-subject Consenter Reason
+,,XPN,Consenter ID
+,,CWE,Relationship to Subject
+,,,
+TXA,Transcription Document Header,SI,Set ID
+,,CWE,Document Type
+,,ID,Document Content Presentation
+,,DTM,Activity Date/Time
+,,XCN,Primary Activity Provider Code/Name
+,,DTM,Origination Date/Time
+,,DTM,Transcription Date/Time
+,,DTM,Edit Date/Time
+,,XCN,Originator Code/Name
+,,XCN,Assigned Document Authenticator
+,,XCN,Transcriptionist Code/Name
+,,EI,Unique Document Number
+,,EI,Parent Document Number
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,ST,Unique Document File Name
+,,ID,Document Completion Status
+,,ID,Document Confidentiality Status
+,,ID,Document Availability Status
+,,ID,Document Storage Status
+,,ST,Document Change Reason
+,,PPN,"Authentication Person, Time Stamp (set)"
+,,XCN,Distributed Copies (Code and Name of Recipient(s) )
+,,CWE,Folder Assignment
+,,ST,Document Title
+,,DTM,Agreed Due Date/Time
+,,HD,Creating Facility
+,,CWE,Creating Specialty
