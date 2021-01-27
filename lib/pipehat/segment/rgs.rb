@@ -6,7 +6,7 @@ module Pipehat
     class RGS < Base
       add_field :set_id,              :SI
       add_field :segment_action_code, :ID
-      add_field :resource_group_id,   :CWE
+      add_field :resource_group_id,   :CE
     end
   end
 end

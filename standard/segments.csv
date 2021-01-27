@@ -2119,3 +2119,123 @@ TXA,Transcription Document Header,SI,Set ID
 ,,DTM,Agreed Due Date/Time
 ,,HD,Creating Facility
 ,,CWE,Creating Specialty
+,,,
+ARQ,Appointment Request,EI,Placer Appointment ID
+,,EI,Filler Appointment ID
+,,NM,Occurrence Number
+,,EI,Placer Order Group Number
+,,CWE,Schedule ID
+,,CWE,Request Event Reason
+,,CWE,Appointment Reason
+,,CWE,Appointment Type
+,,NM,Appointment Duration
+,,CNE,Appointment Duration Units
+,,DR,Requested Start Date/Time Range
+,,ST,Priority-ARQ
+,,RI,Repeating Interval
+,,ST,Repeating Interval Duration
+,,XCN,Placer Contact Person
+,,XTN,Placer Contact Phone Number
+,,XAD,Placer Contact Address
+,,PL,Placer Contact Location
+,,XCN,Entered By Person
+,,XTN,Entered By Phone Number
+,,PL,Entered By Location
+,,EI,Parent Placer Appointment ID
+,,EI,Parent Filler Appointment ID
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,EIP,Alternate Placer Order Group Number
+,,,
+SCH,Scheduling Activity Information,EI,Placer Appointment ID
+,,EI,Filler Appointment ID
+,,NM,Occurrence Number
+,,EI,Placer Order Group Number
+,,CWE,Schedule ID
+,,CWE,Event Reason
+,,CWE,Appointment Reason
+,,CWE,Appointment Type
+,,NM,Appointment Duration
+,,CNE,Appointment Duration Units
+,,TQ,Appointment Timing Quantity
+,,XCN,Placer Contact Person
+,,XTN,Placer Contact Phone Number
+,,XAD,Placer Contact Address
+,,PL,Placer Contact Location
+,,XCN,Filler Contact Person
+,,XTN,Filler Contact Phone Number
+,,XAD,Filler Contact Address
+,,PL,Filler Contact Location
+,,XCN,Entered by Person
+,,XTN,Entered by Phone Number
+,,PL,Entered by Location
+,,EI,Parent Placer Appointment ID
+,,EI,Parent Filler Appointment ID
+,,CWE,Filler Status Code
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,EIP,Alternate Placer Order Group Number
+,,,
+RGS,Resource Group,SI,Set ID
+,,ID,Segment Action Code
+,,CE,Resource Group ID
+,,,
+AIS,Appointment Information,SI,Set ID
+,,ID,Segment Action Code
+,,CWE,Universal Service Identifier
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,CWE,Placer Supplemental Service Information
+,,CWE,Filler Supplemental Service Information
+,,,
+AIG,Appointment Information – General Resource,SI,Set ID
+,,ID,Segment Action Code
+,,CWE,Resource ID
+,,CWE,Resource Type
+,,CWE,Resource Group
+,,NM,Resource Quantity
+,,CNE,Resource Quantity Units
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,,
+AIL,Appointment Information – Location Resource,SI,Set ID
+,,ID,Segment Action Code
+,,PL,Location Resource ID
+,,CWE,Location Type
+,,CWE,Location Group
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,,
+AIP,Appointment Information – Personnel Resource,SI,Set ID
+,,ID,Segment Action code
+,,XCN,Personnel Resource ID
+,,CWE,Resource Type
+,,CWE,Resource Group
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,,
+APR,Appointment Preferences,SCV,Time Selection Criteria
+,,SCV,Resource Selection Criteria
+,,SCV,Location Selection Criteria
+,,NM,Slot Spacing Criteria
+,,SCV,Filler Override Criteria
