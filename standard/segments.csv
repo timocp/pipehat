@@ -2239,3 +2239,82 @@ APR,Appointment Preferences,SCV,Time Selection Criteria
 ,,SCV,Location Selection Criteria
 ,,NM,Slot Spacing Criteria
 ,,SCV,Filler Override Criteria
+,,,
+RF1,Referral Information,CWE,Referral Status
+,,CWE,Referral Priority
+,,CWE,Referral Type
+,,CWE,Referral Disposition
+,,CWE,Referral Category
+,,EI,Originating Referral Identifier
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,DTM,Process Date
+,,CWE,Referral Reason
+,,EI,External Referral Identifier
+,,CWE,Referral Documentation Completion Status
+,,DTM,Planned Treatment Stop Date
+,,ST,Referral Reason Text
+,,CQ,Number of Authorized Treatments/Units
+,,CQ,Number of Used Treatments/Units
+,,CQ,Number of Schedule Treatments/Units
+,,MO,Remaining Benefit Amount
+,,XON,Authorized Provider
+,,XCN,Authorized Health Professional
+,,ST,Source Text
+,,DTM,Source Date
+,,XTN,Source Phone
+,,ST,Comment
+,,ID,Action Code
+,,,
+AUT, Authorization Information,CWE,"Authorizing Payor, Plan ID"
+,,CWE,"Authorizing Payor, Company ID"
+,,ST,"Authorizing Payor, Company Name"
+,,DTM,Authorization Effective Date
+,,DTM,Authorization Expiration Date
+,,EI,Authorization Identifier
+,,CP,Reimbursement Limit
+,,CQ,Requested Number of Treatments
+,,CQ,Authorized Number of Treatments
+,,DTM,Process Date
+,,CWE,Requested Discipline(s)
+,,CWE,Authorized Discipline(s)
+,,CWE,Authorization Referral Type
+,,CWE,Approval Status
+,,DTM,Planned Treatment Stop Date
+,,CWE,Clinical Service
+,,ST,Reason Text
+,,CQ,Number of Authorized Treatments/Units
+,,CQ,Number of Used Treatments/Units
+,,CQ,Number of Schedule Treatments/Units
+,,CWE,Encounter Type
+,,MO,Remaining Benefit Amount
+,,XON,Authorized Provider
+,,XCN,Authorized Health Professional
+,,ST,Source Text
+,,DTM,Source Date
+,,XTN,Source Phone
+,,ST,Comment
+,,ID,Action Code
+,,,
+PRD,Provider Data,CWE,Provider Role
+,,XPN,Provider Name
+,,XAD,Provider Address
+,,PL,Provider Location
+,,XTN,Provider Communication Information
+,,CWE,Preferred Method of Contact
+,,PLN,Provider Identifiers
+,,DTM,Effective Start Date of Provider Role
+,,DTM,Effective End Date of Provider Role
+,,XON,Provider Organization Name and Identifier
+,,XAD,Provider Organization Address
+,,PL,Provider Organization Location Information
+,,XTN,Provider Organization Communication Information
+,,CWE,Provider Organization Method of Contact
+,,,
+CTD,Contact Data,CWE,Contact Role
+,,XPN,Contact Name
+,,XAD,Contact Address
+,,PL,Contact Location
+,,XTN,Contact Communication Information
+,,CWE,Preferred Method of Contact
+,,PLN,Contact Identifiers
