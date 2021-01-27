@@ -2318,3 +2318,89 @@ CTD,Contact Data,CWE,Contact Role
 ,,XTN,Contact Communication Information
 ,,CWE,Preferred Method of Contact
 ,,PLN,Contact Identifiers
+,,,
+GOL,Goal Detail,ID,Action Code
+,,DTM,Action Date/Time
+,,CWE,Goal ID
+,,EI,Goal Instance ID
+,,EI,Episode of Care ID
+,,NM,Goal List Priority
+,,DTM,Goal Established Date/Time
+,,DTM,Expected Goal Achieve Date/Time
+,,CWE,Goal Classification
+,,CWE,Goal Management Discipline
+,,CWE,Current Goal Review Status
+,,DTM,Current Goal Review Date/Time
+,,DTM,Next Goal Review Date/Time
+,,DTM,Previous Goal Review Date/Time
+,,TQ,Goal Review Interval
+,,CWE,Goal Evaluation
+,,ST,Goal Evaluation Comment
+,,CWE,Goal Life Cycle Status
+,,DTM,Goal Life Cycle Status Date/Time
+,,CWE,Goal Target Type
+,,XPN,Goal Target Name
+,,CNE,Mood Code
+,,,
+PRB,Problem Details,ID,Action Code
+,,DTM,Action Date/Time
+,,CWE,Problem ID
+,,EI,Problem Instance ID
+,,EI,Episode of Care ID
+,,NM,Problem List Priority
+,,DTM,Problem Established Date/Time
+,,DTM,Anticipated Problem Resolution Date/Time
+,,DTM,Actual Problem Resolution Date/Time
+,,CWE,Problem Classification
+,,CWE,Problem Management Discipline
+,,CWE,Problem Persistence
+,,CWE,Problem Confirmation Status
+,,CWE,Problem Life Cycle Status
+,,DTM,Problem Life Cycle Status Date/Time
+,,DTM,Problem Date of Onset
+,,ST,Problem Onset Text
+,,CWE,Problem Ranking
+,,CWE,Certainty of Problem
+,,NM,Probability of Problem (0-1)
+,,CWE,Individual Awareness of Problem
+,,CWE,Problem Prognosis
+,,CWE,Individual Awareness of Prognosis
+,,ST,Family/Significant Other Awareness of Problem/Prognosis
+,,CWE,Security/Sensitivity
+,,CWE,Problem Severity
+,,CWE,Problem Perspective
+,,CNE,Mood Code
+,,,
+PTH,Pathway,ID,Action Code
+,,CWE,Pathway ID
+,,EI,Pathway Instance ID
+,,DTM,Pathway Established Date/Time
+,,CWE,Pathway Life Cycle Status
+,,DTM,Change Pathway Life Cycle Status Date/Time
+,,CNE,Mood Code
+,,,
+VAR,Variance,EI,Variance Instance ID
+,,DTM,Documented Date/Time
+,,DTM,Stated Variance Date/Time
+,,XCN,Variance Originator
+,,CWE,Variance Classification
+,,ST,Variance Description
+,,,
+REL,Clinical Relationship Segment,SI,Set ID
+,,CWE,Relationship Type
+,,EI,This Relationship Instance Identifier
+,,EI,Source Information Instance Identifier
+,,EI,Target Information Instance Identifier
+,,EI,Asserting Entity Instance ID
+,,XCN,Asserting Person
+,,XON,Asserting Organization
+,,XAD,Assertor Address
+,,XTN,Assertor Contact
+,,DR,Assertion Date Range
+,,ID,Negation Indicator
+,,CWE,Certainty of Relationship
+,,NM,Priority No
+,,NM,Priority Sequence No (rel preference for consideration)
+,,ID,Separability Indicator
+,,ID,Source Information Instance Object Type
+,,ID,Target Information Instance Object Type
