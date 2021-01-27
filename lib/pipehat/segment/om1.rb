@@ -54,13 +54,13 @@ module Pipehat
       add_field :exclusive_test,                                                               :ID
       add_field :diagnostic_serv_sect_id,                                                      :ID
       add_field :taxonomic_classification_code,                                                :CWE
-      add_field :other_names,                                                                  :ST
+      add_field :other_names_51,                                                               :ST
       add_field :replacement_producers_service_test_observation_id,                            :CWE
       add_field :prior_resuts_instructions,                                                    :TX
       add_field :special_instructions,                                                         :TX
       add_field :test_category,                                                                :CWE
       add_field :observation_identifier_associated_with_producers_service_test_observation_id, :CWE
-      add_field :typical_turn_around_time,                                                     :CQ
+      add_field :typical_turn_around_time_57,                                                  :CQ
       add_field :gender_restriction,                                                           :CWE
       add_field :age_restriction,                                                              :NR
     end

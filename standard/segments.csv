@@ -1811,13 +1811,13 @@ OM1,General Segment,NM,Sequence Number
 ,,ID,Exclusive Test
 ,,ID,Diagnostic Serv Sect ID
 ,,CWE,Taxonomic Classification Code
-,,ST,Other Names
+,,ST,Other Names 51
 ,,CWE,Replacement Producer's Service/Test/Observation ID
 ,,TX,Prior Resuts Instructions
 ,,TX,Special Instructions
 ,,CWE,Test Category
 ,,CWE,Observation/Identifier associated with Producer’s Service/Test/Observation ID
-,,CQ,Typical Turn-Around Time
+,,CQ,Typical Turn-Around Time 57
 ,,CWE,Gender Restriction
 ,,NR,Age Restriction
 ,,,
