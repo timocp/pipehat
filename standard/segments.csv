@@ -2552,3 +2552,31 @@ EQP,Equipment/log Service,CWE,Event type
 ,,,
 DST,Transport Destination,CWE,Destination
 ,,CWE,Route
+,,,
+NCK,System Clock,DTM,System Date/Time
+,,,
+NSC,Application Status Change,CWE,Application Change Type
+,,ST,Current CPU
+,,ST,Current Fileserver
+,,HD,Current Application
+,,HD,Current Facility
+,,ST,New CPU
+,,ST,New Fileserver
+,,HD,New Application
+,,HD,New Facility
+,,,
+NST,Application control level statistics,ID,Statistics Available
+,,ST,Source Identifier
+,,ID,Source Type
+,,DTM,Statistics Start
+,,DTM,Statistics End
+,,NM,Receive Character Count
+,,NM,Send Character Count
+,,NM,Messages Received
+,,NM,Messages Sent
+,,NM,Checksum Errors Received
+,,NM,Length Errors Received
+,,NM,Other Errors Received
+,,NM,Connect Timeouts
+,,NM,Receive Timeouts
+,,NM,Application control-level Errors
