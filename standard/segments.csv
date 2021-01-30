@@ -2580,3 +2580,140 @@ NST,Application control level statistics,ID,Statistics Available
 ,,NM,Connect Timeouts
 ,,NM,Receive Timeouts
 ,,NM,Application control-level Errors
+,,,
+AFF,Professional Affiliation,SI,Set ID
+,,XON,Professional Organization
+,,XAD,Professional Organization Address
+,,DR,Professional Organization Affiliation Date Range
+,,ST,Professional Affiliation Additional Information
+,,,
+CER,Certificate Detail,SI,Set ID
+,,ST,Serial Number
+,,ST,Version
+,,XON,Granting Authority
+,,XCN,Issuing Authority
+,,ED,Signature
+,,ID,Granting Country
+,,CWE,Granting State/Province
+,,CWE,Granting County/Parish
+,,CWE,Certificate Type
+,,CWE,Certificate Domain
+,,EI,Subject ID
+,,ST,Subject Name
+,,CWE,Subject Directory Attribute Extension
+,,CWE,Subject Public Key Info
+,,CWE,Authority Key Identifier
+,,ID,Basic Constraint
+,,CWE,CRL Distribution Point
+,,ID,Jurisdiction Country
+,,CWE,Jurisdiction State/Province
+,,CWE,Jurisdiction County/Parish
+,,CWE,Jurisdiction Breadth
+,,DTM,Granting Date
+,,DTM,Issuing Date
+,,DTM,Activation Date
+,,DTM,Inactivation Date
+,,DTM,Expiration Date
+,,DTM,Renewal Date
+,,DTM,Revocation Date
+,,CWE,Revocation Reason Code
+,,CWE,Certificate Status Code
+,,,
+EDU,Educational Detail,SI,Set ID
+,,CWE,Academic Degree
+,,DR,Academic Degree Program Date Range
+,,DR,Academic Degree Program Participation Date Range
+,,DT,Academic Degree Granted Date
+,,XON,School
+,,CWE,School Type Code
+,,XAD,School Address
+,,CWE,Major Field of Study
+,,,
+LAN,Language Detail,SI,Set ID
+,,CWE,Language Code
+,,CWE,Language Ability Code
+,,CWE,Language Proficiency Code
+,,,
+ORG,Practitioner Organization Unit,SI,Set ID
+,,CWE,Organization Unit Code
+,,CWE,Organization Unit Type Code
+,,ID,Primary Org Unit Indicator
+,,CX,Practitioner Org Unit Identifier
+,,CWE,Health Care Provider Type Code
+,,CWE,Health Care Provider Classification Code
+,,CWE,Health Care Provider Area of Specialization Code
+,,DR,Effective Date Range
+,,CWE,Employment Status Code
+,,ID,Board Approval Indicator
+,,ID,Primary Care Physician Indicator
+,,CWE,Cost Center Code
+,,,
+PRA,Practitioner Detail,CWE,Primary Key Value
+,,CWE,Practitioner Group
+,,CWE,Practitioner Category
+,,ID,Provider Billing
+,,SPD,Specialty
+,,PLN,Practitioner ID Numbers
+,,PIP,Privileges
+,,DT,Date Entered Practice
+,,CWE,Institution
+,,DT,Date Left Practice
+,,CWE,Government Reimbursement Billing Eligibility
+,,SI,Set ID
+,,,
+ROL,Role,EI,Role Instance ID
+,,ID,Action Code
+,,CWE,Role
+,,XCN,Role Person
+,,DTM,Role Begin Date/Time
+,,DTM,Role End Date/Time
+,,CWE,Role Duration
+,,CWE,Role Action Reason
+,,CWE,Provider Type
+,,CWE,Organization Unit Type
+,,XAD,Office/Home Address/Birthplace
+,,XTN,Phone
+,,PL,Person's Location
+,,XON,Organization
+,,,
+STF,Staff Identification,CWE,Primary Key Value
+,,CX,Staff Identifier List
+,,XPN,Staff Name
+,,CWE,Staff Type
+,,CWE,Administrative Sex
+,,DTM,Date/Time of Birth
+,,ID,Active/Inactive Flag
+,,CWE,Department
+,,CWE,Hospital Service
+,,XTN,Phone
+,,XAD,Office/Home Address/Birthplace
+,,DIN,Institution Activation Date
+,,DIN,Institution Inactivation Date
+,,CWE,Backup Person ID
+,,ST,E-Mail Address
+,,CWE,Preferred Method of Contact
+,,CWE,Marital Status
+,,ST,Job Title
+,,JCC,Job Code/Class
+,,CWE,Employment Status Code
+,,ID,Additional Insured on Auto
+,,DLN,Driver's License Number
+,,ID,Copy Auto Ins
+,,DT,Auto Ins Expires
+,,DT,Date Last DMV Review
+,,DT,Date Next DMV Review
+,,CWE,Race
+,,CWE,Ethnic Group
+,,ID,Re-activation Approval Indicator
+,,CWE,Citizenship
+,,DTM,Date/Time of Death
+,,ID,Death Indicator
+,,CWE,Institution Relationship Type Code
+,,DR,Institution Relationship Period
+,,DT,Expected Return Date
+,,CWE,Cost Center Code
+,,ID,Generic Classification Indicator
+,,CWE,Inactive Reason Code
+,,CWE,Generic resource type or category
+,,CWE,Religion
+,,ED,Signature
