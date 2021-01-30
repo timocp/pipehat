@@ -42,7 +42,11 @@ class TypesTest < Minitest::Test
     [Pipehat::Segment::SCH, :appointment_timing_quantity, :quantity, :units],
     [Pipehat::Segment::SCH, :appointment_timing_quantity, :interval, :repeat_pattern],
     [Pipehat::Segment::GOL, :goal_review_interval, :quantity, :units],
-    [Pipehat::Segment::GOL, :goal_review_interval, :interval, :repeat_pattern]
+    [Pipehat::Segment::GOL, :goal_review_interval, :interval, :repeat_pattern],
+    [Pipehat::Segment::ECD, :requested_completion_time, :quantity, :units],
+    [Pipehat::Segment::ECD, :requested_completion_time, :interval, :repeat_pattern],
+    [Pipehat::Segment::INV, :on_board_stability_duration, :quantity, :units],
+    [Pipehat::Segment::INV, :on_board_stability_duration, :interval, :repeat_pattern]
   ]
 
   # dynamically test each named field / component / subcomponent

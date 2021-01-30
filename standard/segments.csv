@@ -2404,3 +2404,151 @@ REL,Clinical Relationship Segment,SI,Set ID
 ,,ID,Separability Indicator
 ,,ID,Source Information Instance Object Type
 ,,ID,Target Information Instance Object Type
+,,,
+EQU,Equipment Detail,EI,Equipment Instance Identifier
+,,DTM,Event Date/Time
+,,CWE,Equipment State
+,,CWE,Local/Remote Control State
+,,CWE,Alert Level
+,,DTM,Expected date/time of the next status change
+,,,
+ISD,Interaction Status Detail,NM,Reference Interaction Number
+,,CWE,Interaction Type Identifier
+,,CWE,Interaction Active State
+,,,
+SAC,Specimen Container detail,EI,External Accession Identifier
+,,EI,Accession Identifier
+,,EI,Container Identifier
+,,EI,Primary (Parent) Container Identifier
+,,EI,Equipment Container Identifier
+,,SPS,Specimen Source
+,,DTM,Registration Date/Time
+,,CWE,Container Status
+,,CWE,Carrier Type
+,,EI,Carrier Identifier
+,,NA,Position in Carrier
+,,CWE,Tray Type – SAC
+,,EI,Tray Identifier
+,,NA,Position in Tray
+,,CWE,Location
+,,NM,Container Height
+,,NM,Container Diameter
+,,NM,Barrier Delta
+,,NM,Bottom Delta
+,,CWE,Container Height/Diameter/Delta Units
+,,NM,Container Volume
+,,NM,Available Specimen Volume
+,,NM,Initial Specimen Volume
+,,CWE,Volume Units
+,,CWE,Separator Type
+,,CWE,Cap Type
+,,CWE,Additive
+,,CWE,Specimen Component
+,,SN,Dilution Factor
+,,CWE,Treatment
+,,SN,Temperature
+,,NM,Hemolysis Index
+,,CWE,Hemolysis Index Units
+,,NM,Lipemia Index
+,,CWE,Lipemia Index Units
+,,NM,Icterus Index
+,,CWE,Icterus Index Units
+,,NM,Fibrin Index
+,,CWE,Fibrin Index Units
+,,CWE,System Induced Contaminants
+,,CWE,Drug Interference
+,,CWE,Artificial Blood
+,,CWE,Special Handling Code
+,,CWE,Other Environmental Factors
+,,CQ,Container Length
+,,CQ,Container Width
+,,CWE,Container Form
+,,CWE,Container Material
+,,CWE,Container Common Name
+,,,
+INV,Inventory Detail,CWE,Substance Identifier
+,,CWE,Substance Status
+,,CWE,Substance Type
+,,CWE,Inventory Container Identifier
+,,CWE,Container Carrier Identifier
+,,CWE,Position on Carrier
+,,NM,Initial Quantity
+,,NM,Current Quantity
+,,NM,Available Quantity
+,,NM,Consumption Quantity
+,,CWE,Quantity Units
+,,DTM,Expiration Date/Time
+,,DTM,First Used Date/Time
+,,TQ,On Board Stability Duration
+,,CWE,Test/Fluid Identifier(s)
+,,ST,Manufacturer Lot Number
+,,CWE,Manufacturer Identifier
+,,CWE,Supplier Identifier
+,,CQ,On Board Stability Time
+,,CQ,Target Value
+,,CWE,Equipment State Indicator Type Code
+,,CQ,Equipment State Indicator Value
+,,,
+ECD,Equipment Command,NM,Reference Command Number
+,,CWE,Remote Control Command
+,,ID,Response Required
+,,TQ,Requested Completion Time
+,,TX,Parameters
+,,,
+ECR,Equipment Command Response,CWE,Command Response
+,,DTM,Date/Time Completed
+,,TX,Command Response Parameters
+,,,
+NDS,Notification Detail,NM,Notification Reference Number
+,,DTM,Notification Date/Time
+,,CWE,Notification Alert Severity
+,,CWE,Notification Code
+,,,
+CNS,Clear Notification,NM,Starting Notification Reference Number
+,,NM,Ending Notification Reference Number
+,,DTM,Starting Notification Date/Time
+,,DTM,Ending Notification Date/Time
+,,CWE,Starting Notification Code
+,,CWE,Ending Notification Code
+,,,
+TCC,Test Code Configuration,CWE,Universal Service Identifier
+,,EI,Equipment Test Application Identifier
+,,SPS,Specimen Source
+,,SN,Auto-Dilution Factor Default
+,,SN,Rerun Dilution Factor Default
+,,SN,Pre-Dilution Factor Default
+,,SN,Endogenous Content of Pre-Dilution Diluent
+,,NM,Inventory Limits Warning Level
+,,ID,Automatic Rerun Allowed
+,,ID,Automatic Repeat Allowed
+,,ID,Automatic Reflex Allowed
+,,SN,Equipment Dynamic Range
+,,CWE,Units
+,,CWE,Processing Type
+,,CWE,Test Criticality
+,,,
+TCD,Test Code Detail,CWE,Universal Service Identifier
+,,SN,Auto-Dilution Factor
+,,SN,Rerun Dilution Factor
+,,SN,Pre-Dilution Factor
+,,SN,Endogenous Content of Pre-Dilution Diluent
+,,ID,Automatic Repeat Allowed
+,,ID,Reflex Allowed
+,,CWE,Analyte Repeat Status
+,,CQ,Specimen Consumption Quantity
+,,NM,Pool Size
+,,CWE,Auto-Dilution Type
+,,,
+SID,Substance Identifier,CWE,Application/Method Identifier
+,,ST,Substance Lot Number
+,,ST,Substance Container Identifier
+,,CWE,Substance Manufacturer Identifier
+,,,
+EQP,Equipment/log Service,CWE,Event type
+,,ST,File Name
+,,DTM,Start Date/Time
+,,DTM,End Date/Time
+,,FT,Transaction Data
+,,,
+DST,Transport Destination,CWE,Destination
+,,CWE,Route
