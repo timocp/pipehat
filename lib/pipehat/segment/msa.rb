@@ -8,8 +8,8 @@ module Pipehat
       add_field :message_control_id,          :ST
       add_field :text_message,                :ST
       add_field :expected_sequence_number,    :NM
-      add_field :delayed_acknowledgment_type, :ST
-      add_field :error_condition,             :ST
+      add_field :delayed_acknowledgment_type, :ID
+      add_field :error_condition,             :CE
       add_field :message_waiting_number,      :NM
       add_field :message_waiting_priority,    :ID
     end

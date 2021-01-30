@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "pipehat/version"
 
 module Pipehat
@@ -6,6 +8,7 @@ end
 
 require "pipehat/parser"
 require "pipehat/segment/base"
+require "pipehat/segment/header"
 require "pipehat/node"
 require "pipehat/field/base"
 require "pipehat/repeat/base"

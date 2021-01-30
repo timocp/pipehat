@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-# Date/time
+# Date/Time
 Pipehat.define_type :DTM

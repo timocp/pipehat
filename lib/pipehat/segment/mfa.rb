@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+module Pipehat
+  module Segment
+    # Master File Acknowledgment
+    class MFA < Base
+      add_field :record_level_event_code,       :ID
+      add_field :mfn_control_id,                :ST
+      add_field :event_completion_date_time,    :DTM
+      add_field :mfn_record_level_error_return, :CWE
+      add_field :primary_key_value,             :Varies
+      add_field :primary_key_value_type,        :ID
+    end
+  end
+end

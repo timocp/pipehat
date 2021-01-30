@@ -1,0 +1,619 @@
+AD,Address,ST,Street Address
+,,ST,Other Designation
+,,ST,City
+,,ST,State or Province
+,,ST,Zip or Postal Code
+,,ID,Country
+,,ID,Address Type
+,,ST,Other Geographic Designation
+,,,
+AUI,Authorization Information,ST,Authorization Number
+,,DT,Date
+,,ST,Source
+,,,
+CCD,Charge Code and Date,ID,Invocation Event
+,,DTM,Date/time
+,,,
+CCP,Channel Calibration Parameters,NM,Channel Calibration Sensitivity Correction Factor
+,,NM,Channel Calibration Baseline
+,,NM,Channel Calibration Time Skew
+,,,
+CD,Channel Definition,WVI,Channel Identifier
+,,WVS,Waveform Source
+,,CSU,Channel Sensitivity and Units
+,,CCP,Channel Calibration Parameters
+,,NM,Channel Sampling Frequency
+,,NR,Minimum and Maximum Data Values
+,,,
+CE,Coded Element,ST,Identifier
+,,ST,Text
+,,ID,Name of Coding System
+,,ST,Alternate Identifier
+,,ST,Alternate Text
+,,ID,Name of Alternate Coding System
+,,,
+CF,Coded Element with Formatted Values,ST,Identifier
+,,FT,Formatted Text
+,,ID,Name of Coding System
+,,ST,Alternate Identifier
+,,FT,Alternate Formatted Text
+,,ID,Name of Alternate Coding System
+,,ST,Coding System Version ID
+,,ST,Alternate Coding System Version ID
+,,ST,Original Text
+,,ST,Second Alternate Identifier
+,,FT,Second Alternate Formatted Text
+,,ID,Name of Second Alternate Coding System
+,,ST,Second Alternate Coding System Version ID
+,,ST,Coding System OID
+,,ST,Value Set OID
+,,DTM,Value Set Version ID
+,,ST,Alternate Coding System OID
+,,ST,Alternate Value Set OID
+,,DTM,Alternate Value Set Version ID
+,,ST,Second Alternate Coding System OID
+,,ST,Second Alternate Value Set OID
+,,DTM,Second Alternate Value Set Version ID
+,,,
+CM,Composite
+,,,
+CNE,Coded with No Exceptions,ST,Identifier
+,,ST,Text
+,,ID,Name of Coding System
+,,ST,Alternate Identifier
+,,ST,Alternate Text
+,,ID,Name of Alternate Coding System
+,,ST,Coding System Version ID
+,,ST,Alternate Coding System Version ID
+,,ST,Original Text
+,,ST,Second Alternate Identifier
+,,ST,Second Alternate Text
+,,ID,Name of Second Alternate Coding System
+,,ST,Second Alternate Coding System Version ID
+,,ST,Coding System OID
+,,ST,Value Set OID
+,,DTM,Value Set Version ID
+,,ST,Alternate Coding System OID
+,,ST,Alternate Value Set OID
+,,DTM,Alternate Value Set Version ID
+,,ST,Second Alternate Coding System OID
+,,ST,Second Alternate Value Set OID
+,,DTM,Second Alternate Value Set Version ID
+,,,
+CNN,Composite ID Number and Name Simplified,ST,ID Number
+,,ST,Family Name
+,,ST,Given Name
+,,ST,Second and Further Given Names or Initials Thereof
+,,ST,"Suffix (e.g., JR or III)"
+,,ST,"Prefix (e.g., DR)"
+,,IS,"Degree (e.g., MD)"
+,,IS,Source Table
+,,IS,Assigning Authority - Namespace ID
+,,ST,Assigning Authority - Universal ID
+,,ID,Assigning Authority - Universal ID Type
+,,,
+CP,Composite Price,MO,Price
+,,ID,Price Type
+,,NM,From Value
+,,NM,To Value
+,,CWE,Range Units
+,,ID,Range Type
+,,,
+CQ,Composite Quantity with Units,NM,Quantity
+,,CWE,Units
+,,,
+CSU,Channel Sensitivity and Units,NM,Channel Sensitivity
+,,ST,Unit of Measure Identifier
+,,ST,Unit of Measure Description
+,,ID,Unit of Measure Coding System
+,,ST,Alternate Unit of Measure Identifier
+,,ST,Alternate Unit of Measure Description
+,,ID,Alternate Unit of Measure Coding System
+,,ST,Unit of Measure Coding System Version ID
+,,ST,Alternate Unit of Measure Coding System Version ID
+,,ST,Original Text
+,,ST,Second Alternate Unit of Measure Identifier
+,,ST,Second Alternate Unit of Measure Text
+,,ID,Name of Second Alternate Unit of Measure Coding System
+,,ST,Second Alternate Unit of Measure Coding System Version ID
+,,ST,Unit of Measure Coding System OID
+,,ST,Unit of Measure Value Set OID
+,,DTM,Unit of Measure Value Set Version ID
+,,ST,Alternate Unit of Measure Coding System OID
+,,ST,Alternate Unit of Measure Value Set OID
+,,DTM,Alternate Unit of Measure Value Set Version ID
+,,ST,Second Alternate Unit of Measure Coding System OID
+,,ST,Second Alternate Unit of Measure Value Set OID
+,,ST,Second Alternate Unit of Measure Value Set Version ID
+,,,
+CWE,Coded with Exceptions,ST,Identifier
+,,ST,Text
+,,ID,Name of Coding System
+,,ST,Alternate Identifier
+,,ST,Alternate Text
+,,ID,Name of Alternate Coding System
+,,ST,Coding System Version ID
+,,ST,Alternate Coding System Version ID
+,,ST,Original Text
+,,ST,Second Alternate Identifier
+,,ST,Second Alternate Text
+,,ID,Name of Second Alternate Coding System
+,,ST,Second Alternate Coding System Version ID
+,,ST,Coding System OID
+,,ST,Value Set OID
+,,DTM,Value Set Version ID
+,,ST,Alternate Coding System OID
+,,ST,Alternate Value Set OID
+,,DTM,Alternate Value Set Version ID
+,,ST,Second Alternate Coding System OID
+,,ST,Second Alternate Value Set OID
+,,DTM,Second Alternate Value Set Version ID
+,,,
+CX,Extended Composite ID with Check Digit,ST,ID Number
+,,ST,Identifier Check Digit
+,,ID,Check Digit Scheme
+,,HD,Assigning Authority
+,,ID,Identifier Type Code
+,,HD,Assigning Facility
+,,DT,Effective Date
+,,DT,Expiration Date
+,,CWE,Assigning Jurisdiction
+,,CWE,Assigning Agency or Department
+,,ST,Security Check
+,,ID,Security Check Scheme
+,,,
+DDI,Daily Deductible Information,NM,Delay Days
+,,MO,Monetary Amount
+,,NM,Number of Days
+,,,
+DIN,Date and Institution Name,DTM,Date
+,,CWE,Institution Name
+,,,
+DLD,Discharge to Location and Date,CWE,Discharge to Location
+,,DTM,Effective Date
+,,,
+DLN,Driver’s License Number,ST,Driver's License Number
+,,CWE,"Issuing State, Province, Country"
+,,DT,Expiration Date
+,,,
+DLT,Delta,NR,Normal Range
+,,NM,Numeric Threshold
+,,ID,Change Computation
+,,NM,Days Retained
+,,,
+DR,Date/Time Range,DTM,Range Start Date/Time
+,,DTM,Range End Date/Time
+,,,
+DT,Date,,
+,,,
+DTM,Date/Time,,
+,,,
+DTN,Day Type and Number,CWE,Day Type
+,,NM,Number of Days
+,,,
+ED,Encapsulated Data,HD,Source Application
+,,ID,Type of Data
+,,ID,Data Subtype
+,,ID,Encoding
+,,TX,Data
+,,,
+EI,Entity Identifier,ST,Entity Identifier
+,,IS,Namespace ID
+,,ST,Universal ID
+,,ID,Universal ID Type
+,,,
+EIP,Entity Identifier Pair,EI,Placer Assigned Identifier
+,,EI,Filler Assigned Identifier
+,,,
+ELD,Error Location and Description,ST,Segment ID
+,,NM,Segment Sequence
+,,NM,Field Position
+,,CE,Code Identifying Error
+,,,
+ERL,Message Location,ST,Segment ID
+,,SI,Segment Sequence
+,,SI,Field Position
+,,SI,Field Repetition
+,,SI,Component Number
+,,SI,Sub-Component Number
+,,,
+FC, Financial Class,CWE,Financial Class Code
+,,DTM,Effective Date
+,,,
+FN,Family Name,ST,Surname
+,,ST,Own Surname Prefix
+,,ST,Own Surname
+,,ST,Surname Prefix from Partner/Spouse
+,,ST,Surname from Partner/Spouse
+,,,
+FT,Formatted Text Data,,
+,,,
+GTS,General Timing Specification,,
+,,,
+HD,Hierarchic Designator,IS,Namespace ID
+,,ST,Universal ID
+,,ID,Universal ID Type
+,,,
+ICD,Insurance Certification Definition,CWE,Certification Patient Type
+,,ID,Certification Required
+,,DTM,Date/Time Certification Required
+,,,
+ID,Coded Value for HL7 Defined Tables,,
+,,,
+IS,Coded Value for User-Defined Tables,,
+,,,
+JCC,Job Code/Class,CWE,Job Code
+,,CWE,Job Class
+,,TX,Job Description Text
+,,,
+LA1,Location with Address Variation 1,IS,Point of Care
+,,IS,Room
+,,IS,Bed
+,,HD,Facility
+,,IS,Location Status
+,,IS,Patient Location Type
+,,IS,Building
+,,IS,Floor
+,,AD,Address
+,,,
+LA2,Location with Address Variation 2,IS,Point of Care
+,,IS,Room
+,,IS,Bed
+,,HD,Facility
+,,IS,Location Status
+,,IS,Patient Location Type
+,,IS,Building
+,,IS,Floor
+,,ST,Street Address
+,,ST,Other Designation
+,,ST,City
+,,ST,State or Province
+,,ST,Zip or Postal Code
+,,ID,Country
+,,ID,Address Type
+,,ST,Other Geographic Designation
+,,,
+MA,Multiplexed Array,NM,Sample Y From Channel 1
+,,NM,Sample Y From Channel 2
+,,NM,Sample Y From Channel 3
+,,NM,Sample Y From Channel 4
+,,,
+MO,Money,NM,Quantity
+,,ID,Denomination
+,,,
+MOC,Money and Code,MO,Monetary Amount
+,,CWE,Charge Code
+,,,
+MOP,Money or Percentage,ID,Money or Percentage Indicator
+,,NM,Money or Percentage Quantity
+,,ID,Monetary Denomination
+,,,
+MSG,Message Type,ID,Message Code
+,,ID,Trigger Event
+,,ID,Message Structure
+,,,
+NA,Numeric Array,NM,Value1
+,,NM,Value2
+,,NM,Value3
+,,NM,Value4
+,,,
+NDL,Name with Date and Location,CNN,Name
+,,DTM,Start Date/Time
+,,DTM,End Date/Time
+,,IS,Point of Care
+,,IS,Room
+,,IS,Bed
+,,HD,Facility
+,,IS,Location Status
+,,IS,Patient Location Type
+,,IS,Building
+,,IS,Floor
+,,,
+NM,Numeric,,
+,,,
+NR,Numeric Range,NM,Low Value
+,,NM,High Value
+,,,
+OCD,Occurrence Code and Date,CNE,Occurrence Code
+,,DT,Occurrence Date
+,,,
+OG,Observation Grouper,ST,Original Sub-Identifier
+,,NM,Group
+,,NM,Sequence
+,,ST,Identifier
+,,,
+OSD,Order Sequence Definition,ID,Sequence/Results Flag
+,,ST,Placer Order Number: Entity Identifier
+,,IS,Placer Order Number: Namespace ID
+,,ST,Filler Order Number: Entity Identifier
+,,IS,Filler Order Number: Namespace ID
+,,ST,Sequence Condition Value
+,,NM,Maximum Number of Repeats
+,,ST,Placer Order Number: Universal ID
+,,ID,Placer Order Number: Universal ID Type
+,,ST,Filler Order Number: Universal ID
+,,ID,Filler Order Number: Universal ID Type
+,,,
+OSP,Occurrence Span Code and Date,CNE,Occurrence Span Code
+,,DT,Occurrence Span Start Date
+,,DT,Occurrence Span Stop Date
+,,,
+PIP,Practitioner Institutional Privileges,CWE,Privilege
+,,CWE,Privilege Class
+,,DT,Expiration Date
+,,DT,Activation Date
+,,EI,Facility
+,,,
+PL,Person Location,HD,Point of Care
+,,HD,Room
+,,HD,Bed
+,,HD,Facility
+,,IS,Location Status
+,,IS,Person Location Type
+,,HD,Building
+,,HD,Floor
+,,ST,Location Description
+,,EI,Comprehensive Location Identifier
+,,HD,Assigning Authority for Location
+,,,
+PLN,Practitioner License or Other ID Number,ST,ID Number
+,,CWE,Type of ID Number
+,,ST,State/other Qualifying Information
+,,DT,Expiration Date
+,,,
+PPN,Performing Person Time Stamp,ST,Person Identifier
+,,FN,Family Name
+,,ST,Given Name
+,,ST,Second and Further Given Names or Initials Thereof
+,,ST,"Suffix (e.g., JR or III)"
+,,ST,"Prefix (e.g., DR)"
+,,IS,"Degree (e.g., MD)"
+,,CWE,Source Table
+,,HD,Assigning Authority
+,,ID,Name Type Code
+,,ST,Identifier Check Digit
+,,ID,Check Digit Scheme
+,,ID,Identifier Type Code
+,,HD,Assigning Facility
+,,DTM,Date/Time Action Performed
+,,ID,Name Representation Code
+,,CWE,Name Context
+,,DR,Name Validity Range
+,,ID,Name Assembly Order
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,ST,Professional Suffix
+,,CWE,Assigning Jurisdiction
+,,CWE,Assigning Agency or Department
+,,ST,Security Check
+,,ID,Security Check Scheme
+,,,
+PRL,Parent Result Link,CWE,Parent Observation Identifier
+,,ST,Parent Observation Sub-identifier
+,,TX,Parent Observation Value Descriptor
+,,,
+PT,Processing Type,ID,Processing ID
+,,ID,Processing Mode
+,,,
+PTA,Policy Type and Amount,CWE,Policy Type
+,,CWE,Amount Class
+,,NM,Money or Percentage Quantity
+,,MOP,Money or Percentage
+,,,
+QIP,Query Input Parameter List,ST,Segment Field Name
+,,ST,Values
+,,,
+QSC,Query Selection Criteria,ST,Segment Field Name
+,,ID,Relational Operator
+,,ST,Value
+,,ID,Relational Conjunction
+,,,
+RCD,Row Column Definition,ST,Segment Field Name
+,,ID,HL7 Data Type
+,,NM,Maximum Column Width
+,,,
+RFR,Reference Range,NR,Numeric Range
+,,CWE,Administrative Sex
+,,NR,Age Range
+,,NR,Gestational Age Range
+,,ST,Species
+,,ST,Race/subspecies
+,,TX,Conditions
+,,,
+RI,Repeat Interval,CWE,Repeat Pattern
+,,ST,Explicit Time Interval
+,,,
+RMC,Room Coverage,CWE,Room Type
+,,CWE,Amount Type
+,,NM,Coverage Amount
+,,MOP,Money or Percentage
+,,,
+RP,Reference Pointer,ST,Pointer
+,,HD,Application ID
+,,ID,Type of Data
+,,ID,Subtype
+,,,
+RPT,Repeat Pattern,CWE,Repeat Pattern Code
+,,ID,Calendar Alignment
+,,NM,Phase Range Begin Value
+,,NM,Phase Range End Value
+,,NM,Period Quantity
+,,CWE,Period Units
+,,ID,Institution Specified Time
+,,ID,Event
+,,NM,Event Offset Quantity
+,,CWE,Event Offset Units
+,,GTS,General Timing Specification
+,,,
+SAD,Street Address,ST,Street or Mailing Address
+,,ST,Street Name
+,,ST,Dwelling Number
+,,,
+SCV,Scheduling Class Value Pair,CWE,Parameter Class
+,,ST,Parameter Value
+,,,
+SI,Sequence ID,,
+,,,
+SN,Structured Numeric,ST,Comparator
+,,NM,Num1
+,,ST,Separator/Suffix
+,,NM,Num2
+,,,
+SNM,String of Telephone Number Digits,,
+,,,
+SPD,Specialty Description,ST,Specialty Name
+,,ST,Governing Board
+,,ID,Eligible or Certified
+,,DT,Date of Certification
+,,,
+SPS,Specimen Source,CWE,Specimen Source Name or Code
+,,CWE,Additives
+,,TX,Specimen Collection Method
+,,CWE,Body Site
+,,CWE,Site Modifier
+,,CWE,Collection Method Modifier Code
+,,CWE,Specimen Role
+,,,
+SRT,Sort Order,ST,Sort-by Field
+,,ID,Sequencing
+,,,
+ST,String Data,,
+,,,
+TM,Time,,
+,,,
+TQ,Timing Quantity,CQ,Quantity
+,,RI,Interval
+,,ST,Duration
+,,TS,Start Date/Time
+,,TS,End Date/Time
+,,ST,Priority
+,,ST,Condition
+,,TX,Text
+,,ID,Conjunction
+,,OSD,Order Sequencing
+,,CE,Occurrence Duration
+,,NM,Total Occurrences
+,,,
+TS,Time Stamp,DTM,Time
+,,ID,Degree of Precision
+,,,
+TX,Text Data,,
+,,,
+UVC,UB Value Code and Amount,CWE,Value Code
+,,MO,Value Amount
+,,NM,Non-Monetary Value Amount / Quantity
+,,CWE,Non-Monetary Value Amount / Units
+,,,
+VH,Visiting Hours,ID,Start Day Range
+,,ID,End Day Range
+,,TM,Start Hour Range
+,,TM,End Hour Range
+,,,
+VID,Version Identifier,ID,Version ID
+,,CWE,Internationalization Code
+,,CWE,International Version ID
+,,,
+VR,Value Range,ST,First Data Code Value
+,,ST,Last Data Code Value
+,,,
+WVI,Channel Identifier,NM,Channel Number
+,,ST,Channel Name
+,,,
+WVS,Waveform Source,ST,Source One Name
+,,ST,Source Two Name
+,,,
+XAD,Extended Address,SAD,Street Address
+,,ST,Other Designation
+,,ST,City
+,,ST,State or Province
+,,ST,Zip or Postal Code
+,,ID,Country
+,,ID,Address Type
+,,ST,Other Geographic Designation
+,,CWE,County/Parish Code
+,,CWE,Census Tract
+,,ID,Address Representation Code
+,,DR,Address Validity Range
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,CWE,Expiration Reason
+,,ID,Temporary Indicator
+,,ID,Bad Address Indicator
+,,ID,Address Usage
+,,ST,Addressee
+,,ST,Comment
+,,NM,Preference Order
+,,CWE,Protection Code
+,,EI,Address Identifier
+,,,
+XCN,Extended Composite ID Number and Name for Persons,ST,Person Identifier
+,,FN,Family Name
+,,ST,Given Name
+,,ST,Second and Further Given Names or Initials Thereof
+,,ST,"Suffix (e.g., JR or III)"
+,,ST,"Prefix (e.g., DR)"
+,,IS,"Degree (e.g., MD)"
+,,CWE,Source Table
+,,HD,Assigning Authority
+,,ID,Name Type Code
+,,ST,Identifier Check Digit
+,,ID,Check Digit Scheme
+,,ID,Identifier Type Code
+,,HD,Assigning Facility
+,,ID,Name Representation Code
+,,CWE,Name Context
+,,DR,Name Validity Range
+,,ID,Name Assembly Order
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,ST,Professional Suffix
+,,CWE,Assigning Jurisdiction
+,,CWE,Assigning Agency or Department
+,,ST,Security Check
+,,ID,Security Check Scheme
+,,,
+XON,Extended Composite Name and Identification Number for Organizations,ST,Organization Name
+,,CWE,Organization Name Type Code
+,,NM,ID Number
+,,NM,Identifier Check Digit
+,,ID,Check Digit Scheme
+,,HD,Assigning Authority
+,,ID,Identifier Type Code
+,,HD,Assigning Facility
+,,ID,Name Representation Code
+,,ST,Organization Identifier
+,,,
+XPN,Extended Person Name,FN,Family Name
+,,ST,Given Name
+,,ST,Second and Further Given Names or Initials Thereof
+,,ST,"Suffix (e.g., JR or III)"
+,,ST,"Prefix (e.g., DR)"
+,,IS,"Degree (e.g., MD)"
+,,ID,Name Type Code
+,,ID,Name Representation Code
+,,CWE,Name Context
+,,DR,Name Validity Range
+,,ID,Name Assembly Order
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,ST,Professional Suffix
+,,ST,Called By
+,,,
+XTN,Extended Telecommunication Number,ST,Telephone Number
+,,ID,Telecommunication Use Code
+,,ID,Telecommunication Equipment Type
+,,ST,Communication Address
+,,SNM,Country Code
+,,SNM,Area/City Code
+,,SNM,Local Number
+,,SNM,Extension
+,,ST,Any Text
+,,ST,Extension Prefix
+,,ST,Speed Dial Code
+,,ST,Unformatted Telephone Number
+,,DTM,Effective Start Date
+,,DTM,Expiration Date
+,,CWE,Expiration Reason
+,,CWE,Protection Code
+,,EI,Shared Telecommunication Identifier
+,,NM,Preference Order

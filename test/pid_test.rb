@@ -22,8 +22,8 @@ class PidTest < Minitest::Test
 
   def test_repeats
     pid = Pipehat::Segment::PID.new("PID||A~B")
-    assert_instance_of Pipehat::Field::ST, pid.patient_id
-    assert_instance_of Pipehat::Repeat::ST, pid.patient_id.repeat(1)
+    assert_instance_of Pipehat::Field::CX, pid.patient_id
+    assert_instance_of Pipehat::Repeat::CX, pid.patient_id.repeat(1)
     assert_equal "A", pid.patient_id.repeat(1).to_s
     assert_equal "B", pid.patient_id.repeat(2).to_s
     assert_equal "A", pid.patient_id[1].to_s

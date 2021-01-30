@@ -1,0 +1,2719 @@
+ADD,Addendum,ST,Addendum Continuation Pointer
+,,,
+BHS,Batch Header,ST,Batch Field Separator
+,,ST,Batch Encoding Characters
+,,HD,Batch Sending Application
+,,HD,Batch Sending Facility
+,,HD,Batch Receiving Application
+,,HD,Batch Receiving Facility
+,,DTM,Batch Creation Date/Time
+,,ST,Batch Security
+,,ST,Batch Name/ID/Type
+,,ST,Batch Comment
+,,ST,Batch Control ID
+,,ST,Reference Batch Control ID
+,,HD,Batch Sending Network Address
+,,HD,Batch Receiving Network Address
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ST,Special Access Restriction Instructions
+,,,
+BTS,Batch Trailer,ST,Batch Message Count
+,,ST,Batch Comment
+,,NM,Batch Totals
+,,,
+DSC,Continuation Pointer,ST,Continuation Pointer
+,,ID,Continuation Style
+,,,
+ERR,Error,ELD,Error Code and Location
+,,ERL,Error Location
+,,CWE,HL7 Error Code
+,,ID,Severity
+,,CWE,Application Error Code
+,,ST,Application Error Parameter
+,,TX,Diagnostic Information
+,,TX,User Message
+,,CWE,Inform Person Indicator
+,,CWE,Override Type
+,,CWE,Override Reason Code
+,,XTN,Help Desk Contact Point
+,,,
+FHS,File Header,ST,File Field Separator
+,,ST,File Encoding Characters
+,,HD,File Sending Application
+,,HD,File Sending Facility
+,,HD,File Receiving Application
+,,HD,File Receiving Facility
+,,DTM,File Creation Date/Time
+,,ST,File Security
+,,ST,File Name/ID
+,,ST,File Header Comment
+,,ST,File Control ID
+,,ST,Reference File Control ID
+,,HD,File Sending Network Address
+,,HD,File Receiving Network Address
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ST,Special Access Restriction Instructions
+,,,
+FTS,File Trailer,NM,File Batch Count
+,,ST,File Trailer Comment
+,,,
+MSA,Message Acknowledgment,ID,Acknowledgment Code
+,,ST,Message Control ID
+,,ST,Text Message
+,,NM,Expected Sequence Number
+,,ID,Delayed Acknowledgment Type
+,,CE,Error Condition
+,,NM,Message Waiting Number
+,,ID,Message Waiting Priority
+,,,
+MSH,Message Header,ST,Field Separator
+,,ST,Encoding Characters
+,,HD,Sending Application
+,,HD,Sending Facility
+,,HD,Receiving Application
+,,HD,Receiving Facility
+,,DTM,Date/Time of Message
+,,ST,Security
+,,MSG,Message Type
+,,ST,Message Control ID
+,,PT,Processing ID
+,,VID,Version ID
+,,NM,Sequence Number
+,,ST,Continuation Pointer
+,,ID,Accept Acknowledgment Type
+,,ID,Application Acknowledgment Type
+,,ID,Country Code
+,,ID,Character Set
+,,CWE,Principal Language Of Message
+,,ID,Alternate Character Set Handling Scheme
+,,EI,Message Profile Identifier
+,,XON,Sending Responsible Organization
+,,XON,Receiving Responsible Organization
+,,HD,Sending Network Address
+,,HD,Receiving Network Address
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ST,Special Access Restriction Instructions
+,,,
+NTE,Notes and Comments,SI,Set ID
+,,ID,Source of Comment
+,,FT,Comment
+,,CWE,Comment Type
+,,XCN,Entered By
+,,DTM,Entered Date/Time
+,,DTM,Effective Start Date
+,,DTM,Expiration Date
+,,CWE,Coded Comment
+,,,
+OVR,Override Segment,CWE,Business Rule Override Type
+,,CWE,Business Rule Override Code
+,,TX,Override Comments
+,,XCN,Override Entered By
+,,XCN,Override Authorized By
+,,,
+SFT,Software Segment,XON,Software Vendor Organization
+,,ST,Software Certified Version or Release Number
+,,ST,Software Product Name
+,,ST,Software Binary ID
+,,TX,Software Product Information
+,,DTM,Software Install Date
+,,,
+SGH, Segment Group Header,SI,Set ID – SGH
+,,ST,Segment Group Name
+,,,
+SGT,Segment Group Trailer,SI,Set ID – SGT
+,,ST,Segment Group Name
+,,,
+UAC,User Authentication Credential Segment,CWE,User Authentication Credential Type Code
+,,ED,User Authentication Credential
+,,,
+EVN,Event Type,ID,Event Type Code
+,,DTM,Recorded Date/Time
+,,DTM,Date/Time Planned Event
+,,CWE,Event Reason Code
+,,XCN,Operator ID
+,,DTM,Event Occurred
+,,HD,Event Facility
+,,,
+PID,Patient Identification,SI,Set ID
+,,CX,Patient ID
+,,CX,Patient Identifier List
+,,CX,Alternate Patient ID
+,,XPN,Patient Name
+,,XPN,Mother's Maiden Name
+,,DTM,Date/Time of Birth
+,,CWE,Administrative Sex
+,,XPN,Patient Alias
+,,CWE,Race
+,,XAD,Patient Address
+,,IS,County Code
+,,XTN,Phone Number - Home
+,,XTN,Phone Number - Business
+,,CWE,Primary Language
+,,CWE,Marital Status
+,,CWE,Religion
+,,CX,Patient Account Number
+,,ST,SSN Number
+,,DLN,Driver's License Number
+,,CX,Mother's Identifier
+,,CWE,Ethnic Group
+,,ST,Birth Place
+,,ID,Multiple Birth Indicator
+,,NM,Birth Order
+,,CWE,Citizenship
+,,CWE,Veterans Military Status
+,,CE,Nationality
+,,DTM,Patient Death Date and Time
+,,ID,Patient Death Indicator
+,,ID,Identity Unknown Indicator
+,,CWE,Identity Reliability Code
+,,DTM,Last Update Date/Time
+,,HD,Last Update Facility
+,,CWE,Taxonomic Classification Code
+,,CWE,Breed Code
+,,ST,Strain
+,,CWE,Production Class Code
+,,CWE,Tribal Citizenship
+,,XTN,Patient Telecommunication Information
+,,,
+PV1,Patient Visit,SI,Set ID
+,,CWE,Patient Class
+,,PL,Assigned Patient Location
+,,CWE,Admission Type
+,,CX,Preadmit Number
+,,PL,Prior Patient Location
+,,XCN,Attending Doctor
+,,XCN,Referring Doctor
+,,XCN,Consulting Doctor
+,,CWE,Hospital Service
+,,PL,Temporary Location
+,,CWE,Preadmit Test Indicator
+,,CWE,Re-admission Indicator
+,,CWE,Admit Source
+,,CWE,Ambulatory Status
+,,CWE,VIP Indicator
+,,XCN,Admitting Doctor
+,,CWE,Patient Type
+,,CX,Visit Number
+,,FC,Financial Class
+,,CWE,Charge Price Indicator
+,,CWE,Courtesy Code
+,,CWE,Credit Rating
+,,CWE,Contract Code
+,,DT,Contract Effective Date
+,,NM,Contract Amount
+,,NM,Contract Period
+,,CWE,Interest Code
+,,CWE,Transfer to Bad Debt Code
+,,DT,Transfer to Bad Debt Date
+,,CWE,Bad Debt Agency Code
+,,NM,Bad Debt Transfer Amount
+,,NM,Bad Debt Recovery Amount
+,,CWE,Delete Account Indicator
+,,DT,Delete Account Date
+,,CWE,Discharge Disposition
+,,DLD,Discharged to Location
+,,CWE,Diet Type
+,,CWE,Servicing Facility
+,,IS,Bed Status
+,,CWE,Account Status
+,,PL,Pending Location
+,,PL,Prior Temporary Location
+,,DTM,Admit Date/Time
+,,DTM,Discharge Date/Time
+,,NM,Current Patient Balance
+,,NM,Total Charges
+,,NM,Total Adjustments
+,,NM,Total Payments
+,,CX,Alternate Visit ID
+,,CWE,Visit Indicator
+,,XCN,Other Healthcare Provider
+,,ST,Service Episode Description
+,,CX,Service Episode Identifier
+,,,
+PV2,Patient Visit - Additional Information,PL,Prior Pending Location
+,,CWE,Accommodation Code
+,,CWE,Admit Reason
+,,CWE,Transfer Reason
+,,ST,Patient Valuables
+,,ST,Patient Valuables Location
+,,CWE,Visit User Code
+,,DTM,Expected Admit Date/Time
+,,DTM,Expected Discharge Date/Time
+,,NM,Estimated Length of Inpatient Stay
+,,NM,Actual Length of Inpatient Stay
+,,ST,Visit Description
+,,XCN,Referral Source Code
+,,DT,Previous Service Date
+,,ID,Employment Illness Related Indicator
+,,CWE,Purge Status Code
+,,DT,Purge Status Date
+,,CWE,Special Program Code
+,,ID,Retention Indicator
+,,NM,Expected Number of Insurance Plans
+,,CWE,Visit Publicity Code
+,,ID,Visit Protection Indicator
+,,XON,Clinic Organization Name
+,,CWE,Patient Status Code
+,,CWE,Visit Priority Code
+,,DT,Previous Treatment Date
+,,CWE,Expected Discharge Disposition
+,,DT,Signature on File Date
+,,DT,First Similar Illness Date
+,,CWE,Patient Charge Adjustment Code
+,,CWE,Recurring Service Code
+,,ID,Billing Media Code
+,,DTM,Expected Surgery Date and Time
+,,ID,Military Partnership Code
+,,ID,Military Non-Availability Code
+,,ID,Newborn Baby Indicator
+,,ID,Baby Detained Indicator
+,,CWE,Mode of Arrival Code
+,,CWE,Recreational Drug Use Code
+,,CWE,Admission Level of Care Code
+,,CWE,Precaution Code
+,,CWE,Patient Condition Code
+,,CWE,Living Will Code
+,,CWE,Organ Donor Code
+,,CWE,Advance Directive Code
+,,DT,Patient Status Effective Date
+,,DTM,Expected LOA Return Date/Time
+,,DTM,Expected Pre-admission Testing Date/Time
+,,CWE,Notify Clergy Code
+,,DT,Advance Directive Last Verified Date
+,,,
+NK1,Next of Kin / Associated Parties,SI,Set ID
+,,XPN,Name
+,,CWE,Relationship
+,,XAD,Address
+,,XTN,Phone Number
+,,XTN,Business Phone Number
+,,CWE,Contact Role
+,,DT,Start Date
+,,DT,End Date
+,,ST,Next of Kin / Associated Parties Job Title
+,,JCC,Next of Kin / Associated Parties Job Code/Class
+,,CX,Next of Kin / Associated Parties Employee Number
+,,XON,Organization Name
+,,CWE,Marital Status
+,,CWE,Administrative Sex
+,,DTM,Date/Time of Birth
+,,CWE,Living Dependency
+,,CWE,Ambulatory Status
+,,CWE,Citizenship
+,,CWE,Primary Language
+,,CWE,Living Arrangement
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,CWE,Student Indicator
+,,CWE,Religion
+,,XPN,Mother's Maiden Name
+,,CWE,Nationality
+,,CWE,Ethnic Group
+,,CWE,Contact Reason
+,,XPN,Contact Person's Name
+,,XTN,Contact Person's Telephone Number
+,,XAD,Contact Person's Address
+,,CX,Next of Kin/Associated Party's Identifiers
+,,CWE,Job Status
+,,CWE,Race
+,,CWE,Handicap
+,,ST,Contact Person Social Security Number
+,,ST,Next of Kin Birth Place
+,,CWE,VIP Indicator
+,,XTN,Next of Kin Telecommunication Information
+,,XTN,Contact Person's Telecommunication Information
+,,,
+AL1,Patient Allergy Information,SI,Set ID
+,,CWE,Allergen Type Code
+,,CWE,Allergen Code/Mnemonic/Description
+,,CWE,Allergy Severity Code
+,,ST,Allergy Reaction Code
+,,DT,Identification Date
+,,,
+IAM,Patient Adverse Reaction Information,SI,Set ID
+,,CWE,Allergen Type Code
+,,CWE,Allergen Code/Mnemonic/Description
+,,CWE,Allergy Severity Code
+,,ST,Allergy Reaction Code
+,,CNE,Allergy Action Code
+,,EI,Allergy Unique Identifier
+,,ST,Action Reason
+,,CWE,Sensitivity to Causative Agent Code
+,,CWE,Allergen Group Code/Mnemonic/Description
+,,DT,Onset Date
+,,ST,Onset Date Text
+,,DTM,Reported Date/Time
+,,XPN,Reported By
+,,CWE,Relationship to Patient Code
+,,CWE,Alert Device Code
+,,CWE,Allergy Clinical Status Code
+,,XCN,Statused by Person
+,,XON,Statused by Organization
+,,DTM,Statused at Date/Time
+,,XCN,Inactivated by Person
+,,DTM,Inactivated Date/Time
+,,XCN,Initially Recorded by Person
+,,DTM,Initially Recorded Date/Time
+,,XCN,Modified by Person
+,,DTM,Modified Date/Time
+,,CWE,Clinician Identified Code
+,,XON,Initially Recorded by Organization
+,,XON,Modified by Organization
+,,XON,Inactivated by Organization
+,,,
+IAR,Allergy Reaction,CWE,Allergy Reaction Code
+,,CWE,Allergy Severity Code
+,,CWE,Sensitivity to Causative Agent Code
+,,ST,Management
+,,,
+NPU,Bed Status Update,PL,Bed Location
+,,CWE,Bed Status
+,,,
+MRG,Merge Patient Information,CX,Prior Patient Identifier List
+,,CX,Prior Alternate Patient ID
+,,CX,Prior Patient Account Number
+,,CX,Prior Patient ID
+,,CX,Prior Visit Number
+,,CX,Prior Alternate Visit ID
+,,XPN,Prior Patient Name
+,,,
+PD1,Patient Additional Demographic,CWE,Living Dependency
+,,CWE,Living Arrangement
+,,XON,Patient Primary Facility
+,,XCN,Patient Primary Care Provider Name & ID No.
+,,CWE,Student Indicator
+,,CWE,Handicap
+,,CWE,Living Will Code
+,,CWE,Organ Donor Code
+,,ID,Separate Bill
+,,CX,Duplicate Patient
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,DT,Protection Indicator Effective Date
+,,XON,Place of Worship
+,,CWE,Advance Directive Code
+,,CWE,Immunization Registry Status
+,,DT,Immunization Registry Status Effective Date
+,,DT,Publicity Code Effective Date
+,,CWE,Military Branch
+,,CWE,Military Rank/Grade
+,,CWE,Military Status
+,,DT,Advance Directive Last Verified Date
+,,DT,Retirement Date
+,,,
+DB1,Disability,SI,Set ID
+,,CWE,Disabled Person Code
+,,CX,Disabled Person Identifier
+,,ID,Disability Indicator
+,,DT,Disability Start Date
+,,DT,Disability End Date
+,,DT,Disability Return to Work Date
+,,DT,Disability Unable to Work Date
+,,,
+PDA,Patient Death and Autopsy,CWE,Death Cause Code
+,,PL,Death Location
+,,ID,Death Certified Indicator
+,,DTM,Death Certificate Signed Date/Time
+,,XCN,Death Certified By
+,,ID,Autopsy Indicator
+,,DR,Autopsy Start and End Date/Time
+,,XCN,Autopsy Performed By
+,,ID,Coroner Indicator
+,,,
+ARV,Access Restriction,SI,Set ID
+,,CNE,Access Restriction Action Code
+,,CWE,Access Restriction Value
+,,CWE,Access Restriction Reason
+,,ST,Special Access Restriction Instructions
+,,DR,Access Restriction Date Range
+,,CWE,Security Classification Tag
+,,CWE,Security Handling Instructions
+,,ERL,Access Restriction Message Location
+,,EI,Access Restriction Instance Identifier
+,,,
+OH1,Person Employment Status,SI,Set ID
+,,ID,Action Code
+,,CWE,Employment Status
+,,DT,Employment Status Start Date
+,,DT,Employment Status End Date
+,,DT,Entered Date
+,,EI,Employment Status Unique Identifier
+,,,
+OH2,Past or Present Job,SI,Set ID
+,,ID,Action Code
+,,DT,Entered Date
+,,CWE,Occupation
+,,CWE,Industry
+,,CWE,Work Classification
+,,DT,Job Start Date
+,,DT,Job End Date
+,,CWE,Work Schedule
+,,NM,Average Hours worked per Day
+,,NM,Average Days Worked per Week
+,,XON,Employer Organization
+,,XAD,Employer Address
+,,CWE,Supervisory Level
+,,ST,Job Duties
+,,FT,Occupational Hazards
+,,EI,Job Unique Identifier
+,,CWE,Current Job Indicator
+,,,
+OH3,Usual Work,SI,Set ID
+,,ID,Action Code
+,,CWE,Occupation
+,,CWE,Industry
+,,NM,Usual Occupation Duration (years)
+,,DT,Start year
+,,DT,Entered Date
+,,EI,Work Unique Identifier
+,,,
+OH4,Combat Zone Work,SI,Set ID
+,,ID,Action Code
+,,DT,Combat Zone Start Date
+,,DT,Combat Zone End Date
+,,DT,Entered Date
+,,EI,Combat Zone Unique Identifier
+,,,
+ORC,Common Order,ID,Order Control
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,EI,Placer Order Group Number
+,,ID,Order Status
+,,ID,Response Flag
+,,TQ,Quantity/Timing
+,,EIP,Parent Order
+,,DTM,Date/Time of Order Event
+,,XCN,Entered By
+,,XCN,Verified By
+,,XCN,Ordering Provider
+,,PL,Enterer's Location
+,,XTN,Call Back Phone Number
+,,DTM,Order Effective Date/Time
+,,CWE,Order Control Code Reason
+,,CWE,Entering Organization
+,,CWE,Entering Device
+,,XCN,Action By
+,,CWE,Advanced Beneficiary Notice Code
+,,XON,Ordering Facility Name
+,,XAD,Ordering Facility Address
+,,XTN,Ordering Facility Phone Number
+,,XAD,Ordering Provider Address
+,,CWE,Order Status Modifier
+,,CWE,Advanced Beneficiary Notice Override Reason
+,,DTM,Filler's Expected Availability Date/Time
+,,CWE,Confidentiality Code
+,,CWE,Order Type
+,,CNE,Enterer Authorization Mode
+,,CWE,Parent Universal Service Identifier
+,,DT,Advanced Beneficiary Notice Date
+,,CX,Alternate Placer Order Number
+,,CWE,Order Workflow Profile
+,,ID,Action Code
+,,DR,Order Status Date Range
+,,DTM,Order Creation Date/Time
+,,EI,Filler Order Group Number
+,,,
+BLG,Billing,CCD,When to Charge
+,,ID,Charge Type
+,,CX,Account ID
+,,CWE,Charge Type Reason
+,,,
+OBR,Observation Request,SI,Set ID
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,CWE,Universal Service Identifier
+,,ID,Priority
+,,TS,Requested Date/Time
+,,DTM,Observation Date/Time
+,,DTM,Observation End Date/Time
+,,CQ,Collection Volume
+,,XCN,Collector Identifier
+,,ID,Specimen Action Code
+,,CWE,Danger Code
+,,CWE,Relevant Clinical Information
+,,TS,Specimen Received Date/Time
+,,SPS,Specimen Source
+,,XCN,Ordering Provider
+,,XTN,Order Callback Phone Number
+,,ST,Placer Field 1
+,,ST,Placer Field 2
+,,ST,Filler Field 1
+,,ST,Filler Field 2
+,,DTM,Results Rpt/Status Chng – Date/Time
+,,MOC,Charge to Practice
+,,ID,Diagnostic Serv Sect ID
+,,ID,Result Status
+,,PRL,Parent Result
+,,TQ,Quantity/Timing
+,,XCN,Result Copies To
+,,EIP,Parent Results Observation Identifier
+,,ID,Transportation Mode
+,,CWE,Reason for Study
+,,NDL,Principal Result Interpreter
+,,NDL,Assistant Result Interpreter
+,,NDL,Technician
+,,NDL,Transcriptionist
+,,DTM,Scheduled Date/Time
+,,NM,Number of Sample Containers
+,,CWE,Transport Logistics of Collected Sample
+,,CWE,Collector's Comment
+,,CWE,Transport Arrangement Responsibility
+,,ID,Transport Arranged
+,,ID,Escort Required
+,,CWE,Planned Patient Transport Comment
+,,CNE,Procedure Code
+,,CNE,Procedure Code Modifier
+,,CWE,Placer Supplemental Service Information
+,,CWE,Filler Supplemental Service Information
+,,CWE,Medically Necessary Duplicate Procedure Reason
+,,CWE,Result Handling
+,,CWE,Parent Universal Service Identifier
+,,EI,Observation Group ID
+,,EI,Parent Observation Group ID
+,,CX,Alternate Placer Order Number
+,,EIP,Parent Order
+,,ID,Action Code
+,,,
+TQ1,Timing/Quantity,SI,Set ID
+,,CQ,Quantity
+,,RPT,Repeat Pattern
+,,TM,Explicit Time
+,,CQ,Relative Time and Units
+,,CQ,Service Duration
+,,DTM,Start date/time
+,,DTM,End date/time
+,,CWE,Priority
+,,TX,Condition text
+,,TX,Text instruction
+,,ID,Conjunction
+,,CQ,Occurrence duration
+,,NM,Total occurrences
+,,,
+TQ2,Timing/Quantity Relationship,SI,Set ID
+,,ID,Sequence/Results Flag
+,,EI,Related Placer Number
+,,EI,Related Filler Number
+,,EI,Related Placer Group Number
+,,ID,Sequence Condition Code
+,,ID,Cyclic Entry/Exit Indicator
+,,CQ,Sequence Condition Time Interval
+,,NM,Cyclic Group Maximum Number of Repeats
+,,ID,Special Service Request Relationship
+,,,
+IPC, Imaging Procedure Control Segment,EI,Accession Identifier
+,,EI,Requested Procedure ID
+,,EI,Study Instance UID
+,,EI,Scheduled Procedure Step ID
+,,CWE,Modality
+,,CWE,Protocol Code
+,,EI,Scheduled Station Name
+,,CWE,Scheduled Procedure Step Location
+,,ST,Scheduled Station AE Title
+,,ID,Action Code
+,,,
+ODS,"Dietary Orders, Supplements, and Preferences",ID,Type
+,,CWE,Service Period
+,,CWE,"Diet, Supplement, or Preference Code"
+,,ST,Text Instruction
+,,,
+ODT, Diet Tray Instructions,CWE,Tray Type
+,,CWE,Service Period
+,,ST,Text Instruction
+,,,
+RQD,Requisition Detail,SI,Requisition Line Number
+,,CWE,Item Code - Internal
+,,CWE,Item Code - Externa
+,,CWE,Hospital Item Code
+,,NM,Requisition Quantity
+,,CWE,Requisition Unit of Measure
+,,CX,Cost Center Account Number
+,,CWE,Item Natural Account Code
+,,CWE,Deliver To ID
+,,DT,Date Needed
+,,,
+RQ1,Requisition Detail-1,ST,Anticipated Price
+,,CWE,Manufacturer Identifier
+,,ST,Manufacturer's Catalog
+,,CWE,Vendor ID
+,,ST,Vendor Catalog
+,,ID,Taxable
+,,ID,Substitute Allowed
+,,,
+BPO,Blood product order,SI,Set ID
+,,CWE,BP Universal Service Identifier
+,,CWE,BP Processing Requirements
+,,NM,BP Quantity
+,,NM,BP Amount
+,,CWE,BP Units
+,,DTM,BP Intended Use Date/Time
+,,PL,BP Intended Dispense From Location
+,,XAD,BP Intended Dispense From Address
+,,DTM,BP Requested Dispense Date/Time
+,,PL,BP Requested Dispense To Location
+,,XAD,BP Requested Dispense To Address
+,,CWE,BP Indication for Use
+,,ID,BP Informed Consent Indicator
+,,,
+BPX,Blood product dispense status,SI,Set ID
+,,CWE,BP Dispense Status
+,,ID,BP Status
+,,DTM,BP Date/Time of Status
+,,EI,BC Donation ID
+,,CNE,BC Component
+,,CNE,BC Donation Type / Intended Use
+,,CWE,CP Commercial Product
+,,XON,CP Manufacturer
+,,EI,CP Lot Number
+,,CNE,BP Blood Group
+,,CNE,BC Special Testing
+,,DTM,BP Expiration Date/Time
+,,NM,BP Quantity
+,,NM,BP Amount
+,,CWE,BP Units
+,,EI,BP Unique ID
+,,PL,BP Actual Dispensed To Location
+,,XAD,BP Actual Dispensed To Address
+,,XCN,BP Dispensed to Receiver
+,,XCN,BP Dispensing Individual
+,,ID,Action Code
+,,,
+BTX,Blood Product Transfusion/Disposition,SI,Set ID
+,,EI,BC Donation ID
+,,CNE,BC Component
+,,CNE,BC Blood Group
+,,CWE,CP Commercial Product
+,,XON,CP Manufacturer
+,,EI,CP Lot Number
+,,NM,BP Quantity
+,,NM,BP Amount
+,,CWE,BP Units
+,,CWE,BP Transfusion/Disposition Status
+,,ID,BP Message Status
+,,DTM,BP Date/Time of Status
+,,XCN,BP Transfusion Administrator
+,,XCN,BP Transfusion Verifier
+,,DTM,BP Transfusion Start Date/Time of Status
+,,DTM,BP Transfusion End Date/Time of Status
+,,CWE,BP Adverse Reaction Type
+,,CWE,BP Transfusion Interrupted Reason
+,,EI,BP Unique ID
+,,ID,Action Code
+,,,
+DON,Donation,EI,Donation Identification Number
+,,CNE,Donation Type
+,,DTM,Phlebotomy Start Date/Time
+,,DTM,Phlebotomy End Date/Time
+,,NM,Donation Duration
+,,CNE,Donation Duration Units
+,,CNE,Intended Procedure Type
+,,CNE,Actual Procedure Type
+,,ID,Donor Eligibility Flag
+,,CNE,Donor Eligibility Procedure Type
+,,DTM,Donor Eligibility Date
+,,CNE,Process Interruption
+,,CNE,Process Interruption Reason
+,,CNE,Phlebotomy Issue
+,,ID,Intended Recipient Blood Relative
+,,XPN,Intended Recipient Name
+,,DTM,Intended Recipient DOB
+,,XON,Intended Recipient Facility
+,,DTM,Intended Recipient Procedure Date
+,,XPN,Intended Recipient Ordering Provider
+,,CNE,Phlebotomy Status
+,,CNE,Arm Stick
+,,XPN,Bleed Start Phlebotomist
+,,XPN,Bleed End Phlebotomist
+,,ST,Aphaeresis Type Machine
+,,ST,Aphaeresis Machine Serial Number
+,,ID,Donor Reaction
+,,XPN,Final Review Staff ID
+,,DTM,Final Review Date/Time
+,,NM,Number of Tubes Collected
+,,EI,Donation Sample Identifier
+,,XCN,Donation Accept Staff
+,,XCN,Donation Material Review Staff
+,,ID,Action Code
+,,,
+BUI,Blood Unit Information,SI,Set ID
+,,EI,Blood Unit Identifier
+,,CWE,Blood Unit Type
+,,NM,Blood Unit Weight
+,,CNE,Weight Units
+,,NM,Blood Unit Volume
+,,CNE,Volume Units
+,,ST,Container Catalog Number
+,,ST,Container Lot Number
+,,XON,Container Manufacturer
+,,NR,Transport Temperature
+,,CNE,Transport Temperature Units
+,,ID,Action Code
+,,,
+RXO,Pharmacy/Treatment Order,CWE,Requested Give Code
+,,NM,Requested Give Amount - Minimum
+,,NM,Requested Give Amount - Maximum
+,,CWE,Requested Give Units
+,,CWE,Requested Dosage Form
+,,CWE,Provider's Pharmacy/Treatment Instructions
+,,CWE,Provider's Administration Instructions
+,,LA1,Deliver-To Location
+,,ID,Allow Substitutions
+,,CWE,Requested Dispense Code
+,,NM,Requested Dispense Amount
+,,CWE,Requested Dispense Units
+,,NM,Number Of Refills
+,,XCN,Ordering Provider's DEA Number
+,,XCN,Pharmacist/Treatment Supplier's Verifier ID
+,,ID,Needs Human Review
+,,ST,Requested Give Per (Time Unit)
+,,NM,Requested Give Strength
+,,CWE,Requested Give Strength Units
+,,CWE,Indication
+,,ST,Requested Give Rate Amount
+,,CWE,Requested Give Rate Units
+,,CQ,Total Daily Dose
+,,CWE,Supplementary Code
+,,NM,Requested Drug Strength Volume
+,,CWE,Requested Drug Strength Volume Units
+,,ID,Pharmacy Order Type
+,,NM,Dispensing Interval
+,,EI,Medication Instance Identifier
+,,EI,Segment Instance Identifier
+,,CNE,Mood Code
+,,CWE,Dispensing Pharmacy
+,,XAD,Dispensing Pharmacy Address
+,,PL,Deliver-to Patient Location
+,,XAD,Deliver-to Address
+,,XTN,Pharmacy Phone Number
+,,,
+RXR,Pharmacy/Treatment Route,CWE,Route
+,,CWE,Administration Site
+,,CWE,Administration Device
+,,CWE,Administration Method
+,,CWE,Routing Instruction
+,,CWE,Administration Site Modifier
+,,,
+RXC,Pharmacy/Treatment Component Order,ID,RX Component Type
+,,CWE,Component Code
+,,NM,Component Amount
+,,CWE,Component Units
+,,NM,Component Strength
+,,CWE,Component Strength Units
+,,CWE,Supplementary Code
+,,NM,Component Drug Strength Volume
+,,CWE,Component Drug Strength Volume Units
+,,NM,Dispense Amount
+,,CWE,Dispense Units
+,,,
+RXE,Pharmacy/Treatment Encoded Order,TQ,Quantity/Timing
+,,CWE,Give Code
+,,NM,Give Amount - Minimum
+,,NM,Give Amount - Maximum
+,,CWE,Give Units
+,,CWE,Give Dosage Form
+,,CWE,Provider's Administration Instructions
+,,LA1,Deliver-to Location
+,,ID,Substitution Status
+,,NM,Dispense Amount
+,,CWE,Dispense Units
+,,NM,Number of Refills
+,,XCN,Ordering Provider's DEA Number
+,,XCN,Pharmacist/Treatment Supplier's Verifier ID
+,,ST,Prescription Number
+,,NM,Number of Refills Remaining
+,,NM,Number of Refills/Doses Dispensed
+,,DTM,D/T of Most Recent Refill or Dose Dispensed
+,,CQ,Total Daily Dose
+,,ID,Needs Human Review
+,,CWE,Special Dispensing Instructions
+,,ST,Give Per (Time Unit)
+,,ST,Give Rate Amount
+,,CWE,Give Rate Units
+,,NM,Give Strength
+,,CWE,Give Strength Units
+,,CWE,Give Indication
+,,NM,Dispense Package Size
+,,CWE,Dispense Package Size Unit
+,,ID,Dispense Package Method
+,,CWE,Supplementary Code
+,,DTM,Original Order Date/Time
+,,NM,Give Drug Strength Volume
+,,CWE,Give Drug Strength Volume Units
+,,CWE,Controlled Substance Schedule
+,,ID,Formulary Status
+,,CWE,Pharmaceutical Substance Alternative
+,,CWE,Pharmacy of Most Recent Fill
+,,NM,Initial Dispense Amount
+,,CWE,Dispensing Pharmacy
+,,XAD,Dispensing Pharmacy Address
+,,PL,Deliver-to Patient Location
+,,XAD,Deliver-to Address
+,,ID,Pharmacy Order Type
+,,XTN,Pharmacy Phone Number
+,,,
+RXD,Pharmacy/Treatment Dispense,NM,Dispense Sub-ID Counter
+,,CWE,Dispense/Give Code
+,,DTM,Date/Time Dispensed
+,,NM,Actual Dispense Amount
+,,CWE,Actual Dispense Units
+,,CWE,Actual Dosage Form
+,,ST,Prescription Number
+,,NM,Number of Refills Remaining
+,,ST,Dispense Notes
+,,XCN,Dispensing Provider
+,,ID,Substitution Status
+,,CQ,Total Daily Dose
+,,LA2,Dispense-to Location
+,,ID,Needs Human Review
+,,CWE,Special Dispensing Instructions
+,,NM,Actual Strength
+,,CWE,Actual Strength Unit
+,,ST,Substance Lot Number
+,,DTM,Substance Expiration Date
+,,CWE,Substance Manufacturer Name
+,,CWE,Indication
+,,NM,Dispense Package Size
+,,CWE,Dispense Package Size Unit
+,,ID,Dispense Package Method
+,,CWE,Supplementary Code
+,,CWE,Initiating Location
+,,CWE,Packaging/Assembly Location
+,,NM,Actual Drug Strength Volume
+,,CWE,Actual Drug Strength Volume Units
+,,CWE,Dispense to Pharmacy
+,,XAD,Dispense to Pharmacy Address
+,,ID,Pharmacy Order Type
+,,CWE,Dispense Type
+,,XTN,Pharmacy Phone Number
+,,EI,Dispense Tag Identifier
+,,,
+RXG,Pharmacy/Treatment Give,NM,Give Sub-ID Counter
+,,NM,Dispense Sub-ID Counter
+,,TQ,Quantity/Timing
+,,CWE,Give Code
+,,NM,Give Amount - Minimum
+,,NM,Give Amount - Maximum
+,,CWE,Give Units
+,,CWE,Give Dosage Form
+,,CWE,Administration Notes
+,,ID,Substitution Status
+,,LA2,Dispense-To Location
+,,ID,Needs Human Review
+,,CWE,Special Administration Instructions
+,,ST,Give Per (Time Unit)
+,,ST,Give Rate Amount
+,,CWE,Give Rate Units
+,,NM,Give Strength
+,,CWE,Give Strength Units
+,,ST,Substance Lot Number
+,,DTM,Substance Expiration Date
+,,CWE,Substance Manufacturer Name
+,,CWE,Indication
+,,NM,Give Drug Strength Volume
+,,CWE,Give Drug Strength Volume Units
+,,CWE,Give Barcode Identifier
+,,ID,Pharmacy Order Type
+,,CWE,Dispense to Pharmacy
+,,XAD,Dispense to Pharmacy Address
+,,PL,Deliver-to Patient Location
+,,XAD,Deliver-to Address
+,,EI,Give Tag Identifier
+,,NM,Dispense Amount
+,,CWE,Dispense Units
+,,,
+RXA,Pharmacy/Treatment Administration,NM,Give Sub-ID Counter
+,,NM,Administration Sub-ID Counter
+,,DTM,Date/Time Start of Administration
+,,DTM,Date/Time End of Administration
+,,CWE,Administered Code
+,,NM,Administered Amount
+,,CWE,Administered Units
+,,CWE,Administered Dosage Form
+,,CWE,Administration Notes
+,,XCN,Administering Provider
+,,LA2,Administered-at Location
+,,ST,Administered Per (Time Unit)
+,,NM,Administered Strength
+,,CWE,Administered Strength Units
+,,ST,Substance Lot Number
+,,DTM,Substance Expiration Date
+,,CWE,Substance Manufacturer Name
+,,CWE,Substance/Treatment Refusal Reason
+,,CWE,Indication
+,,ID,Completion Status
+,,ID,Action Code
+,,DTM,System Entry Date/Time
+,,NM,Administered Drug Strength Volume
+,,CWE,Administered Drug Strength Volume Units
+,,CWE,Administered Barcode Identifier
+,,ID,Pharmacy Order Type
+,,PL,Administer-at
+,,XAD,Administered-at Address
+,,EI,Administered Tag Identifier
+,,,
+RXV,Pharmacy/Treatment Infusion,SI,Set ID
+,,ID,Bolus Type
+,,NM,Bolus Dose Amount
+,,CWE,Bolus Dose Amount Units
+,,NM,Bolus Dose Volume
+,,CWE,Bolus Dose Volume Units
+,,ID,PCA Type
+,,NM,PCA Dose Amount
+,,CWE,PCA Dose Amount Units
+,,NM,PCA Dose Amount Volume
+,,CWE,PCA Dose Amount Volume Units
+,,NM,Max Dose Amount
+,,CWE,Max Dose Amount Units
+,,NM,Max Dose Amount Volume
+,,CWE,Max Dose Amount Volume Units
+,,CQ,Max Dose per Time
+,,CQ,Lockout Interval
+,,CWE,Syringe Manufacturer
+,,CWE,Syringe Model Number
+,,NM,Syringe Size
+,,CWE,Syringe Size Units
+,,ID,Action Code
+,,,
+CDO,Cumulative Dosage,SI,Set ID
+,,ID,Action Code
+,,CQ,Cumulative Dosage Limit
+,,CQ,Cumulative Dosage Limit Time Interval
+,,,
+DSP,Display Data,SI,Set ID
+,,SI,Display Level
+,,TX,Data Line
+,,ST,Logical Break Point
+,,TX,Result ID
+,,,
+QAK,Query Acknowledgment,ST,Query Tag
+,,ID,Query Response Status
+,,CWE,Message Query Name
+,,NM,Hit Count Total
+,,NM,This payload
+,,NM,Hits remaining
+,,,
+QID,Query Identification,ST,Query Tag
+,,CWE,Message Query Name
+,,,
+QPD,Query Parameter Definition,CWE,Message Query Name
+,,ST,Query Tag
+,,Varies,User Parameters (in successive fields)
+,,,
+QRI,Query Response Instance,NM,Candidate Confidence
+,,CWE,Match Reason Code
+,,CWE,Algorithm Descriptor
+,,,
+RCP,Response Control Parameter,ID,Query Priority
+,,CQ,Quantity Limited Request
+,,CNE,Response Modality
+,,DTM,Execution and Delivery Time
+,,ID,Modify Indicator
+,,SRT,Sort-by Field
+,,ID,Segment group inclusion
+,,,
+RDF,Table Row Definition,NM,Number of Columns per Row
+,,RCD,Column Description
+,,,
+RDT,Table Row Data,Varies,Column Value
+,,,
+FT1,Financial Transaction,SI,Set ID
+,,CX,Transaction ID
+,,ST,Transaction Batch ID
+,,DR,Transaction Date
+,,DTM,Transaction Posting Date
+,,CWE,Transaction Type
+,,CWE,Transaction Code
+,,ST,Transaction Description
+,,ST,Transaction Description - Alt
+,,NM,Transaction Quantity
+,,CP,Transaction Amount - Extended
+,,CP,Transaction Amount - Unit
+,,CWE,Department Code
+,,CWE,Health Plan ID
+,,CP,Insurance Amount
+,,PL,Assigned Patient Location
+,,CWE,Fee Schedule
+,,CWE,Patient Type
+,,CWE,Diagnosis Code
+,,XCN,Performed By Code
+,,XCN,Ordered By Code
+,,CP,Unit Cost
+,,EI,Filler Order Number
+,,XCN,Entered By Code
+,,CNE,Procedure Code
+,,CNE,Procedure Code Modifier
+,,CWE,Advanced Beneficiary Notice Code
+,,CWE,Medically Necessary Duplicate Procedure Reason
+,,CWE,NDC Code
+,,CX,Payment Reference ID
+,,SI,Transaction Reference Key
+,,XON,Performing Facility
+,,XON,Ordering Facility
+,,CWE,Item Number
+,,ST,Model Number
+,,CWE,Special Processing Code
+,,CWE,Clinic Code
+,,CX,Referral Number
+,,CX,Authorization Number
+,,CWE,Service Provider Taxonomy Code
+,,CWE,Revenue Code
+,,ST,Prescription Number
+,,CQ,NDC Qty and UOM
+,,CWE,DME Certificate of Medical Necessity Transmission Code
+,,CWE,DME Certification Type Code
+,,NM,DME Duration Value
+,,DT,DME Certification Revision Date
+,,DT,DME Initial Certification Date
+,,DT,DME Last Certification Date
+,,NM,DME Length of Medical Necessity Days
+,,MO,DME Rental Price
+,,MO,DME Purchase Price
+,,CWE,DME Frequency Code
+,,ID,DME Certification Condition Indicator
+,,CWE,DME Condition Indicator Code
+,,CWE,Service Reason Code
+,,,
+DG1,Diagnosis,SI,Set ID
+,,ID,Diagnosis Coding Method
+,,CWE,Diagnosis Code
+,,ST,Diagnosis Description
+,,DTM,Diagnosis Date/Time
+,,CWE,Diagnosis Type
+,,CE,Major Diagnostic Category
+,,CE,Diagnostic Related Group
+,,ID,DRG Approval Indicator
+,,IS,DRG Grouper Review Code
+,,CE,Outlier Type
+,,NM,Outlier Days
+,,CP,Outlier Cost
+,,ST,Grouper Version And Type
+,,NM,Diagnosis Priority
+,,XCN,Diagnosing Clinician
+,,CWE,Diagnosis Classification
+,,ID,Confidential Indicator
+,,DTM,Attestation Date/Time
+,,EI,Diagnosis Identifier
+,,ID,Diagnosis Action Code
+,,EI,Parent Diagnosis
+,,CWE,DRG CCL Value Code
+,,ID,DRG Grouping Usage
+,,CWE,DRG Diagnosis Determination Status
+,,CWE,Present On Admission (POA) Indicator
+,,,
+DRG,Diagnosis Related Group,CNE,Diagnostic Related Group
+,,DTM,DRG Assigned Date/Time
+,,ID,DRG Approval Indicator
+,,CWE,DRG Grouper Review Code
+,,CWE,Outlier Type
+,,NM,Outlier Days
+,,CP,Outlier Cost
+,,CWE,DRG Payor
+,,CP,Outlier Reimbursement
+,,ID,Confidential Indicator
+,,CWE,DRG Transfer Type
+,,XPN,Name of Coder
+,,CWE,Grouper Status
+,,CWE,PCCL Value Code
+,,NM,Effective Weight
+,,MO,Monetary Amount
+,,CWE,Status Patient
+,,ST,Grouper Software Name
+,,ST,Grouper Software Version
+,,CWE,Status Financial Calculation
+,,MO,Relative Discount/Surcharge
+,,MO,Basic Charge
+,,MO,Total Charge
+,,MO,Discount/Surcharge
+,,NM,Calculated Days
+,,CWE,Status Gender
+,,CWE,Status Age
+,,CWE,Status Length of Stay
+,,CWE,Status Same Day Flag
+,,CWE,Status Separation Mode
+,,CWE,Status Weight at Birth
+,,CWE,Status Respiration Minutes
+,,CWE,Status Admission
+,,,
+PR1,Procedures,SI,Set ID
+,,IS,Procedure Coding Method
+,,CNE,Procedure Code
+,,ST,Procedure Description
+,,DTM,Procedure Date/Time
+,,CWE,Procedure Functional Type
+,,NM,Procedure Minutes
+,,XCN,Anesthesiologist
+,,CWE,Anesthesia Code
+,,NM,Anesthesia Minutes
+,,XCN,Surgeon
+,,XCN,Procedure Practitioner
+,,CWE,Consent Code
+,,NM,Procedure Priority
+,,CWE,Associated Diagnosis Code
+,,CNE,Procedure Code Modifier
+,,CWE,Procedure DRG Type
+,,CWE,Tissue Type Code
+,,EI,Procedure Identifier
+,,ID,Procedure Action Code
+,,CWE,DRG Procedure Determination Status
+,,CWE,DRG Procedure Relevance
+,,PL,Treating Organizational Unit
+,,ID,Respiratory Within Surgery
+,,EI,Parent Procedure ID
+,,,
+GT1,Guarantor,SI,Set ID
+,,CX,Guarantor Number
+,,XPN,Guarantor Name
+,,XPN,Guarantor Spouse Name
+,,XAD,Guarantor Address
+,,XTN,Guarantor Ph Num – Home
+,,XTN,Guarantor Ph Num – Business
+,,DTM,Guarantor Date/Time Of Birth
+,,CWE,Guarantor Administrative Sex
+,,CWE,Guarantor Type
+,,CWE,Guarantor Relationship
+,,ST,Guarantor SSN
+,,DT,Guarantor Date - Begin
+,,DT,Guarantor Date - End
+,,NM,Guarantor Priority
+,,XPN,Guarantor Employer Name
+,,XAD,Guarantor Employer Address
+,,XTN,Guarantor Employer Phone Number
+,,CX,Guarantor Employee ID Number
+,,CWE,Guarantor Employment Status
+,,XON,Guarantor Organization Name
+,,ID,Guarantor Billing Hold Flag
+,,CWE,Guarantor Credit Rating Code
+,,DTM,Guarantor Death Date And Time
+,,ID,Guarantor Death Flag
+,,CWE,Guarantor Charge Adjustment Code
+,,CP,Guarantor Household Annual Income
+,,NM,Guarantor Household Size
+,,CX,Guarantor Employer ID Number
+,,CWE,Guarantor Marital Status Code
+,,DT,Guarantor Hire Effective Date
+,,DT,Employment Stop Date
+,,CWE,Living Dependency
+,,CWE,Ambulatory Status
+,,CWE,Citizenship
+,,CWE,Primary Language
+,,CWE,Living Arrangement
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,CWE,Student Indicator
+,,CWE,Religion
+,,XPN,Mother's Maiden Name
+,,CWE,Nationality
+,,CWE,Ethnic Group
+,,XPN,Contact Person's Name
+,,XTN,Contact Person's Telephone Number
+,,CWE,Contact Reason
+,,CWE,Contact Relationship
+,,ST,Job Title
+,,JCC,Job Code/Class
+,,XON,Guarantor Employer's Organization Name
+,,CWE,Handicap
+,,CWE,Job Status
+,,FC,Guarantor Financial Class
+,,CWE,Guarantor Race
+,,ST,Guarantor Birth Place
+,,CWE,VIP Indicator
+,,,
+IN1,Insurance,SI,Set ID
+,,CWE,Health Plan ID
+,,CX,Insurance Company ID
+,,XON,Insurance Company Name
+,,XAD,Insurance Company Address
+,,XPN,Insurance Co Contact Person
+,,XTN,Insurance Co Phone Number
+,,ST,Group Number
+,,XON,Group Name
+,,CX,Insured's Group Emp ID
+,,XON,Insured's Group Emp Name
+,,DT,Plan Effective Date
+,,DT,Plan Expiration Date
+,,AUI,Authorization Information
+,,CWE,Plan Type
+,,XPN,Name Of Insured
+,,CWE,Insured's Relationship To Patient
+,,DTM,Insured's Date Of Birth
+,,XAD,Insured's Address
+,,CWE,Assignment Of Benefits
+,,CWE,Coordination Of Benefits
+,,ST,Coord Of Ben. Priority
+,,ID,Notice Of Admission Flag
+,,DT,Notice Of Admission Date
+,,ID,Report Of Eligibility Flag
+,,DT,Report Of Eligibility Date
+,,CWE,Release Information Code
+,,ST,Pre-Admit Cert (PAC)
+,,DTM,Verification Date/Time
+,,XCN,Verification By
+,,CWE,Type Of Agreement Code
+,,CWE,Billing Status
+,,NM,Lifetime Reserve Days
+,,NM,Delay Before L.R. Day
+,,CWE,Company Plan Code
+,,ST,Policy Number
+,,CP,Policy Deductible
+,,CP,Policy Limit - Amount
+,,NM,Policy Limit - Days
+,,CP,Room Rate - Semi-Private
+,,CP,Room Rate - Private
+,,CWE,Insured's Employment Status
+,,CWE,Insured's Administrative Sex
+,,XAD,Insured's Employer's Address
+,,ST,Verification Status
+,,CWE,Prior Insurance Plan ID
+,,CWE,Coverage Type
+,,CWE,Handicap
+,,CX,Insured's ID Number
+,,CWE,Signature Code
+,,DT,Signature Code Date
+,,ST,Insured's Birth Place
+,,CWE,VIP Indicator
+,,CX,External Health Plan Identifiers
+,,ID,Insurance Action Code
+,,,
+IN2,Insurance Additional Information,CX,Insured's Employee ID
+,,ST,Insured's Social Security Number
+,,XCN,Insured's Employer's Name and ID
+,,CWE,Employer Information Data
+,,CWE,Mail Claim Party
+,,ST,Medicare Health Ins Card Number
+,,XPN,Medicaid Case Name
+,,ST,Medicaid Case Number
+,,XPN,Military Sponsor Name
+,,ST,Military ID Number
+,,CWE,Dependent Of Military Recipient
+,,ST,Military Organization
+,,ST,Military Station
+,,CWE,Military Service
+,,CWE,Military Rank/Grade
+,,CWE,Military Status
+,,DT,Military Retire Date
+,,ID,Military Non-Avail Cert On File
+,,ID,Baby Coverage
+,,ID,Combine Baby Bill
+,,ST,Blood Deductible
+,,XPN,Special Coverage Approval Name
+,,ST,Special Coverage Approval Title
+,,CWE,Non-Covered Insurance Code
+,,CX,Payor ID
+,,CX,Payor Subscriber ID
+,,CWE,Eligibility Source
+,,RMC,Room Coverage Type/Amount
+,,PTA,Policy Type/Amount
+,,DDI,Daily Deductible
+,,CWE,Living Dependency
+,,CWE,Ambulatory Status
+,,CWE,Citizenship
+,,CWE,Primary Language
+,,CWE,Living Arrangement
+,,CWE,Publicity Code
+,,ID,Protection Indicator
+,,CWE,Student Indicator
+,,CWE,Religion
+,,XPN,Mother's Maiden Name
+,,CWE,Nationality
+,,CWE,Ethnic Group
+,,CWE,Marital Status
+,,DT,Insured's Employment Start Date
+,,DT,Employment Stop Date
+,,ST,Job Title
+,,JCC,Job Code/Class
+,,CWE,Job Status
+,,XPN,Employer Contact Person Name
+,,XTN,Employer Contact Person Phone Number
+,,CWE,Employer Contact Reason
+,,XPN,Insured's Contact Person's Name
+,,XTN,Insured's Contact Person Phone Number
+,,CWE,Insured's Contact Person Reason
+,,DT,Relationship to the Patient Start Date
+,,DT,Relationship to the Patient Stop Date
+,,CWE,Insurance Co Contact Reason
+,,XTN,Insurance Co Contact Phone Number
+,,CWE,Policy Scope
+,,CWE,Policy Source
+,,CX,Patient Member Number
+,,CWE,Guarantor's Relationship to Insured
+,,XTN,Insured's Phone Number - Home
+,,XTN,Insured's Employer Phone Number
+,,CWE,Military Handicapped Program
+,,ID,Suspend Flag
+,,ID,Copay Limit Flag
+,,ID,Stoploss Limit Flag
+,,XON,Insured Organization Name and ID
+,,XON,Insured Employer Organization Name and ID
+,,CWE,Race
+,,CWE,Patient's Relationship to Insured
+,,CP,Co-Pay Amount
+,,,
+IN3,"Insurance Additional Information, Certification",SI,Set ID
+,,CX,Certification Number
+,,XCN,Certified By
+,,ID,Certification Required
+,,MOP,Penalty
+,,DTM,Certification Date/Time
+,,DTM,Certification Modify Date/Time
+,,XCN,Operator
+,,DT,Certification Begin Date
+,,DT,Certification End Date
+,,DTN,Days
+,,CWE,Non-Concur Code/Description
+,,DTM,Non-Concur Effective Date/Time
+,,XCN,Physician Reviewer
+,,ST,Certification Contact
+,,XTN,Certification Contact Phone Number
+,,CWE,Appeal Reason
+,,CWE,Certification Agency
+,,XTN,Certification Agency Phone Number
+,,ICD,Pre-Certification Requirement
+,,ST,Case Manager
+,,DT,Second Opinion Date
+,,CWE,Second Opinion Status
+,,CWE,Second Opinion Documentation Received
+,,XCN,Second Opinion Physician
+,,CWE,Certification Type
+,,CWE,Certification Category
+,,DTM,Online Verification Date/Time
+,,CWE,Online Verification Result
+,,CWE,Online Verification Result Error Code
+,,ST,Online Verification Result Check Digit
+,,,
+ACC,Accident,DTM,Accident Date/Time
+,,CWE,Accident Code
+,,ST,Accident Location
+,,CWE,Auto Accident State
+,,ID,Accident Job Related Indicator
+,,ID,Accident Death Indicator
+,,XCN,Entered By
+,,ST,Accident Description
+,,ST,Brought In By
+,,ID,Police Notified Indicator
+,,XAD,Accident Address
+,,NM,Degree of patient liability
+,,EI,Accident Identifier
+,,,
+UB1,Uniform Billing Data 1,SI,Set ID
+,,NM,Blood Deductible
+,,NM,Blood Furnished-Pints
+,,NM,Blood Replaced-Pints
+,,NM,Blood Not Replaced-Pints
+,,NM,Co-Insurance Days
+,,IS,Condition Code
+,,NM,Covered Days
+,,NM,Non Covered Days
+,,CM,Value Amount & Code
+,,NM,Number Of Grace Days
+,,CE,Special Program Indicator
+,,CE,PSRO/UR Approval Indicator
+,,DT,PSRO/UR Approved Stay-Fm
+,,DT,PSRO/UR Approved Stay-To
+,,CM,Occurrence
+,,CE,Occurrence Span
+,,DT,Occur Span Start Date
+,,DT,Occur Span End Date
+,,ST,UB-82 Locator 2
+,,ST,UB-82 Locator 9
+,,ST,UB-82 Locator 27
+,,ST,UB-82 Locator 45
+,,,
+UB2,Uniform Billing Data 2,SI,Set ID
+,,ST,Co-Insurance Days (9)
+,,CWE,Condition Code (24-30)
+,,ST,Covered Days (7)
+,,ST,Non-Covered Days (8)
+,,UVC,Value Amount & Code (39-41)
+,,OCD,Occurrence Code & Date (32-35)
+,,OSP,Occurrence Span Code/Dates (36)
+,,ST,Uniform Billing Locator 2 (state)
+,,ST,Uniform Billing Locator 11 (state)
+,,ST,Uniform Billing Locator 31 (national)
+,,ST,Document Control Number
+,,ST,Uniform Billing Locator 49 (national)
+,,ST,Uniform Billing Locator 56 (state)
+,,ST,Uniform Billing Locator 57 (sational)
+,,ST,Uniform Billing Locator 78 (state)
+,,NM,Special Visit Count
+,,,
+ABS,Abstract,XCN,Discharge Care Provider
+,,CWE,Transfer Medical Service Code
+,,CWE,Severity of Illness Code
+,,DTM,Date/Time of Attestation
+,,XCN,Attested By
+,,CWE,Triage Code
+,,DTM,Abstract Completion Date/Time
+,,XCN,Abstracted By
+,,CWE,Case Category Code
+,,ID,Caesarian Section Indicator
+,,CWE,Gestation Category Code
+,,NM,Gestation Period - Weeks
+,,CWE,Newborn Code
+,,ID,Stillborn Indicator
+,,,
+BLC,Blood Code,CWE,Blood Product Code
+,,CQ,Blood Amount
+,,,
+RMI,Risk Management Incident,CWE,Risk Management Incident Code
+,,DTM,Date/Time Incident
+,,CWE,Incident Type Code
+,,,
+GP1,Grouping/Reimbursement - Visit,CWE,Type of Bill Code
+,,CWE,Revenue Code
+,,CWE,Overall Claim Disposition Code
+,,CWE,OCE Edits per Visit Code
+,,CP,Outlier Cost
+,,,
+GP2,Grouping/Reimbursement - Procedure Line Item,CWE,Revenue Code
+,,NM,Number of Service Units
+,,CP,Charge
+,,CWE,Reimbursement Action Code
+,,CWE,Denial or Rejection Code
+,,CWE,OCE Edit Code
+,,CWE,Ambulatory Payment Classification Code
+,,CWE,Modifier Edit Code
+,,CWE,Payment Adjustment Code
+,,CWE,Packaging Status Code
+,,CP,Expected CMS Payment Amount
+,,CWE,Reimbursement Type Code
+,,CP,Co-Pay Amount
+,,NM,Pay Rate per Service Unit
+,,,
+OBX,Observation/Result,SI,Set ID
+,,ID,Value Type
+,,CWE,Observation Identifier
+,,OG,Observation Sub-ID
+,,Varies,Observation Value
+,,CWE,Units
+,,ST,Reference Range
+,,CWE,Interpretation Codes
+,,NM,Probability
+,,ID,Nature of Abnormal Test
+,,ID,Observation Result Status
+,,DTM,Effective Date of Reference Range
+,,ST,User Defined Access Checks
+,,DTM,Date/Time of the Observation
+,,CWE,Producer's ID
+,,XCN,Responsible Observer
+,,CWE,Observation Method
+,,EI,Equipment Instance Identifier
+,,DTM,Date/Time of the Analysis
+,,CWE,Observation Site
+,,EI,Observation Instance Identifier
+,,CNE,Mood Code
+,,XON,Performing Organization Name
+,,XAD,Performing Organization Address
+,,XCN,Performing Organization Medical Director
+,,ID,Patient Results Release Category
+,,CWE,Root Cause
+,,CWE,Local Process Control
+,,ID,Observation Type
+,,ID,Observation Sub-Type
+,,ID,Action Code
+,,CWE,Observation Value Absent Reason
+,,EIP,Observation Related Specimen Identifier
+,,,
+SPM,Specimen,SI,Set ID
+,,EIP,Specimen Identifier
+,,EIP,Specimen Parent IDs
+,,CWE,Specimen Type
+,,CWE,Specimen Type Modifier
+,,CWE,Specimen Additives
+,,CWE,Specimen Collection Method
+,,CWE,Specimen Source Site
+,,CWE,Specimen Source Site Modifier
+,,CWE,Specimen Collection Site
+,,CWE,Specimen Role
+,,CQ,Specimen Collection Amount
+,,NM,Grouped Specimen Count
+,,ST,Specimen Description
+,,CWE,Specimen Handling Code
+,,CWE,Specimen Risk Code
+,,DR,Specimen Collection Date/Time
+,,DTM,Specimen Received Date/Time
+,,DTM,Specimen Expiration Date/Time
+,,ID,Specimen Availability
+,,CWE,Specimen Reject Reason
+,,CWE,Specimen Quality
+,,CWE,Specimen Appropriateness
+,,CWE,Specimen Condition
+,,CQ,Specimen Current Quantity
+,,NM,Number of Specimen Containers
+,,CWE,Container Type
+,,CWE,Container Condition
+,,CWE,Specimen Child Role
+,,CX,Accession ID
+,,CX,Other Specimen ID
+,,EI,Shipment ID
+,,DTM,Culture Start Date/Time
+,,DTM,Culture Final Date/Time
+,,ID,Action Code
+,,,
+PRT,Participation Information,EI,Participation Instance ID
+,,ID,Action Code
+,,CWE,Action Reason
+,,CWE,Role of Participation
+,,XCN,Person
+,,CWE,Person Provider Type
+,,CWE,Organization Unit Type
+,,XON,Organization
+,,PL,Location
+,,EI,Device
+,,DTM,Begin Date/Time (arrival time)
+,,DTM,End Date/Time (departure time)
+,,CWE,Qualitative Duration
+,,XAD,Address
+,,XTN,Telecommunication Address
+,,EI,UDI Device Identifier
+,,DTM,Device Manufacture Date
+,,DTM,Device Expiry Date
+,,ST,Device Lot Number
+,,ST,Device Serial Number
+,,EI,Device Donation Identification
+,,CNE,Device Type
+,,CWE,Preferred Method of Contact
+,,PLN,Contact Identifiers
+,,,
+CSR,Clinical Study Registration,EI,Sponsor Study ID
+,,EI,Alternate Study ID
+,,CWE,Institution Registering the Patient
+,,CX,Sponsor Patient ID
+,,CX,Alternate Patient ID - CSR
+,,DTM,Date/Time of Patient Study Registration
+,,XCN,Person Performing Study Registration
+,,XCN,Study Authorizing Provider
+,,DTM,Date/Time Patient Study Consent Signed
+,,CWE,Patient Study Eligibility Status
+,,DTM,Study Randomization Date/time
+,,CWE,Randomized Study Arm
+,,CWE,Stratum for Study Randomization
+,,CWE,Patient Evaluability Status
+,,DTM,Date/Time Ended Study
+,,CWE,Reason Ended Study
+,,ID,Action Code
+,,,
+CSP,Clinical Study Phase,CWE,Study Phase Identifier
+,,DTM,Date/time Study Phase Began
+,,DTM,Date/time Study Phase Ended
+,,CWE,Study Phase Evaluability
+,,,
+CSS,Clinical Study Data Schedule,CWE,Study Scheduled Time Point
+,,DTM,Study Scheduled Patient Time Point
+,,CWE,Study Quality Control Codes
+,,,
+CTI,Clinical Trial Identification,EI,Sponsor Study ID
+,,CWE,Study Phase Identifier
+,,CWE,Study Scheduled Time Point
+,,ID,Action Code
+,,,
+PES,Product Experience Sender,XON,Sender Organization Name
+,,XCN,Sender Individual Name
+,,XAD,Sender Address
+,,XTN,Sender Telephone
+,,EI,Sender Event Identifier
+,,NM,Sender Sequence Number
+,,FT,Sender Event Description
+,,FT,Sender Comment
+,,DTM,Sender Aware Date/Time
+,,DTM,Event Report Date
+,,ID,Event Report Timing/Type
+,,ID,Event Report Source
+,,ID,Event Reported To
+,,,
+PEO,Product Experience Observation,CWE,Event Identifiers Used
+,,CWE,Event Symptom/Diagnosis Code
+,,DTM,Event Onset Date/Time
+,,DTM,Event Exacerbation Date/Time
+,,DTM,Event Improved Date/Time
+,,DTM,Event Ended Data/Time
+,,XAD,Event Location Occurred Address
+,,ID,Event Qualification
+,,ID,Event Serious
+,,ID,Event Expected
+,,ID,Event Outcome
+,,ID,Patient Outcome
+,,FT,Event Description from Others
+,,FT,Event Description from Original Reporter
+,,FT,Event Description from Patient
+,,FT,Event Description from Practitioner
+,,FT,Event Description from Autopsy
+,,CWE,Cause Of Death
+,,XPN,Primary Observer Name
+,,XAD,Primary Observer Address
+,,XTN,Primary Observer Telephone
+,,ID,Primary Observer's Qualification
+,,ID,Confirmation Provided By
+,,DTM,Primary Observer Aware Date/Time
+,,ID,Primary Observer's identity May Be Divulged
+,,,
+PCR,Possible Causal Relationship,CWE,Implicated Product
+,,IS,Generic Product
+,,CWE,Product Class
+,,CQ,Total Duration Of Therapy
+,,DTM,Product Manufacture Date
+,,DTM,Product Expiration Date
+,,DTM,Product Implantation Date
+,,DTM,Product Explantation Date
+,,CWE,Single Use Device
+,,CWE,Indication For Product Use
+,,CWE,Product Problem
+,,ST,Product Serial/Lot Number
+,,CWE,Product Available For Inspection
+,,CWE,Product Evaluation Performed
+,,CWE,Product Evaluation Status
+,,CWE,Product Evaluation Results
+,,ID,Evaluated Product Source
+,,DTM,Date Product Returned To Manufacturer
+,,ID,Device Operator Qualifications
+,,ID,Relatedness Assessment
+,,ID,Action Taken In Response To The Event
+,,ID,Event Causality Observations
+,,ID,Indirect Exposure Mechanism
+,,,
+PSH,Product Summary Header,ST,Report Type
+,,ST,Report Form Identifier
+,,DTM,Report Date
+,,DTM,Report Interval Start Date
+,,DTM,Report Interval End Date
+,,CQ,Quantity Manufactured
+,,CQ,Quantity Distributed
+,,ID,Quantity Distributed Method
+,,FT,Quantity Distributed Comment
+,,CQ,Quantity in Use
+,,ID,Quantity in Use Method
+,,FT,Quantity in Use Comment
+,,NM,Number of Product Experience Reports Filed by Facility
+,,NM,Number of Product Experience Reports Filed by Distributor
+,,,
+PDC,Product Detail Country,XON,Manufacturer/Distributor
+,,CWE,Country
+,,ST,Brand Name
+,,ST,Device Family Name
+,,CWE,Generic Name
+,,ST,Model Identifier
+,,ST,Catalogue Identifier
+,,ST,Other Identifier
+,,CWE,Product Code
+,,ID,Marketing Basis
+,,ST,Marketing Approval ID
+,,CQ,Labeled Shelf Life
+,,CQ,Expected Shelf Life
+,,DTM,Date First Marketed
+,,DTM,Date Last Marketed
+,,,
+FAC,Facility,EI,Facility ID
+,,ID,Facility Type
+,,XAD,Facility Address
+,,XTN,Facility Telecommunication
+,,XCN,Contact Person
+,,ST,Contact Title
+,,XAD,Contact Address
+,,XTN,Contact Telecommunication
+,,XCN,Signature Authority
+,,ST,Signature Authority Title
+,,XAD,Signature Authority Address
+,,XTN,Signature Authority Telecommunication
+,,,
+SHP,Shipment,EI,Shipment ID
+,,EI,Internal Shipment ID
+,,CWE,Shipment Status
+,,DTM,Shipment Status Date/Time
+,,TX,Shipment Status Reason
+,,CWE,Shipment Priority
+,,CWE,Shipment Confidentiality
+,,NM,Number of Packages in Shipment
+,,CWE,Shipment Condition
+,,CWE,Shipment Handling Code
+,,CWE,Shipment Risk Code
+,,ID,Action Code
+,,,
+PAC,Shipment Package,SI,Set Id
+,,EI,Package ID
+,,EI,Parent Package ID
+,,NA,Position in Parent Package
+,,CWE,Package Type
+,,CWE,Package Condition
+,,CWE,Package Handling Code
+,,CWE,Package Risk Code
+,,ID,Action Code
+,,,
+MFI,Master File Identification,CWE,Master File Identifier
+,,HD,Master File Application Identifier
+,,ID,File-Level Event Code
+,,DTM,Entered Date/Time
+,,DTM,Effective Date/Time
+,,ID,Response Level Code
+,,,
+MFE,Master File Entry,ID,Record-Level Event Code
+,,ST,MFN Control ID
+,,DTM,Effective Date/Time
+,,Varies,Primary Key Value
+,,ID,Primary Key Value Type
+,,DTM,Entered Date/Time
+,,XCN,Entered By
+,,,
+MFA,Master File Acknowledgment,ID,Record-Level Event Code
+,,ST,MFN Control ID
+,,DTM,Event Completion Date/Time
+,,CWE,MFN Record Level Error Return
+,,Varies,Primary Key Value
+,,ID,Primary Key Value Type
+,,,
+OM1,General Segment,NM,Sequence Number
+,,CWE,Producer's Service/Test/Observation ID
+,,ID,Permitted Data Types
+,,ID,Specimen Required
+,,CWE,Producer ID
+,,TX,Observation Description
+,,CWE,Other Service/Test/Observation IDs for the Observation
+,,ST,Other Names
+,,ST,Preferred Report Name for the Observation
+,,ST,Preferred Short Name or Mnemonic for the Observation
+,,ST,Preferred Long Name for the Observation
+,,ID,Orderability
+,,CWE,Identity of Instrument Used to Perform this Study
+,,CWE,Coded Representation of Method
+,,ID,Portable Device Indicator
+,,CWE,Observation Producing Department/Section
+,,XTN,Telephone Number of Section
+,,CWE,Nature of Service/Test/Observation
+,,CWE,Report Subheader
+,,ST,Report Display Order
+,,DTM,Date/Time Stamp for Any Change in Definition for the Observation
+,,DTM,Effective Date/Time of Change
+,,NM,Typical Turn-Around Time
+,,NM,Processing Time
+,,ID,Processing Priority
+,,ID,Reporting Priority
+,,CWE,Outside Site(s) Where Observation May Be Performed
+,,XAD,Address of Outside Site(s)
+,,XTN,Phone Number of Outside Site
+,,CWE,Confidentiality Code
+,,CWE,Observations Required to Interpret this Observation
+,,TX,Interpretation of Observations
+,,CWE,Contraindications to Observations
+,,CWE,Reflex Tests/Observations
+,,TX,Rules that Trigger Reflex Testing
+,,CWE,Fixed Canned Message
+,,TX,Patient Preparation
+,,CWE,Procedure Medication
+,,TX,Factors that may Affect the Observation
+,,ST,Service/Test/Observation Performance Schedule
+,,TX,Description of Test Methods
+,,CWE,Kind of Quantity Observed
+,,CWE,Point Versus Interval
+,,TX,Challenge Information
+,,CWE,Relationship Modifier
+,,CWE,Target Anatomic Site Of Test
+,,CWE,Modality of Imaging Measurement
+,,ID,Exclusive Test
+,,ID,Diagnostic Serv Sect ID
+,,CWE,Taxonomic Classification Code
+,,ST,Other Names 51
+,,CWE,Replacement Producer's Service/Test/Observation ID
+,,TX,Prior Resuts Instructions
+,,TX,Special Instructions
+,,CWE,Test Category
+,,CWE,Observation/Identifier associated with Producer’s Service/Test/Observation ID
+,,CQ,Typical Turn-Around Time 57
+,,CWE,Gender Restriction
+,,NR,Age Restriction
+,,,
+OM2,Numeric Observation,NM,Sequence Number
+,,CWE,Units of Measure
+,,NM,Range of Decimal Precision
+,,CWE,Corresponding SI Units of Measure
+,,TX,SI Conversion Factor
+,,RFR,Reference Range for Ordinal and Continuous Observations
+,,RFR,Critical Range for Ordinal and Continuous Observations
+,,RFR,Absolute Range for Ordinal and Continuous Observations
+,,DLT,Delta Check Criteria
+,,NM,Minimum Meaningful Increments
+,,,
+OM3,Categorical Service/Test/Observation,NM,Sequence Number
+,,CWE,Preferred Coding System
+,,CWE,"Valid Coded ""Answers"""
+,,CWE,Normal Text/Codes for Categorical Observations
+,,CWE,Abnormal Text/Codes for Categorical Observations
+,,CWE,Critical Text/Codes for Categorical Observations
+,,ID,Value Type
+,,,
+OM4,Observations that Require Specimens,NM,Sequence Number
+,,ID,Derived Specimen
+,,TX,Container Description
+,,NM,Container Volume
+,,CWE,Container Units
+,,CWE,Specimen
+,,CWE,Additive
+,,TX,Preparation
+,,TX,Special Handling Requirements
+,,CQ,Normal Collection Volume
+,,CQ,Minimum Collection Volume
+,,TX,Specimen Requirements
+,,ID,Specimen Priorities
+,,CQ,Specimen Retention Time
+,,CWE,Specimen Handling Code
+,,ID,Specimen Preference
+,,NM,Preferred Specimen/Attribture Sequence ID
+,,CWE,Taxonomic Classification Code
+,,,
+OM5,Observation Batteries (Sets),NM,Sequence Number
+,,CWE,Test/Observations Included Within an Ordered Test Battery
+,,ST,Observation ID Suffixes
+,,,
+OM6,Observations that are Calculated from Other Observations,NM,Sequence Number
+,,TX,Derivation Rule
+,,,
+OM7,Additional Basic Attributes,NM,Sequence Number
+,,CWE,Universal Service Identifier
+,,CWE,Category Identifier
+,,TX,Category Description
+,,ST,Category Synonym
+,,DTM,Effective Test/Service Start Date/Time
+,,DTM,Effective Test/Service End Date/Time
+,,NM,Test/Service Default Duration Quantity
+,,CWE,Test/Service Default Duration Units
+,,CWE,Test/Service Default Frequency
+,,ID,Consent Indicator
+,,CWE,Consent Identifier
+,,DTM,Consent Effective Start Date/Time
+,,DTM,Consent Effective End Date/Time
+,,NM,Consent Interval Quantity
+,,CWE,Consent Interval Units
+,,NM,Consent Waiting Period Quantity
+,,CWE,Consent Waiting Period Units
+,,DTM,Effective Date/Time of Change
+,,XCN,Entered By
+,,PL,Orderable-at Location
+,,CWE,Formulary Status
+,,ID,Special Order Indicator
+,,CWE,Primary Key Value - CDM
+,,,
+OMC,Supporting Clinical Information,NM,Sequence Number
+,,ID,Segment Action Code
+,,EI,Segment Unique Key
+,,CWE,Clinical Information Request
+,,CWE,Collection Event/Process Step
+,,CWE,Communication Location
+,,ID,Answer Required
+,,ST,Hint/Help Text
+,,ID,Type of Answer
+,,ID,Multiple Answers Allowed
+,,CWE,Answer Choices
+,,NM,Character Limit
+,,NM,Number of Decimals
+,,,
+PM1,Payer Master File,CWE,Health Plan ID
+,,CX,Insurance Company ID
+,,XON,Insurance Company Name
+,,XAD,Insurance Company Address
+,,XPN,Insurance Co Contact Person
+,,XTN,Insurance Co Phone Number
+,,ST,Group Number
+,,XON,Group Name
+,,DT,Plan Effective Date
+,,DT,Plan Expiration Date
+,,ID,Patient DOB Required
+,,ID,Patient Gender Required
+,,ID,Patient Relationship Required
+,,ID,Patient Signature Required
+,,ID,Diagnosis Required
+,,ID,Service Required
+,,ID,Patient Name Required
+,,ID,Patient Address Required
+,,ID,Subscribers Name Required
+,,ID,Workman's Comp Indicator
+,,ID,Bill Type Required
+,,ID,Commercial Carrier Name and Address Required
+,,ST,Policy Number Pattern
+,,ST,Group Number Pattern
+,,,
+MCP,Master File Coverage,SI,Set ID
+,,CWE,Producer's Service/Test/Observation ID
+,,MO,Universal Service Price Range – Low Value
+,,MO,Universal Service Price Range – High Value
+,,ST,Reason for Universal Service Cost Range
+,,,
+DPS,Diagnosis and Procedure Code,CWE,Diagnosis Code
+,,CWE,Procedure Code
+,,DTM,Effective Date/Time
+,,DTM,Expiration Date/Time
+,,CNE,Type of Limitation
+,,,
+LOC,Location Identification,PL,Primary Key Value
+,,ST,Location Description
+,,CWE,Location Type
+,,XON,Organization Name
+,,XAD,Location Address
+,,XTN,Location Phone
+,,CWE,License Number
+,,CWE,Location Equipment
+,,CWE,Location Service Code
+,,,
+LCH,Location Characteristic,PL,Primary Key Value
+,,ID,Segment Action Code
+,,EI,Segment Unique Key
+,,CWE,Location Characteristic ID
+,,CWE,Location Characteristic Value
+,,,
+LRL,Location Relationship,PL,Primary Key Value
+,,ID,Segment Action Code
+,,EI,Segment Unique Key
+,,CWE,Location Relationship ID
+,,XON,Organizational Location Relationship Value
+,,PL,Patient Location Relationship Value
+,,,
+LDP,Location Department,PL,Primary Key Value
+,,CWE,Location Department
+,,CWE,Location Service
+,,CWE,Specialty Type
+,,CWE,Valid Patient Classes
+,,ID,Active/Inactive Flag
+,,DTM,Activation Date
+,,DTM,Inactivation Date
+,,ST,Inactivated Reason
+,,VH,Visiting Hours
+,,XTN,Contact Phone
+,,CWE,Location Cost Center
+,,,
+LCC,Location Charge Code,PL,Primary Key Value
+,,CWE,Location Department
+,,CWE,Accommodation Type
+,,CWE,Charge Code
+,,,
+CDM,Charge Description Master,CWE,Primary Key Value
+,,CWE,Charge Code Alias
+,,ST,Charge Description Short
+,,ST,Charge Description Long
+,,CWE,Description Override Indicator
+,,CWE,Exploding Charges
+,,CNE,Procedure Code
+,,ID,Active/Inactive Flag
+,,CWE,Inventory Number
+,,NM,Resource Load
+,,CX,Contract Number
+,,XON,Contract Organization
+,,ID,Room Fee Indicator
+,,,
+PRC,Pricing Segment,CWE,Primary Key Value
+,,CWE,Facility ID
+,,CWE,Department
+,,CWE,Valid Patient Classes
+,,CP,Price
+,,ST,Formula
+,,NM,Minimum Quantity
+,,NM,Maximum Quantity
+,,MO,Minimum Price
+,,MO,Maximum Price
+,,DTM,Effective Start Date
+,,DTM,Effective End Date
+,,CWE,Price Override Flag
+,,CWE,Billing Category
+,,ID,Chargeable Flag
+,,ID,Active/Inactive Flag
+,,MO,Cost
+,,CWE,Charge on Indicator
+,,,
+CM0,Clinical Study Master,SI,Set ID
+,,EI,Sponsor Study ID
+,,EI,Alternate Study ID
+,,ST,Title of Study
+,,XCN,Chairman of Study
+,,DT,Last IRB Approval Date
+,,NM,Total Accrual to Date
+,,DT,Last Accrual Date
+,,XCN,Contact for Study
+,,XTN,Contact's Telephone Number
+,,XAD,Contact's Address
+,,,
+CM1,Clinical Study Phase Master,SI,Set ID
+,,CWE,Study Phase Identifier
+,,ST,Description of Study Phase
+,,,
+CM2,Clinical Study Schedule Master,SI,Set ID
+,,CWE,Scheduled Time Point
+,,ST,Description of Time Point
+,,CWE,Events Scheduled This Time Point
+,,,
+DMI,DRG Master File Information,CNE,Diagnostic Related Group
+,,CNE,Major Diagnostic Category
+,,NR,Lower and Upper Trim Points
+,,NM,Average Length of Stay
+,,NM,Relative Weight
+,,,
+CTR,Contract Master Outbound,EI,Contract Identifier
+,,ST,Contract Description
+,,CWE,Contract Status
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,XPN,Contract Owner Name
+,,XPN,Contract Originator Name
+,,CWE,Supplier Type
+,,CWE,Contract Type
+,,CNE,Free On Board Freight Terms
+,,DTM,Price Protection Date
+,,CNE,Fixed Price Contract Indicator
+,,XON,Group Purchasing Organization
+,,MOP,Maximum Markup
+,,MOP,Actual Markup
+,,XON,Corporation
+,,XON,Parent of Corporation
+,,CWE,Pricing Tier Level
+,,ST,Contract Priority
+,,CWE,Class of Trade
+,,EI,Associated Contract ID
+,,,
+CON,Consent Segment,SI,Set ID
+,,CWE,Consent Type
+,,ST,Consent Form ID and Version
+,,EI,Consent Form Number
+,,FT,Consent Text
+,,FT,Subject-specific Consent Text
+,,FT,Consent Background Information
+,,FT,Subject-specific Consent Background Text
+,,FT,Consenter-imposed limitations
+,,CNE,Consent Mode
+,,CNE,Consent Status
+,,DTM,Consent Discussion Date/Time
+,,DTM,Consent Decision Date/Time
+,,DTM,Consent Effective Date/Time
+,,DTM,Consent End Date/Time
+,,ID,Subject Competence Indicator
+,,ID,Translator Assistance Indicator
+,,CWE,Language Translated To
+,,ID,Informational Material Supplied Indicator
+,,CWE,Consent Bypass Reason
+,,ID,Consent Disclosure Level
+,,CWE,Consent Non-disclosure Reason
+,,CWE,Non-subject Consenter Reason
+,,XPN,Consenter ID
+,,CWE,Relationship to Subject
+,,,
+TXA,Transcription Document Header,SI,Set ID
+,,CWE,Document Type
+,,ID,Document Content Presentation
+,,DTM,Activity Date/Time
+,,XCN,Primary Activity Provider Code/Name
+,,DTM,Origination Date/Time
+,,DTM,Transcription Date/Time
+,,DTM,Edit Date/Time
+,,XCN,Originator Code/Name
+,,XCN,Assigned Document Authenticator
+,,XCN,Transcriptionist Code/Name
+,,EI,Unique Document Number
+,,EI,Parent Document Number
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,ST,Unique Document File Name
+,,ID,Document Completion Status
+,,ID,Document Confidentiality Status
+,,ID,Document Availability Status
+,,ID,Document Storage Status
+,,ST,Document Change Reason
+,,PPN,"Authentication Person, Time Stamp (set)"
+,,XCN,Distributed Copies (Code and Name of Recipient(s) )
+,,CWE,Folder Assignment
+,,ST,Document Title
+,,DTM,Agreed Due Date/Time
+,,HD,Creating Facility
+,,CWE,Creating Specialty
+,,,
+ARQ,Appointment Request,EI,Placer Appointment ID
+,,EI,Filler Appointment ID
+,,NM,Occurrence Number
+,,EI,Placer Order Group Number
+,,CWE,Schedule ID
+,,CWE,Request Event Reason
+,,CWE,Appointment Reason
+,,CWE,Appointment Type
+,,NM,Appointment Duration
+,,CNE,Appointment Duration Units
+,,DR,Requested Start Date/Time Range
+,,ST,Priority-ARQ
+,,RI,Repeating Interval
+,,ST,Repeating Interval Duration
+,,XCN,Placer Contact Person
+,,XTN,Placer Contact Phone Number
+,,XAD,Placer Contact Address
+,,PL,Placer Contact Location
+,,XCN,Entered By Person
+,,XTN,Entered By Phone Number
+,,PL,Entered By Location
+,,EI,Parent Placer Appointment ID
+,,EI,Parent Filler Appointment ID
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,EIP,Alternate Placer Order Group Number
+,,,
+SCH,Scheduling Activity Information,EI,Placer Appointment ID
+,,EI,Filler Appointment ID
+,,NM,Occurrence Number
+,,EI,Placer Order Group Number
+,,CWE,Schedule ID
+,,CWE,Event Reason
+,,CWE,Appointment Reason
+,,CWE,Appointment Type
+,,NM,Appointment Duration
+,,CNE,Appointment Duration Units
+,,TQ,Appointment Timing Quantity
+,,XCN,Placer Contact Person
+,,XTN,Placer Contact Phone Number
+,,XAD,Placer Contact Address
+,,PL,Placer Contact Location
+,,XCN,Filler Contact Person
+,,XTN,Filler Contact Phone Number
+,,XAD,Filler Contact Address
+,,PL,Filler Contact Location
+,,XCN,Entered by Person
+,,XTN,Entered by Phone Number
+,,PL,Entered by Location
+,,EI,Parent Placer Appointment ID
+,,EI,Parent Filler Appointment ID
+,,CWE,Filler Status Code
+,,EI,Placer Order Number
+,,EI,Filler Order Number
+,,EIP,Alternate Placer Order Group Number
+,,,
+RGS,Resource Group,SI,Set ID
+,,ID,Segment Action Code
+,,CE,Resource Group ID
+,,,
+AIS,Appointment Information,SI,Set ID
+,,ID,Segment Action Code
+,,CWE,Universal Service Identifier
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,CWE,Placer Supplemental Service Information
+,,CWE,Filler Supplemental Service Information
+,,,
+AIG,Appointment Information – General Resource,SI,Set ID
+,,ID,Segment Action Code
+,,CWE,Resource ID
+,,CWE,Resource Type
+,,CWE,Resource Group
+,,NM,Resource Quantity
+,,CNE,Resource Quantity Units
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,,
+AIL,Appointment Information – Location Resource,SI,Set ID
+,,ID,Segment Action Code
+,,PL,Location Resource ID
+,,CWE,Location Type
+,,CWE,Location Group
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,,
+AIP,Appointment Information – Personnel Resource,SI,Set ID
+,,ID,Segment Action code
+,,XCN,Personnel Resource ID
+,,CWE,Resource Type
+,,CWE,Resource Group
+,,DTM,Start Date/Time
+,,NM,Start Date/Time Offset
+,,CNE,Start Date/Time Offset Units
+,,NM,Duration
+,,CNE,Duration Units
+,,CWE,Allow Substitution Code
+,,CWE,Filler Status Code
+,,,
+APR,Appointment Preferences,SCV,Time Selection Criteria
+,,SCV,Resource Selection Criteria
+,,SCV,Location Selection Criteria
+,,NM,Slot Spacing Criteria
+,,SCV,Filler Override Criteria
+,,,
+RF1,Referral Information,CWE,Referral Status
+,,CWE,Referral Priority
+,,CWE,Referral Type
+,,CWE,Referral Disposition
+,,CWE,Referral Category
+,,EI,Originating Referral Identifier
+,,DTM,Effective Date
+,,DTM,Expiration Date
+,,DTM,Process Date
+,,CWE,Referral Reason
+,,EI,External Referral Identifier
+,,CWE,Referral Documentation Completion Status
+,,DTM,Planned Treatment Stop Date
+,,ST,Referral Reason Text
+,,CQ,Number of Authorized Treatments/Units
+,,CQ,Number of Used Treatments/Units
+,,CQ,Number of Schedule Treatments/Units
+,,MO,Remaining Benefit Amount
+,,XON,Authorized Provider
+,,XCN,Authorized Health Professional
+,,ST,Source Text
+,,DTM,Source Date
+,,XTN,Source Phone
+,,ST,Comment
+,,ID,Action Code
+,,,
+AUT, Authorization Information,CWE,"Authorizing Payor, Plan ID"
+,,CWE,"Authorizing Payor, Company ID"
+,,ST,"Authorizing Payor, Company Name"
+,,DTM,Authorization Effective Date
+,,DTM,Authorization Expiration Date
+,,EI,Authorization Identifier
+,,CP,Reimbursement Limit
+,,CQ,Requested Number of Treatments
+,,CQ,Authorized Number of Treatments
+,,DTM,Process Date
+,,CWE,Requested Discipline(s)
+,,CWE,Authorized Discipline(s)
+,,CWE,Authorization Referral Type
+,,CWE,Approval Status
+,,DTM,Planned Treatment Stop Date
+,,CWE,Clinical Service
+,,ST,Reason Text
+,,CQ,Number of Authorized Treatments/Units
+,,CQ,Number of Used Treatments/Units
+,,CQ,Number of Schedule Treatments/Units
+,,CWE,Encounter Type
+,,MO,Remaining Benefit Amount
+,,XON,Authorized Provider
+,,XCN,Authorized Health Professional
+,,ST,Source Text
+,,DTM,Source Date
+,,XTN,Source Phone
+,,ST,Comment
+,,ID,Action Code
+,,,
+PRD,Provider Data,CWE,Provider Role
+,,XPN,Provider Name
+,,XAD,Provider Address
+,,PL,Provider Location
+,,XTN,Provider Communication Information
+,,CWE,Preferred Method of Contact
+,,PLN,Provider Identifiers
+,,DTM,Effective Start Date of Provider Role
+,,DTM,Effective End Date of Provider Role
+,,XON,Provider Organization Name and Identifier
+,,XAD,Provider Organization Address
+,,PL,Provider Organization Location Information
+,,XTN,Provider Organization Communication Information
+,,CWE,Provider Organization Method of Contact
+,,,
+CTD,Contact Data,CWE,Contact Role
+,,XPN,Contact Name
+,,XAD,Contact Address
+,,PL,Contact Location
+,,XTN,Contact Communication Information
+,,CWE,Preferred Method of Contact
+,,PLN,Contact Identifiers
+,,,
+GOL,Goal Detail,ID,Action Code
+,,DTM,Action Date/Time
+,,CWE,Goal ID
+,,EI,Goal Instance ID
+,,EI,Episode of Care ID
+,,NM,Goal List Priority
+,,DTM,Goal Established Date/Time
+,,DTM,Expected Goal Achieve Date/Time
+,,CWE,Goal Classification
+,,CWE,Goal Management Discipline
+,,CWE,Current Goal Review Status
+,,DTM,Current Goal Review Date/Time
+,,DTM,Next Goal Review Date/Time
+,,DTM,Previous Goal Review Date/Time
+,,TQ,Goal Review Interval
+,,CWE,Goal Evaluation
+,,ST,Goal Evaluation Comment
+,,CWE,Goal Life Cycle Status
+,,DTM,Goal Life Cycle Status Date/Time
+,,CWE,Goal Target Type
+,,XPN,Goal Target Name
+,,CNE,Mood Code
+,,,
+PRB,Problem Details,ID,Action Code
+,,DTM,Action Date/Time
+,,CWE,Problem ID
+,,EI,Problem Instance ID
+,,EI,Episode of Care ID
+,,NM,Problem List Priority
+,,DTM,Problem Established Date/Time
+,,DTM,Anticipated Problem Resolution Date/Time
+,,DTM,Actual Problem Resolution Date/Time
+,,CWE,Problem Classification
+,,CWE,Problem Management Discipline
+,,CWE,Problem Persistence
+,,CWE,Problem Confirmation Status
+,,CWE,Problem Life Cycle Status
+,,DTM,Problem Life Cycle Status Date/Time
+,,DTM,Problem Date of Onset
+,,ST,Problem Onset Text
+,,CWE,Problem Ranking
+,,CWE,Certainty of Problem
+,,NM,Probability of Problem (0-1)
+,,CWE,Individual Awareness of Problem
+,,CWE,Problem Prognosis
+,,CWE,Individual Awareness of Prognosis
+,,ST,Family/Significant Other Awareness of Problem/Prognosis
+,,CWE,Security/Sensitivity
+,,CWE,Problem Severity
+,,CWE,Problem Perspective
+,,CNE,Mood Code
+,,,
+PTH,Pathway,ID,Action Code
+,,CWE,Pathway ID
+,,EI,Pathway Instance ID
+,,DTM,Pathway Established Date/Time
+,,CWE,Pathway Life Cycle Status
+,,DTM,Change Pathway Life Cycle Status Date/Time
+,,CNE,Mood Code
+,,,
+VAR,Variance,EI,Variance Instance ID
+,,DTM,Documented Date/Time
+,,DTM,Stated Variance Date/Time
+,,XCN,Variance Originator
+,,CWE,Variance Classification
+,,ST,Variance Description
+,,,
+REL,Clinical Relationship Segment,SI,Set ID
+,,CWE,Relationship Type
+,,EI,This Relationship Instance Identifier
+,,EI,Source Information Instance Identifier
+,,EI,Target Information Instance Identifier
+,,EI,Asserting Entity Instance ID
+,,XCN,Asserting Person
+,,XON,Asserting Organization
+,,XAD,Assertor Address
+,,XTN,Assertor Contact
+,,DR,Assertion Date Range
+,,ID,Negation Indicator
+,,CWE,Certainty of Relationship
+,,NM,Priority No
+,,NM,Priority Sequence No (rel preference for consideration)
+,,ID,Separability Indicator
+,,ID,Source Information Instance Object Type
+,,ID,Target Information Instance Object Type
+,,,
+EQU,Equipment Detail,EI,Equipment Instance Identifier
+,,DTM,Event Date/Time
+,,CWE,Equipment State
+,,CWE,Local/Remote Control State
+,,CWE,Alert Level
+,,DTM,Expected date/time of the next status change
+,,,
+ISD,Interaction Status Detail,NM,Reference Interaction Number
+,,CWE,Interaction Type Identifier
+,,CWE,Interaction Active State
+,,,
+SAC,Specimen Container detail,EI,External Accession Identifier
+,,EI,Accession Identifier
+,,EI,Container Identifier
+,,EI,Primary (Parent) Container Identifier
+,,EI,Equipment Container Identifier
+,,SPS,Specimen Source
+,,DTM,Registration Date/Time
+,,CWE,Container Status
+,,CWE,Carrier Type
+,,EI,Carrier Identifier
+,,NA,Position in Carrier
+,,CWE,Tray Type – SAC
+,,EI,Tray Identifier
+,,NA,Position in Tray
+,,CWE,Location
+,,NM,Container Height
+,,NM,Container Diameter
+,,NM,Barrier Delta
+,,NM,Bottom Delta
+,,CWE,Container Height/Diameter/Delta Units
+,,NM,Container Volume
+,,NM,Available Specimen Volume
+,,NM,Initial Specimen Volume
+,,CWE,Volume Units
+,,CWE,Separator Type
+,,CWE,Cap Type
+,,CWE,Additive
+,,CWE,Specimen Component
+,,SN,Dilution Factor
+,,CWE,Treatment
+,,SN,Temperature
+,,NM,Hemolysis Index
+,,CWE,Hemolysis Index Units
+,,NM,Lipemia Index
+,,CWE,Lipemia Index Units
+,,NM,Icterus Index
+,,CWE,Icterus Index Units
+,,NM,Fibrin Index
+,,CWE,Fibrin Index Units
+,,CWE,System Induced Contaminants
+,,CWE,Drug Interference
+,,CWE,Artificial Blood
+,,CWE,Special Handling Code
+,,CWE,Other Environmental Factors
+,,CQ,Container Length
+,,CQ,Container Width
+,,CWE,Container Form
+,,CWE,Container Material
+,,CWE,Container Common Name
+,,,
+INV,Inventory Detail,CWE,Substance Identifier
+,,CWE,Substance Status
+,,CWE,Substance Type
+,,CWE,Inventory Container Identifier
+,,CWE,Container Carrier Identifier
+,,CWE,Position on Carrier
+,,NM,Initial Quantity
+,,NM,Current Quantity
+,,NM,Available Quantity
+,,NM,Consumption Quantity
+,,CWE,Quantity Units
+,,DTM,Expiration Date/Time
+,,DTM,First Used Date/Time
+,,TQ,On Board Stability Duration
+,,CWE,Test/Fluid Identifier(s)
+,,ST,Manufacturer Lot Number
+,,CWE,Manufacturer Identifier
+,,CWE,Supplier Identifier
+,,CQ,On Board Stability Time
+,,CQ,Target Value
+,,CWE,Equipment State Indicator Type Code
+,,CQ,Equipment State Indicator Value
+,,,
+ECD,Equipment Command,NM,Reference Command Number
+,,CWE,Remote Control Command
+,,ID,Response Required
+,,TQ,Requested Completion Time
+,,TX,Parameters
+,,,
+ECR,Equipment Command Response,CWE,Command Response
+,,DTM,Date/Time Completed
+,,TX,Command Response Parameters
+,,,
+NDS,Notification Detail,NM,Notification Reference Number
+,,DTM,Notification Date/Time
+,,CWE,Notification Alert Severity
+,,CWE,Notification Code
+,,,
+CNS,Clear Notification,NM,Starting Notification Reference Number
+,,NM,Ending Notification Reference Number
+,,DTM,Starting Notification Date/Time
+,,DTM,Ending Notification Date/Time
+,,CWE,Starting Notification Code
+,,CWE,Ending Notification Code
+,,,
+TCC,Test Code Configuration,CWE,Universal Service Identifier
+,,EI,Equipment Test Application Identifier
+,,SPS,Specimen Source
+,,SN,Auto-Dilution Factor Default
+,,SN,Rerun Dilution Factor Default
+,,SN,Pre-Dilution Factor Default
+,,SN,Endogenous Content of Pre-Dilution Diluent
+,,NM,Inventory Limits Warning Level
+,,ID,Automatic Rerun Allowed
+,,ID,Automatic Repeat Allowed
+,,ID,Automatic Reflex Allowed
+,,SN,Equipment Dynamic Range
+,,CWE,Units
+,,CWE,Processing Type
+,,CWE,Test Criticality
+,,,
+TCD,Test Code Detail,CWE,Universal Service Identifier
+,,SN,Auto-Dilution Factor
+,,SN,Rerun Dilution Factor
+,,SN,Pre-Dilution Factor
+,,SN,Endogenous Content of Pre-Dilution Diluent
+,,ID,Automatic Repeat Allowed
+,,ID,Reflex Allowed
+,,CWE,Analyte Repeat Status
+,,CQ,Specimen Consumption Quantity
+,,NM,Pool Size
+,,CWE,Auto-Dilution Type
+,,,
+SID,Substance Identifier,CWE,Application/Method Identifier
+,,ST,Substance Lot Number
+,,ST,Substance Container Identifier
+,,CWE,Substance Manufacturer Identifier
+,,,
+EQP,Equipment/log Service,CWE,Event type
+,,ST,File Name
+,,DTM,Start Date/Time
+,,DTM,End Date/Time
+,,FT,Transaction Data
+,,,
+DST,Transport Destination,CWE,Destination
+,,CWE,Route
+,,,
+NCK,System Clock,DTM,System Date/Time
+,,,
+NSC,Application Status Change,CWE,Application Change Type
+,,ST,Current CPU
+,,ST,Current Fileserver
+,,HD,Current Application
+,,HD,Current Facility
+,,ST,New CPU
+,,ST,New Fileserver
+,,HD,New Application
+,,HD,New Facility
+,,,
+NST,Application control level statistics,ID,Statistics Available
+,,ST,Source Identifier
+,,ID,Source Type
+,,DTM,Statistics Start
+,,DTM,Statistics End
+,,NM,Receive Character Count
+,,NM,Send Character Count
+,,NM,Messages Received
+,,NM,Messages Sent
+,,NM,Checksum Errors Received
+,,NM,Length Errors Received
+,,NM,Other Errors Received
+,,NM,Connect Timeouts
+,,NM,Receive Timeouts
+,,NM,Application control-level Errors
+,,,
+AFF,Professional Affiliation,SI,Set ID
+,,XON,Professional Organization
+,,XAD,Professional Organization Address
+,,DR,Professional Organization Affiliation Date Range
+,,ST,Professional Affiliation Additional Information
+,,,
+CER,Certificate Detail,SI,Set ID
+,,ST,Serial Number
+,,ST,Version
+,,XON,Granting Authority
+,,XCN,Issuing Authority
+,,ED,Signature
+,,ID,Granting Country
+,,CWE,Granting State/Province
+,,CWE,Granting County/Parish
+,,CWE,Certificate Type
+,,CWE,Certificate Domain
+,,EI,Subject ID
+,,ST,Subject Name
+,,CWE,Subject Directory Attribute Extension
+,,CWE,Subject Public Key Info
+,,CWE,Authority Key Identifier
+,,ID,Basic Constraint
+,,CWE,CRL Distribution Point
+,,ID,Jurisdiction Country
+,,CWE,Jurisdiction State/Province
+,,CWE,Jurisdiction County/Parish
+,,CWE,Jurisdiction Breadth
+,,DTM,Granting Date
+,,DTM,Issuing Date
+,,DTM,Activation Date
+,,DTM,Inactivation Date
+,,DTM,Expiration Date
+,,DTM,Renewal Date
+,,DTM,Revocation Date
+,,CWE,Revocation Reason Code
+,,CWE,Certificate Status Code
+,,,
+EDU,Educational Detail,SI,Set ID
+,,CWE,Academic Degree
+,,DR,Academic Degree Program Date Range
+,,DR,Academic Degree Program Participation Date Range
+,,DT,Academic Degree Granted Date
+,,XON,School
+,,CWE,School Type Code
+,,XAD,School Address
+,,CWE,Major Field of Study
+,,,
+LAN,Language Detail,SI,Set ID
+,,CWE,Language Code
+,,CWE,Language Ability Code
+,,CWE,Language Proficiency Code
+,,,
+ORG,Practitioner Organization Unit,SI,Set ID
+,,CWE,Organization Unit Code
+,,CWE,Organization Unit Type Code
+,,ID,Primary Org Unit Indicator
+,,CX,Practitioner Org Unit Identifier
+,,CWE,Health Care Provider Type Code
+,,CWE,Health Care Provider Classification Code
+,,CWE,Health Care Provider Area of Specialization Code
+,,DR,Effective Date Range
+,,CWE,Employment Status Code
+,,ID,Board Approval Indicator
+,,ID,Primary Care Physician Indicator
+,,CWE,Cost Center Code
+,,,
+PRA,Practitioner Detail,CWE,Primary Key Value
+,,CWE,Practitioner Group
+,,CWE,Practitioner Category
+,,ID,Provider Billing
+,,SPD,Specialty
+,,PLN,Practitioner ID Numbers
+,,PIP,Privileges
+,,DT,Date Entered Practice
+,,CWE,Institution
+,,DT,Date Left Practice
+,,CWE,Government Reimbursement Billing Eligibility
+,,SI,Set ID
+,,,
+ROL,Role,EI,Role Instance ID
+,,ID,Action Code
+,,CWE,Role
+,,XCN,Role Person
+,,DTM,Role Begin Date/Time
+,,DTM,Role End Date/Time
+,,CWE,Role Duration
+,,CWE,Role Action Reason
+,,CWE,Provider Type
+,,CWE,Organization Unit Type
+,,XAD,Office/Home Address/Birthplace
+,,XTN,Phone
+,,PL,Person's Location
+,,XON,Organization
+,,,
+STF,Staff Identification,CWE,Primary Key Value
+,,CX,Staff Identifier List
+,,XPN,Staff Name
+,,CWE,Staff Type
+,,CWE,Administrative Sex
+,,DTM,Date/Time of Birth
+,,ID,Active/Inactive Flag
+,,CWE,Department
+,,CWE,Hospital Service
+,,XTN,Phone
+,,XAD,Office/Home Address/Birthplace
+,,DIN,Institution Activation Date
+,,DIN,Institution Inactivation Date
+,,CWE,Backup Person ID
+,,ST,E-Mail Address
+,,CWE,Preferred Method of Contact
+,,CWE,Marital Status
+,,ST,Job Title
+,,JCC,Job Code/Class
+,,CWE,Employment Status Code
+,,ID,Additional Insured on Auto
+,,DLN,Driver's License Number
+,,ID,Copy Auto Ins
+,,DT,Auto Ins Expires
+,,DT,Date Last DMV Review
+,,DT,Date Next DMV Review
+,,CWE,Race
+,,CWE,Ethnic Group
+,,ID,Re-activation Approval Indicator
+,,CWE,Citizenship
+,,DTM,Date/Time of Death
+,,ID,Death Indicator
+,,CWE,Institution Relationship Type Code
+,,DR,Institution Relationship Period
+,,DT,Expected Return Date
+,,CWE,Cost Center Code
+,,ID,Generic Classification Indicator
+,,CWE,Inactive Reason Code
+,,CWE,Generic resource type or category
+,,CWE,Religion
+,,ED,Signature
